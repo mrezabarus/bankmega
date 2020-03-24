@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>advert</title>  
+	<link href="advert.css" rel="stylesheet">
+</head>
+
+<body>
+	<div id="advert">
+	
+		<div id="img1"></div>       
+		<div id="img2"></div>       
+		<div id="img3"></div>       
+		<div id="img4"></div>
+
+		<!--# Script show hide image-->
+	</div>
+	
+	
+    <script src="../assets/jquery/1.9.1/jquery.min.js"></script>
+		<!-- Script show hide image-->
+		<script type='text/javascript'>
+			var shadowes = $('#img2,#img3,#img4');
+			function runIthide() {
+				$('#img3,#img4').fadeIn(1000);
+				$('#img4').delay(4000);
+				$('#img3').delay(8000);
+				$('#img2').delay(12000);
+				shadowes.fadeOut(1000);
+				$('#img2').delay(3000);
+				$('#img2').fadeIn(2000, runIthide);
+				}
+			runIthide();
+		</script>
+</body>
+</html>

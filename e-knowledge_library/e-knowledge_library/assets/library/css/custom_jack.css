@@ -1,0 +1,23 @@
+body > .top .right .url {
+    padding: 2px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 3px;
+}
+
+.container .login {
+	margin-top: 20px;
+}
+
+.user {
+	color: #4974A1;
+}
+body > .top .right .url  .user {
+	color: #4974A1;
+}
+
+
+/* copy from bootstrap 3.1.1 */
+
+/* end copy from bootstrap 3.1.1 */
+

@@ -1,0 +1,407 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel" xmlns="http://www.w3.org/TR/REC-html40">
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="ProgId" content="Excel.Sheet"/>
+  <meta name="Generator" content="WPS Office ET"/>
+  <!--[if gte mso 9]>
+   <xml>
+    <o:DocumentProperties>
+     <o:Author>mbm</o:Author>
+     <o:Created>2015-08-07T10:10:44</o:Created>
+     <o:LastSaved>2017-09-08T16:25:47</o:LastSaved>
+    </o:DocumentProperties>
+    <o:CustomDocumentProperties>
+     <o:KSOProductBuildVer dt:dt="string">1033-9.1.0.4674</o:KSOProductBuildVer>
+    </o:CustomDocumentProperties>
+   </xml>
+  <![endif]-->
+  <style>
+<!-- @page
+	{margin:0.98in 0.75in 0.98in 0.75in;
+	mso-header-margin:0.51in;
+	mso-footer-margin:0.51in;}
+tr
+	{mso-height-source:auto;
+	mso-ruby-visibility:none;}
+col
+	{mso-width-source:auto;
+	mso-ruby-visibility:none;}
+br
+	{mso-data-placement:same-cell;}
+.font0
+	{color:#000000;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"Times New Roman";
+	mso-generic-font-family:auto;
+	mso-font-charset:134;}
+.font1
+	{color:#000000;
+	font-size:10.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"Calibri";
+	mso-generic-font-family:auto;
+	mso-font-charset:134;}
+.font2
+	{color:#000000;
+	font-size:10.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"Calibri";
+	mso-generic-font-family:auto;
+	mso-font-charset:134;}
+.font3
+	{color:#800080;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:underline;
+	text-underline-style:single;
+	font-family:"Times New Roman";
+	mso-generic-font-family:auto;
+	mso-font-charset:134;}
+.font4
+	{color:#0000FF;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:underline;
+	text-underline-style:single;
+	font-family:"Times New Roman";
+	mso-generic-font-family:auto;
+	mso-font-charset:134;}
+.style0
+	{mso-number-format:"General";
+	text-align:general;
+	vertical-align:middle;
+	white-space:nowrap;
+	mso-rotate:0;
+	color:#000000;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Times New Roman;
+	border:none;
+	mso-protection:locked visible;
+	mso-style-name:"Normal";
+	mso-style-id:0;}
+.style16
+	{mso-number-format:"_ * \#\,\#\#0\.00_ \;_ * \\-\#\,\#\#0\.00_ \;_ * \0022-\0022??_ \;_ \@_ ";
+	mso-style-name:"Comma";
+	mso-style-id:3;}
+.style17
+	{mso-number-format:"_\(\0022$\0022* \#\,\#\#0\.00_\)\;_\(\0022$\0022* \\\(\#\,\#\#0\.00\\\)\;_\(\0022$\0022* \0022-\0022??_\)\;_\(\@_\)";
+	mso-style-name:"Currency";
+	mso-style-id:4;}
+.style18
+	{mso-number-format:"_ * \#\,\#\#0_ \;_ * \\-\#\,\#\#0_ \;_ * \0022-\0022_ \;_ \@_ ";
+	mso-style-name:"Comma[0]";
+	mso-style-id:6;}
+.style19
+	{mso-number-format:"0%";
+	mso-style-name:"Percent";
+	mso-style-id:5;}
+.style20
+	{mso-number-format:"_\(\0022$\0022* \#\,\#\#0_\)\;_\(\0022$\0022* \\\(\#\,\#\#0\\\)\;_\(\0022$\0022* \0022-\0022_\)\;_\(\@_\)";
+	mso-style-name:"Currency[0]";
+	mso-style-id:7;}
+.style21
+	{color:#0000FF;
+	font-size:12.0pt;
+	text-decoration:underline;
+	text-underline-style:single;
+	font-family:Times New Roman;
+	mso-style-name:"Hyperlink";
+	mso-style-id:8;}
+.style22
+	{color:#800080;
+	font-size:12.0pt;
+	text-decoration:underline;
+	text-underline-style:single;
+	font-family:Times New Roman;
+	mso-style-name:"Followed Hyperlink";
+	mso-style-id:9;}
+td
+	{mso-style-parent:style0;
+	padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	mso-number-format:"General";
+	text-align:general;
+	vertical-align:middle;
+	white-space:nowrap;
+	mso-rotate:0;
+	color:#000000;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Times New Roman;
+	border:none;
+	mso-protection:locked visible;}
+.xl24
+	{mso-style-parent:style0;
+	text-align:center;
+	font-size:10.0pt;
+	font-weight:700;
+	font-family:Calibri;}
+.xl25
+	{mso-style-parent:style0;
+	text-align:center;
+	font-size:10.0pt;
+	font-family:Calibri;}
+.xl26
+	{mso-style-parent:style0;
+	text-align:center;
+	font-size:10.0pt;
+	font-family:Calibri;}
+.xl27
+	{mso-style-parent:style0;
+	text-align:left;
+	font-size:10.0pt;
+	font-family:Calibri;}
+.xl28
+	{mso-style-parent:style0;
+	text-align:left;
+	font-size:10.0pt;
+	font-family:Calibri;}
+.xl29
+	{mso-style-parent:style0;
+	text-align:center;
+	font-size:10.0pt;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:134;}
+ -->  </style>
+  <!--[if gte mso 9]>
+   <xml>
+    <x:ExcelWorkbook>
+     <x:ExcelWorksheets>
+      <x:ExcelWorksheet>
+       <x:Name>Sheet1</x:Name>
+       <x:WorksheetOptions>
+        <x:DefaultRowHeight>380</x:DefaultRowHeight>
+        <x:Unsynced/>
+        <x:Selected/>
+        <x:Panes>
+         <x:Pane>
+          <x:Number>3</x:Number>
+          <x:ActiveCol>0</x:ActiveCol>
+          <x:ActiveRow>0</x:ActiveRow>
+         </x:Pane>
+        </x:Panes>
+        <x:ProtectContents>False</x:ProtectContents>
+        <x:ProtectObjects>False</x:ProtectObjects>
+        <x:ProtectScenarios>False</x:ProtectScenarios>
+        <x:PageBreakZoom>100</x:PageBreakZoom>
+        <x:Print>
+         <x:ValidPrinterInfo/>
+         <x:PaperSizeIndex>9</x:PaperSizeIndex>
+        </x:Print>
+       </x:WorksheetOptions>
+      </x:ExcelWorksheet>
+      <x:ExcelWorksheet>
+       <x:Name>Sheet2</x:Name>
+       <x:WorksheetOptions>
+        <x:DefaultRowHeight>315</x:DefaultRowHeight>
+        <x:Panes>
+         <x:Pane>
+          <x:Number>3</x:Number>
+          <x:ActiveCol>0</x:ActiveCol>
+          <x:ActiveRow>0</x:ActiveRow>
+         </x:Pane>
+        </x:Panes>
+        <x:ProtectContents>False</x:ProtectContents>
+        <x:ProtectObjects>False</x:ProtectObjects>
+        <x:ProtectScenarios>False</x:ProtectScenarios>
+        <x:PageBreakZoom>100</x:PageBreakZoom>
+        <x:Print>
+         <x:ValidPrinterInfo/>
+         <x:PaperSizeIndex>9</x:PaperSizeIndex>
+        </x:Print>
+       </x:WorksheetOptions>
+      </x:ExcelWorksheet>
+      <x:ExcelWorksheet>
+       <x:Name>Sheet3</x:Name>
+       <x:WorksheetOptions>
+        <x:DefaultRowHeight>315</x:DefaultRowHeight>
+        <x:Panes>
+         <x:Pane>
+          <x:Number>3</x:Number>
+          <x:ActiveCol>0</x:ActiveCol>
+          <x:ActiveRow>0</x:ActiveRow>
+         </x:Pane>
+        </x:Panes>
+        <x:ProtectContents>False</x:ProtectContents>
+        <x:ProtectObjects>False</x:ProtectObjects>
+        <x:ProtectScenarios>False</x:ProtectScenarios>
+        <x:PageBreakZoom>100</x:PageBreakZoom>
+        <x:Print>
+         <x:ValidPrinterInfo/>
+         <x:PaperSizeIndex>9</x:PaperSizeIndex>
+        </x:Print>
+       </x:WorksheetOptions>
+      </x:ExcelWorksheet>
+     </x:ExcelWorksheets>
+     <x:ProtectStructure>False</x:ProtectStructure>
+     <x:ProtectWindows>False</x:ProtectWindows>
+     <x:SelectedSheets>0</x:SelectedSheets>
+     <x:WindowHeight>8130</x:WindowHeight>
+     <x:WindowWidth>15240</x:WindowWidth>
+    </x:ExcelWorkbook>
+   </xml>
+  <![endif]-->
+ </head>
+ <body link="blue" vlink="purple" class="xl26">
+  <table width="1291" border="0" cellpadding="0" cellspacing="0" style='width:1057.50pt;border-collapse:collapse;table-layout:fixed;'>
+   <tr height="42.67" class="xl24" style='height:32.00pt;mso-height-source:userset;mso-height-alt:640;'>
+    <td class="xl24" height="42.67" width="72" style='height:32.00pt;width:54.00pt;' x:str>ID jadwal</td>
+    <td class="xl24" width="171" style='width:128.25pt;' x:str>Regional</td>
+    <td class="xl24" width="171" style='width:128.25pt;' x:str>Organisasi</td>
+    <td class="xl24" width="171" style='width:128.25pt;' x:str>Posisi detail</td>
+    <td class="xl24" width="234" style='width:175.50pt;' x:str>Nama</td>
+    <td class="xl24" width="72" style='width:54.00pt;' x:str>Nip</td>
+    <td class="xl24" width="72" style='width:54.00pt;' x:str>Login</td>
+    <td class="xl24" width="72" style='width:54.00pt;' x:str>Pretest</td>
+    <td class="xl24" width="72" style='width:54.00pt;' x:str>Duration</td>
+    <td class="xl24" width="72" style='width:54.00pt;' x:str>Posttest</td>
+    <td class="xl24" width="159" style='width:119.25pt;' x:str>Serial</td>
+    <td class="xl24" width="72" style='width:54.00pt;' x:str>Resign</td>
+    <td class="xl24" width="234" style='width:175.50pt;' x:str>Email</td>
+   </tr>	  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>119</td>
+                <td class='xl28' x:str>KPNO</td>
+                
+                <td class='xl28' x:str>Human Capital Management</td>
+                <td class='xl28' x:str>Organization & System Development Specia</td>
+                <td class='xl28' x:str>Muhammad Reza Barus</td>
+                <td class='xl29' x:str>13055808</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>muhammad.baruz@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>119</td>
+                <td class='xl28' x:str>KPNO</td>
+                
+                <td class='xl28' x:str>Human Capital Management</td>
+                <td class='xl28' x:str>Organization & System Development Specia</td>
+                <td class='xl28' x:str>Djoko Erry Kurniawan</td>
+                <td class='xl29' x:str>16074009</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>djoko.kurniawan@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>119</td>
+                <td class='xl28' x:str>KPNO</td>
+                
+                <td class='xl28' x:str>Human Capital Management</td>
+                <td class='xl28' x:str>Program Design Management Specialist</td>
+                <td class='xl28' x:str>Yunan Ferry Okto Imam S. Purba</td>
+                <td class='xl29' x:str>01102633</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>yunan.purba@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>119</td>
+                <td class='xl28' x:str>KPNO</td>
+                
+                <td class='xl28' x:str>Operational Risk Management</td>
+                <td class='xl28' x:str>Operational Risk Management Head</td>
+                <td class='xl28' x:str>A. Ary Satrio</td>
+                <td class='xl29' x:str>10092121</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>aloysius.ary@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>119</td>
+                <td class='xl28' x:str>KPNO</td>
+                
+                <td class='xl28' x:str>Operational Risk Management</td>
+                <td class='xl28' x:str>ORM Implementation Head</td>
+                <td class='xl28' x:str>Purnomo Pudyastomo</td>
+                <td class='xl29' x:str>03104125</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>purnomo.pudyastomo@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>119</td>
+                <td class='xl28' x:str>KPNO</td>
+                
+                <td class='xl28' x:str>Operational Risk Management</td>
+                <td class='xl28' x:str>ORM Implementation Specialist</td>
+                <td class='xl28' x:str>Sisca Endhiyasari</td>
+                <td class='xl29' x:str>08032035</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>sisca.endhiyasari@bankmega.com</td>
+                
+               </tr>
+   
+   		
+			
+  </table>
+ </body>
+</html>

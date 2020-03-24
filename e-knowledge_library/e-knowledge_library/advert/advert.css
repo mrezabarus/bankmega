@@ -1,0 +1,38 @@
+body{
+	padding:0;
+	margin:0;
+}
+
+#advert {
+    background-color: #0073EA;
+    background-image: url("images/x1.png");
+    height: 286px;
+    width: 218px;
+}
+#img2 {
+    background-image: url("images/x2.png");
+    height: 286px;
+    margin-left: 0;
+    margin-top: 0;
+    position: absolute;
+    width: 218px;
+	display:none;
+}
+#img3 {
+    background-image: url("images/x3.png");
+    height: 286px;
+    margin-left: 0;
+    margin-top: 0;
+    position: absolute;
+    width: 218px;
+	display:none;
+}
+#img4 {
+    background-image: url("images/x4.png");
+    height: 286px;
+    margin-left: 0;
+    margin-top: 0;
+    position: absolute;
+    width: 218px;
+	display:none;
+}

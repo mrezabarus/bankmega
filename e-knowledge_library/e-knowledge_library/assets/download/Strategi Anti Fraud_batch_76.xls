@@ -1,0 +1,3263 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel" xmlns="http://www.w3.org/TR/REC-html40">
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="ProgId" content="Excel.Sheet"/>
+  <meta name="Generator" content="WPS Office ET"/>
+  <!--[if gte mso 9]>
+   <xml>
+    <o:DocumentProperties>
+     <o:Author>mbm</o:Author>
+     <o:Created>2015-08-07T10:10:44</o:Created>
+     <o:LastSaved>2017-09-08T16:25:47</o:LastSaved>
+    </o:DocumentProperties>
+    <o:CustomDocumentProperties>
+     <o:KSOProductBuildVer dt:dt="string">1033-9.1.0.4674</o:KSOProductBuildVer>
+    </o:CustomDocumentProperties>
+   </xml>
+  <![endif]-->
+  <style>
+<!-- @page
+	{margin:0.98in 0.75in 0.98in 0.75in;
+	mso-header-margin:0.51in;
+	mso-footer-margin:0.51in;}
+tr
+	{mso-height-source:auto;
+	mso-ruby-visibility:none;}
+col
+	{mso-width-source:auto;
+	mso-ruby-visibility:none;}
+br
+	{mso-data-placement:same-cell;}
+.font0
+	{color:#000000;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"Times New Roman";
+	mso-generic-font-family:auto;
+	mso-font-charset:134;}
+.font1
+	{color:#000000;
+	font-size:10.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"Calibri";
+	mso-generic-font-family:auto;
+	mso-font-charset:134;}
+.font2
+	{color:#000000;
+	font-size:10.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"Calibri";
+	mso-generic-font-family:auto;
+	mso-font-charset:134;}
+.font3
+	{color:#800080;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:underline;
+	text-underline-style:single;
+	font-family:"Times New Roman";
+	mso-generic-font-family:auto;
+	mso-font-charset:134;}
+.font4
+	{color:#0000FF;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:underline;
+	text-underline-style:single;
+	font-family:"Times New Roman";
+	mso-generic-font-family:auto;
+	mso-font-charset:134;}
+.style0
+	{mso-number-format:"General";
+	text-align:general;
+	vertical-align:middle;
+	white-space:nowrap;
+	mso-rotate:0;
+	color:#000000;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Times New Roman;
+	border:none;
+	mso-protection:locked visible;
+	mso-style-name:"Normal";
+	mso-style-id:0;}
+.style16
+	{mso-number-format:"_ * \#\,\#\#0\.00_ \;_ * \\-\#\,\#\#0\.00_ \;_ * \0022-\0022??_ \;_ \@_ ";
+	mso-style-name:"Comma";
+	mso-style-id:3;}
+.style17
+	{mso-number-format:"_\(\0022$\0022* \#\,\#\#0\.00_\)\;_\(\0022$\0022* \\\(\#\,\#\#0\.00\\\)\;_\(\0022$\0022* \0022-\0022??_\)\;_\(\@_\)";
+	mso-style-name:"Currency";
+	mso-style-id:4;}
+.style18
+	{mso-number-format:"_ * \#\,\#\#0_ \;_ * \\-\#\,\#\#0_ \;_ * \0022-\0022_ \;_ \@_ ";
+	mso-style-name:"Comma[0]";
+	mso-style-id:6;}
+.style19
+	{mso-number-format:"0%";
+	mso-style-name:"Percent";
+	mso-style-id:5;}
+.style20
+	{mso-number-format:"_\(\0022$\0022* \#\,\#\#0_\)\;_\(\0022$\0022* \\\(\#\,\#\#0\\\)\;_\(\0022$\0022* \0022-\0022_\)\;_\(\@_\)";
+	mso-style-name:"Currency[0]";
+	mso-style-id:7;}
+.style21
+	{color:#0000FF;
+	font-size:12.0pt;
+	text-decoration:underline;
+	text-underline-style:single;
+	font-family:Times New Roman;
+	mso-style-name:"Hyperlink";
+	mso-style-id:8;}
+.style22
+	{color:#800080;
+	font-size:12.0pt;
+	text-decoration:underline;
+	text-underline-style:single;
+	font-family:Times New Roman;
+	mso-style-name:"Followed Hyperlink";
+	mso-style-id:9;}
+td
+	{mso-style-parent:style0;
+	padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	mso-number-format:"General";
+	text-align:general;
+	vertical-align:middle;
+	white-space:nowrap;
+	mso-rotate:0;
+	color:#000000;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Times New Roman;
+	border:none;
+	mso-protection:locked visible;}
+.xl24
+	{mso-style-parent:style0;
+	text-align:center;
+	font-size:10.0pt;
+	font-weight:700;
+	font-family:Calibri;}
+.xl25
+	{mso-style-parent:style0;
+	text-align:center;
+	font-size:10.0pt;
+	font-family:Calibri;}
+.xl26
+	{mso-style-parent:style0;
+	text-align:center;
+	font-size:10.0pt;
+	font-family:Calibri;}
+.xl27
+	{mso-style-parent:style0;
+	text-align:left;
+	font-size:10.0pt;
+	font-family:Calibri;}
+.xl28
+	{mso-style-parent:style0;
+	text-align:left;
+	font-size:10.0pt;
+	font-family:Calibri;}
+.xl29
+	{mso-style-parent:style0;
+	text-align:center;
+	font-size:10.0pt;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:134;}
+ -->  </style>
+  <!--[if gte mso 9]>
+   <xml>
+    <x:ExcelWorkbook>
+     <x:ExcelWorksheets>
+      <x:ExcelWorksheet>
+       <x:Name>Sheet1</x:Name>
+       <x:WorksheetOptions>
+        <x:DefaultRowHeight>380</x:DefaultRowHeight>
+        <x:Unsynced/>
+        <x:Selected/>
+        <x:Panes>
+         <x:Pane>
+          <x:Number>3</x:Number>
+          <x:ActiveCol>0</x:ActiveCol>
+          <x:ActiveRow>0</x:ActiveRow>
+         </x:Pane>
+        </x:Panes>
+        <x:ProtectContents>False</x:ProtectContents>
+        <x:ProtectObjects>False</x:ProtectObjects>
+        <x:ProtectScenarios>False</x:ProtectScenarios>
+        <x:PageBreakZoom>100</x:PageBreakZoom>
+        <x:Print>
+         <x:ValidPrinterInfo/>
+         <x:PaperSizeIndex>9</x:PaperSizeIndex>
+        </x:Print>
+       </x:WorksheetOptions>
+      </x:ExcelWorksheet>
+      <x:ExcelWorksheet>
+       <x:Name>Sheet2</x:Name>
+       <x:WorksheetOptions>
+        <x:DefaultRowHeight>315</x:DefaultRowHeight>
+        <x:Panes>
+         <x:Pane>
+          <x:Number>3</x:Number>
+          <x:ActiveCol>0</x:ActiveCol>
+          <x:ActiveRow>0</x:ActiveRow>
+         </x:Pane>
+        </x:Panes>
+        <x:ProtectContents>False</x:ProtectContents>
+        <x:ProtectObjects>False</x:ProtectObjects>
+        <x:ProtectScenarios>False</x:ProtectScenarios>
+        <x:PageBreakZoom>100</x:PageBreakZoom>
+        <x:Print>
+         <x:ValidPrinterInfo/>
+         <x:PaperSizeIndex>9</x:PaperSizeIndex>
+        </x:Print>
+       </x:WorksheetOptions>
+      </x:ExcelWorksheet>
+      <x:ExcelWorksheet>
+       <x:Name>Sheet3</x:Name>
+       <x:WorksheetOptions>
+        <x:DefaultRowHeight>315</x:DefaultRowHeight>
+        <x:Panes>
+         <x:Pane>
+          <x:Number>3</x:Number>
+          <x:ActiveCol>0</x:ActiveCol>
+          <x:ActiveRow>0</x:ActiveRow>
+         </x:Pane>
+        </x:Panes>
+        <x:ProtectContents>False</x:ProtectContents>
+        <x:ProtectObjects>False</x:ProtectObjects>
+        <x:ProtectScenarios>False</x:ProtectScenarios>
+        <x:PageBreakZoom>100</x:PageBreakZoom>
+        <x:Print>
+         <x:ValidPrinterInfo/>
+         <x:PaperSizeIndex>9</x:PaperSizeIndex>
+        </x:Print>
+       </x:WorksheetOptions>
+      </x:ExcelWorksheet>
+     </x:ExcelWorksheets>
+     <x:ProtectStructure>False</x:ProtectStructure>
+     <x:ProtectWindows>False</x:ProtectWindows>
+     <x:SelectedSheets>0</x:SelectedSheets>
+     <x:WindowHeight>8130</x:WindowHeight>
+     <x:WindowWidth>15240</x:WindowWidth>
+    </x:ExcelWorkbook>
+   </xml>
+  <![endif]-->
+ </head>
+ <body link="blue" vlink="purple" class="xl26">
+  <table width="1291" border="0" cellpadding="0" cellspacing="0" style='width:1057.50pt;border-collapse:collapse;table-layout:fixed;'>
+   <tr height="42.67" class="xl24" style='height:32.00pt;mso-height-source:userset;mso-height-alt:640;'>
+    <td class="xl24" height="42.67" width="72" style='height:32.00pt;width:54.00pt;' x:str>ID jadwal</td>
+    <td class="xl24" width="171" style='width:128.25pt;' x:str>Regional</td>
+    <td class="xl24" width="171" style='width:128.25pt;' x:str>Organisasi</td>
+    <td class="xl24" width="171" style='width:128.25pt;' x:str>Posisi detail</td>
+    <td class="xl24" width="234" style='width:175.50pt;' x:str>Nama</td>
+    <td class="xl24" width="72" style='width:54.00pt;' x:str>Nip</td>
+    <td class="xl24" width="72" style='width:54.00pt;' x:str>Login</td>
+    <td class="xl24" width="72" style='width:54.00pt;' x:str>Pretest</td>
+    <td class="xl24" width="72" style='width:54.00pt;' x:str>Duration</td>
+    <td class="xl24" width="72" style='width:54.00pt;' x:str>Posttest</td>
+    <td class="xl24" width="159" style='width:119.25pt;' x:str>Serial</td>
+    <td class="xl24" width="72" style='width:54.00pt;' x:str>Resign</td>
+    <td class="xl24" width="234" style='width:175.50pt;' x:str>Email</td>
+   </tr>	  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KCP SURABAYA NGAGEL</td>
+                <td class='xl28' x:str>Retail Funding Officer</td>
+                <td class='xl28' x:str>Praditha Ayu Dwiningtias Jektiono</td>
+                <td class='xl29' x:str>16125419</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>60</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>70</td>
+                <td class='xl29' x:str>SN-EK023125419221117</td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>praditha.dwiningtias@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                <td class='xl28' x:str>Card & Loan Officer (Regional)</td>
+                <td class='xl28' x:str>Badi&#039;atul Munawaroh</td>
+                <td class='xl29' x:str>16115060</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>60</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>90</td>
+                <td class='xl29' x:str>SN-EK023115060221117</td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str></td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KCP SURABAYA NGAGEL</td>
+                <td class='xl28' x:str>Card & Loan Officer</td>
+                <td class='xl28' x:str>Agusta Ramadhani</td>
+                <td class='xl29' x:str>10113472</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>70</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>80</td>
+                <td class='xl29' x:str>SN-EK023113472221117</td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>agusta.ramadhani@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                <td class='xl28' x:str>Regional Funding Support Specialist</td>
+                <td class='xl28' x:str>Fransiskus Freddy Sutanto</td>
+                <td class='xl29' x:str>11106519</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>75</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>85</td>
+                <td class='xl29' x:str>SN-EK023106519201117</td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>fransiskus.sutanto@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                <td class='xl28' x:str>Card & Loan Officer (Regional)</td>
+                <td class='xl28' x:str>Tulus Imam Santoso</td>
+                <td class='xl29' x:str>16104795</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>40</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>80</td>
+                <td class='xl29' x:str>SN-EK023104795221117</td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str></td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KCP SURABAYA HR.MUHAMMAD</td>
+                <td class='xl28' x:str>Operations Manager</td>
+                <td class='xl28' x:str>Angga Dwi Riswanto</td>
+                <td class='xl29' x:str>08103796</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>70</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>85</td>
+                <td class='xl29' x:str>SN-EK023103796241117</td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>angga.riswanto@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KCP PASURUAN</td>
+                <td class='xl28' x:str>Customer Service</td>
+                <td class='xl28' x:str>Tutik Nurhidayah</td>
+                <td class='xl29' x:str>15101724</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>55</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>85</td>
+                <td class='xl29' x:str>SN-EK023101724171117</td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>tutik.nurhidayah@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KCP KUTA KALIANGET</td>
+                <td class='xl28' x:str>Retail Funding Officer</td>
+                <td class='xl28' x:str>I Made Karuna Yuga</td>
+                <td class='xl29' x:str>17097609</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>55</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>70</td>
+                <td class='xl29' x:str>SN-EK023097609221117</td>
+                <td class='xl29' x:str>yes</td>
+                <td class='xl28' x:str>made.yuga@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KCP SURABAYA HR.MUHAMMAD</td>
+                <td class='xl28' x:str>Customer Service</td>
+                <td class='xl28' x:str>Virna Dwi Risnawanti</td>
+                <td class='xl29' x:str>13097452</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>75</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>85</td>
+                <td class='xl29' x:str>SN-EK023097452241117</td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>virna.risnawanti@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KCP SURABAYA NGAGEL</td>
+                <td class='xl28' x:str>Credit Relationship Manager</td>
+                <td class='xl28' x:str>Maria Agnes Kristriya</td>
+                <td class='xl29' x:str>16094553</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>45</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>75</td>
+                <td class='xl29' x:str>SN-EK023094553221117</td>
+                <td class='xl29' x:str>yes</td>
+                <td class='xl28' x:str>maria.kristriya@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KCP SUMBAWA</td>
+                <td class='xl28' x:str>Teller</td>
+                <td class='xl28' x:str>Sarita Ratulanis</td>
+                <td class='xl29' x:str>11092337</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>55</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>85</td>
+                <td class='xl29' x:str>SN-EK023092337201117</td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>sarita.ratulanis@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                <td class='xl28' x:str>Regional CCPL Usage & Acquiring Officer</td>
+                <td class='xl28' x:str>Maicho Ismandar</td>
+                <td class='xl29' x:str>14089294</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>50</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>70</td>
+                <td class='xl29' x:str>SN-EK023089294201117</td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>maicho.ismandar@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KCP PONOROGO</td>
+                <td class='xl28' x:str>Retail Funding Officer</td>
+                <td class='xl28' x:str>Rizka Silvia Arvianti</td>
+                <td class='xl29' x:str>17077101</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>60</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>90</td>
+                <td class='xl29' x:str>SN-EK023077101171117</td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>rizka.arvianti@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                <td class='xl28' x:str>Regional CCPL Usage & Acquiring Officer</td>
+                <td class='xl28' x:str>Okta Saktiawan</td>
+                <td class='xl29' x:str>10071768</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>70</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>80</td>
+                <td class='xl29' x:str>SN-EK023071768201117</td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>okta.saktiawan@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                <td class='xl28' x:str>Regional CCPL Usage & Acquiring Officer</td>
+                <td class='xl28' x:str>Ruri Tika Satyani Wijaya</td>
+                <td class='xl29' x:str>07069943</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>50</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>75</td>
+                <td class='xl29' x:str>SN-EK023069943221117</td>
+                <td class='xl29' x:str>yes</td>
+                <td class='xl28' x:str>ruri.tika@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KCP SURABAYA MULYOSARI</td>
+                <td class='xl28' x:str>Retail Funding Officer</td>
+                <td class='xl28' x:str>Stefanus Sandjojo</td>
+                <td class='xl29' x:str>17066831</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>70</td>
+                <td class='xl29' x:str>SN-EK023066831221117</td>
+                <td class='xl29' x:str>yes</td>
+                <td class='xl28' x:str>stefanus.sandjojo@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KCP SURABAYA NGAGEL</td>
+                <td class='xl28' x:str>Sub Branch Manager</td>
+                <td class='xl28' x:str>Retno Taviati</td>
+                <td class='xl29' x:str>05065906</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>75</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>90</td>
+                <td class='xl29' x:str>SN-EK023065906221117</td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>retno.taviati@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                <td class='xl28' x:str>Card & Loan Officer (Regional)</td>
+                <td class='xl28' x:str>Lina Sulistyorini</td>
+                <td class='xl29' x:str>16063978</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>40</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>90</td>
+                <td class='xl29' x:str>SN-EK023063978221117</td>
+                <td class='xl29' x:str>yes</td>
+                <td class='xl28' x:str></td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KCP SURABAYA JEMUR ANDAYANI</td>
+                <td class='xl28' x:str>Card & Loan Officer</td>
+                <td class='xl28' x:str>Riska Puspita Sari</td>
+                <td class='xl29' x:str>17046379</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>65</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>85</td>
+                <td class='xl29' x:str>SN-EK023046379221117</td>
+                <td class='xl29' x:str>yes</td>
+                <td class='xl28' x:str></td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KCP SURABAYA NGAGEL</td>
+                <td class='xl28' x:str>Retail Funding Officer</td>
+                <td class='xl28' x:str>Mozes Yoshua Bizaliel Mainake</td>
+                <td class='xl29' x:str>17046308</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>45</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>70</td>
+                <td class='xl29' x:str>SN-EK023046308221117</td>
+                <td class='xl29' x:str>yes</td>
+                <td class='xl28' x:str>mozes.mainake@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                <td class='xl28' x:str>Card & Loan Officer (Regional)</td>
+                <td class='xl28' x:str>Richa Rahmatin</td>
+                <td class='xl29' x:str>16043364</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>65</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>80</td>
+                <td class='xl29' x:str>SN-EK023043364221117</td>
+                <td class='xl29' x:str>yes</td>
+                <td class='xl28' x:str></td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                <td class='xl28' x:str>Card & Loan Officer (Regional)</td>
+                <td class='xl28' x:str>Shabrina Ulima Rahmah</td>
+                <td class='xl29' x:str>16043363</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>50</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>80</td>
+                <td class='xl29' x:str>SN-EK023043363221117</td>
+                <td class='xl29' x:str>yes</td>
+                <td class='xl28' x:str></td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KCP SURABAYA WIYUNG</td>
+                <td class='xl28' x:str>Card & Loan Officer</td>
+                <td class='xl28' x:str>Ainul Yaqin</td>
+                <td class='xl29' x:str>17036081</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>45</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>70</td>
+                <td class='xl29' x:str>SN-EK023036081221117</td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>ainul.yaqin@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KCP SURABAYA JEMUR ANDAYANI</td>
+                <td class='xl28' x:str>Customer Service</td>
+                <td class='xl28' x:str>Geovenda Stephanie</td>
+                <td class='xl29' x:str>13034609</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>80</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>75</td>
+                <td class='xl29' x:str>SN-EK023034609211117</td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>geovenda.stephanie@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                <td class='xl28' x:str>Card & Loan Officer (Regional)</td>
+                <td class='xl28' x:str>Muhammad Mujib</td>
+                <td class='xl29' x:str>16033055</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>35</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>70</td>
+                <td class='xl29' x:str>SN-EK023033055221117</td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str></td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                <td class='xl28' x:str>Card & Loan Officer (Regional)</td>
+                <td class='xl28' x:str>Moh Yusufi Ananta Cahyo Nugroho</td>
+                <td class='xl29' x:str>16033052</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>70</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>80</td>
+                <td class='xl29' x:str>SN-EK023033052221117</td>
+                <td class='xl29' x:str>yes</td>
+                <td class='xl28' x:str></td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                <td class='xl28' x:str>Regional CCPL Support Specialist</td>
+                <td class='xl28' x:str>Silvania Parsaulian Mauliate</td>
+                <td class='xl29' x:str>08032054</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>65</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>80</td>
+                <td class='xl29' x:str>SN-EK023032054221117</td>
+                <td class='xl29' x:str>yes</td>
+                <td class='xl28' x:str>silvania.mauliate@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                <td class='xl28' x:str>Regional General Service Manager</td>
+                <td class='xl28' x:str>Sugiyoto</td>
+                <td class='xl29' x:str>07018523</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>70</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>80</td>
+                <td class='xl29' x:str>SN-EK023018523221117</td>
+                <td class='xl29' x:str>yes</td>
+                <td class='xl28' x:str>sugiyoto.sugiyoto@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                <td class='xl28' x:str>Card & Loan Officer (Regional)</td>
+                <td class='xl28' x:str>Synthia Dewi Arindi</td>
+                <td class='xl29' x:str>17015530</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>35</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>85</td>
+                <td class='xl29' x:str>SN-EK023015530221117</td>
+                <td class='xl29' x:str>yes</td>
+                <td class='xl28' x:str></td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KCP DENPASAR GATOT SUBROTO</td>
+                <td class='xl28' x:str>Operations Supervisor</td>
+                <td class='xl28' x:str>Ni Ketut Apriyani</td>
+                <td class='xl29' x:str>11045473</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>80</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>95</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>ketut.apriyani@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KCP SURABAYA KEMBANG JEPUN</td>
+                <td class='xl28' x:str>Card & Loan Officer</td>
+                <td class='xl28' x:str>Dwi Haryanto</td>
+                <td class='xl29' x:str>10030461</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>70</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>90</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>dwi.haryanto@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KCP Denpasar Transmart Sunset Road</td>
+                <td class='xl28' x:str>Operations Supervisor</td>
+                <td class='xl28' x:str>Dian Suryawardhani</td>
+                <td class='xl29' x:str>08104179</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>85</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>dian.suryawardhani@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KCP SURABAYA KERTAJAYA</td>
+                <td class='xl28' x:str>Card & Loan Officer</td>
+                <td class='xl28' x:str>Mulyaningsih</td>
+                <td class='xl29' x:str>09015096</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>20</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>80</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>yes</td>
+                <td class='xl28' x:str>mulyaningsih.004@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KCP BANYUWANGI</td>
+                <td class='xl28' x:str>Retail Funding Officer</td>
+                <td class='xl28' x:str>Deny Kristinawati</td>
+                <td class='xl29' x:str>17097507</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>65</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>55</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>yes</td>
+                <td class='xl28' x:str></td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KC MALANG</td>
+                <td class='xl28' x:str>Card & Loan Officer</td>
+                <td class='xl28' x:str>Winda Kusuma Wardhani</td>
+                <td class='xl29' x:str>17036230</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>65</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>winda.wardhani@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KCP SURABAYA WIYUNG</td>
+                <td class='xl28' x:str>Card & Loan Officer</td>
+                <td class='xl28' x:str>Sheila Karina Eka Putri</td>
+                <td class='xl29' x:str>17097594</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>50</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>yes</td>
+                <td class='xl28' x:str></td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KCP MALANG KYAI TAMIN</td>
+                <td class='xl28' x:str>Card & Loan Officer</td>
+                <td class='xl28' x:str>Effi Kristanti</td>
+                <td class='xl29' x:str>10123987</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>5</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>yes</td>
+                <td class='xl28' x:str>effi.kristanti@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KC DENPASAR</td>
+                <td class='xl28' x:str>Branch Manager</td>
+                <td class='xl28' x:str>Ardhana Febrianaji</td>
+                <td class='xl29' x:str>99020568</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>ardhana.febrianaji@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KC DENPASAR</td>
+                <td class='xl28' x:str>Credit Relationship Manager</td>
+                <td class='xl28' x:str>I Wayan Dharmika</td>
+                <td class='xl29' x:str>17107745</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>yes</td>
+                <td class='xl28' x:str>wayan.dharmika@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KC DENPASAR</td>
+                <td class='xl28' x:str>Credit Relationship Manager</td>
+                <td class='xl28' x:str>Bagus Gede Ari Narayana</td>
+                <td class='xl29' x:str>17107776</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>yes</td>
+                <td class='xl28' x:str>bagus.narayana@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KC DENPASAR</td>
+                <td class='xl28' x:str>Retail Funding Officer</td>
+                <td class='xl28' x:str>I Made Hary Wiratama</td>
+                <td class='xl29' x:str>16084313</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>yes</td>
+                <td class='xl28' x:str>hary.wiratama@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KC DENPASAR</td>
+                <td class='xl28' x:str>Teller</td>
+                <td class='xl28' x:str>Kadek Nila Karyogis</td>
+                <td class='xl29' x:str>17107847</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>kadek.karyogis@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KC KUPANG</td>
+                <td class='xl28' x:str>Retail Funding Officer</td>
+                <td class='xl28' x:str>Gary Trans Sara Budhi Arti</td>
+                <td class='xl29' x:str>17097628</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>gary.arti@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KC MALANG</td>
+                <td class='xl28' x:str>Customer Service</td>
+                <td class='xl28' x:str>Kinza Natalia Sutejo</td>
+                <td class='xl29' x:str>16053503</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>kinza.sutejo@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KC MALANG</td>
+                <td class='xl28' x:str>Retail Funding Officer</td>
+                <td class='xl28' x:str>Eva Febriana</td>
+                <td class='xl29' x:str>16063881</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>yes</td>
+                <td class='xl28' x:str></td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KC SURABAYA DARMO</td>
+                <td class='xl28' x:str>Personal Relationship Manager</td>
+                <td class='xl28' x:str>Prinka Haryono</td>
+                <td class='xl29' x:str>17097601</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>yes</td>
+                <td class='xl28' x:str>prinka.haryono@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KC SURABAYA YOS SUDARSO</td>
+                <td class='xl28' x:str>Personal Relationship Manager</td>
+                <td class='xl28' x:str>Rouben Meldrick Andrew Ticoalu</td>
+                <td class='xl29' x:str>17097605</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>yes</td>
+                <td class='xl28' x:str></td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KCP SURABAYA DHARMAHUSADA</td>
+                <td class='xl28' x:str>Sub Branch Manager</td>
+                <td class='xl28' x:str>Daud Tjandra Gunawan</td>
+                <td class='xl29' x:str>10082393</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>yes</td>
+                <td class='xl28' x:str>daud.gunawan@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KCP SURABAYA GRESIK</td>
+                <td class='xl28' x:str>Retail Funding Officer</td>
+                <td class='xl28' x:str>Amilia Maulidah</td>
+                <td class='xl29' x:str>17066767</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>yes</td>
+                <td class='xl28' x:str></td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KCP SURABAYA MULYOSARI</td>
+                <td class='xl28' x:str>Card & Loan Officer</td>
+                <td class='xl28' x:str>Nanang Prihantoro</td>
+                <td class='xl29' x:str>08042342</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>nanang.prihantoro@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KCP SURABAYA MULYOSARI</td>
+                <td class='xl28' x:str>Customer Service</td>
+                <td class='xl28' x:str>Annisa Hakima</td>
+                <td class='xl29' x:str>13077112</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>annisa.hakima@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KCP SURABAYA NGAGEL</td>
+                <td class='xl28' x:str>Card & Loan Officer</td>
+                <td class='xl28' x:str>Eni Handarijati</td>
+                <td class='xl29' x:str>08011303</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>eni.handarijati@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KCP SURABAYA WIYUNG</td>
+                <td class='xl28' x:str>Retail Funding Officer</td>
+                <td class='xl28' x:str>Jeanny Indahwati Limantara</td>
+                <td class='xl29' x:str>17097598</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>yes</td>
+                <td class='xl28' x:str>jeanny.limantara@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                <td class='xl28' x:str>Card & Loan Officer (Regional)</td>
+                <td class='xl28' x:str>Indra Nurdian Fajri</td>
+                <td class='xl29' x:str>17087223</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>yes</td>
+                <td class='xl28' x:str></td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                <td class='xl28' x:str>Regional CCPL Usage & Acquiring Officer</td>
+                <td class='xl28' x:str>Baso Mappangara Abdi</td>
+                <td class='xl29' x:str>15020423</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>ara.abdi@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                <td class='xl28' x:str>Regional Human Capital Manager</td>
+                <td class='xl28' x:str>Meta Maria</td>
+                <td class='xl29' x:str>04034463</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>yes</td>
+                <td class='xl28' x:str>meta.maria@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KC DENPASAR</td>
+                <td class='xl28' x:str>Back Office</td>
+                <td class='xl28' x:str>Indah Dhiharistiani</td>
+                <td class='xl29' x:str>11045384</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>yes</td>
+                <td class='xl28' x:str>indah.dhiharistiani@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KC KUPANG</td>
+                <td class='xl28' x:str>Back Office</td>
+                <td class='xl28' x:str>Roi Bona Ranto Siagian</td>
+                <td class='xl29' x:str>11056931</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>roi.siagian@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KC KUPANG</td>
+                <td class='xl28' x:str>Branch Manager</td>
+                <td class='xl28' x:str>Anthonius Aten</td>
+                <td class='xl29' x:str>17077051</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>yes</td>
+                <td class='xl28' x:str>anthonius.aten@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KC MALANG</td>
+                <td class='xl28' x:str>Card & Loan Officer</td>
+                <td class='xl28' x:str>Mohammad Tohir</td>
+                <td class='xl29' x:str>12100444</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>mohammad.tohir@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KC MALANG</td>
+                <td class='xl28' x:str>Card & Loan Officer</td>
+                <td class='xl28' x:str>Fatma Muharromah</td>
+                <td class='xl29' x:str>13023284</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>fatma.muharromah@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KC MALANG</td>
+                <td class='xl28' x:str>Card & Loan Officer</td>
+                <td class='xl28' x:str>Rudjuan Istiarsono</td>
+                <td class='xl29' x:str>08021732</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>rudjuan.istiarsono@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KC MALANG</td>
+                <td class='xl28' x:str>Credit Relationship Manager</td>
+                <td class='xl28' x:str>Iwan Soepriyanto</td>
+                <td class='xl29' x:str>11081314</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>yes</td>
+                <td class='xl28' x:str>iwan.soepriyanto@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KC MALANG</td>
+                <td class='xl28' x:str>Retail Funding Officer</td>
+                <td class='xl28' x:str>Astrin Septiana Ardhiyanti</td>
+                <td class='xl29' x:str>17097716</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>yes</td>
+                <td class='xl28' x:str></td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KC SURABAYA DARMO</td>
+                <td class='xl28' x:str>Branch Manager</td>
+                <td class='xl28' x:str>Djoko Tjandra Agung</td>
+                <td class='xl29' x:str>01011903</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>djoko.tjandra@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KC SURABAYA DARMO</td>
+                <td class='xl28' x:str>Card & Loan Officer</td>
+                <td class='xl28' x:str>Syin Al Dilla</td>
+                <td class='xl29' x:str>17107884</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>syin.aldilla@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KC SURABAYA DARMO</td>
+                <td class='xl28' x:str>Credit Relationship Manager</td>
+                <td class='xl28' x:str>Sandy Aditya Hartantyo</td>
+                <td class='xl29' x:str>17107943</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>yes</td>
+                <td class='xl28' x:str>sandy.hartantyo@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KC SURABAYA DARMO</td>
+                <td class='xl28' x:str>Credit Relationship Manager</td>
+                <td class='xl28' x:str>Sandy Gerry Permana</td>
+                <td class='xl29' x:str>17107947</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>sandy.putra@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KC SURABAYA YOS SUDARSO</td>
+                <td class='xl28' x:str>Card & Loan Officer</td>
+                <td class='xl28' x:str>Andriana Ai Merantau</td>
+                <td class='xl29' x:str>17107958</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>yes</td>
+                <td class='xl28' x:str></td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KC SURABAYA YOS SUDARSO</td>
+                <td class='xl28' x:str>Customer Service</td>
+                <td class='xl28' x:str>Fanny Marcelina Winoto</td>
+                <td class='xl29' x:str>17097733</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>fanny.winoto@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KC SURABAYA YOS SUDARSO</td>
+                <td class='xl28' x:str>Retail Funding Officer</td>
+                <td class='xl28' x:str>Audityo Pramudya Mulyo</td>
+                <td class='xl29' x:str>17107914</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>yes</td>
+                <td class='xl28' x:str>audityo.mulyo@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KC SURABAYA YOS SUDARSO</td>
+                <td class='xl28' x:str>Teller</td>
+                <td class='xl28' x:str>Elvira Citra Anugerah</td>
+                <td class='xl29' x:str>11081859</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>elvira.anugerah@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KCP DENPASAR GATOT SUBROTO</td>
+                <td class='xl28' x:str>Teller</td>
+                <td class='xl28' x:str>Muhammad Ryno Yanuar Daeng Malino</td>
+                <td class='xl29' x:str>17107882</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>muhammad.malino@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KCP Denpasar Transmart Sunset Road</td>
+                <td class='xl28' x:str>Card & Loan Officer</td>
+                <td class='xl28' x:str>Putu Mahendra Dananjaya</td>
+                <td class='xl29' x:str>17087215</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>yes</td>
+                <td class='xl28' x:str>putu.dananjaya@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KCP Denpasar Transmart Sunset Road</td>
+                <td class='xl28' x:str>Retail Funding Officer</td>
+                <td class='xl28' x:str>I Putu Oki Darma Yudha</td>
+                <td class='xl29' x:str>17077104</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>yes</td>
+                <td class='xl28' x:str>oki.darmayudha@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KCP Denpasar Transmart Sunset Road</td>
+                <td class='xl28' x:str>Retail Funding Officer</td>
+                <td class='xl28' x:str>Anissa Kamay Dita</td>
+                <td class='xl29' x:str>17107793</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>anissa.dita@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KCP JOMBANG</td>
+                <td class='xl28' x:str>Branch Manager</td>
+                <td class='xl28' x:str>Ratnadi Agus Laksono</td>
+                <td class='xl29' x:str>17118066</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>ratnadi.laksono@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KCP JOMBANG</td>
+                <td class='xl28' x:str>Credit Relationship Manager</td>
+                <td class='xl28' x:str>Tias Nurhayati</td>
+                <td class='xl29' x:str>17107939</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>tias.nurhayati@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KCP MALANG KAWI</td>
+                <td class='xl28' x:str>Personal Relationship Manager</td>
+                <td class='xl28' x:str>Mega Febyanti</td>
+                <td class='xl29' x:str>17118068</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>yes</td>
+                <td class='xl28' x:str>mega.febyanti@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KCP MALANG KYAI TAMIN</td>
+                <td class='xl28' x:str>Retail Funding Officer</td>
+                <td class='xl28' x:str>Sukma Putri Jaya Puspita</td>
+                <td class='xl29' x:str>17097702</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>yes</td>
+                <td class='xl28' x:str></td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KCP MALANG KYAI TAMIN</td>
+                <td class='xl28' x:str>Sub Branch Manager</td>
+                <td class='xl28' x:str>Yohana</td>
+                <td class='xl29' x:str>17097701</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>yes</td>
+                <td class='xl28' x:str>yohana.2@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KCP PASURUAN</td>
+                <td class='xl28' x:str>Credit Relationship Manager</td>
+                <td class='xl28' x:str>Teguh Wibowo</td>
+                <td class='xl29' x:str>17107879</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>yes</td>
+                <td class='xl28' x:str>teguh.wibowo2@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KCP PROBOLINGGO</td>
+                <td class='xl28' x:str>Retail Funding Officer</td>
+                <td class='xl28' x:str>Serlina Ivana</td>
+                <td class='xl29' x:str>17046505</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>yes</td>
+                <td class='xl28' x:str>serlina.ivana@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KCP PROBOLINGGO</td>
+                <td class='xl28' x:str>Sub Branch Manager</td>
+                <td class='xl28' x:str>Dedy Matrianto</td>
+                <td class='xl29' x:str>17076992</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>dedy.matrianto@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KCP SIDOARJO TROPODO</td>
+                <td class='xl28' x:str>Customer Service</td>
+                <td class='xl28' x:str>Yuni Nur Astrida</td>
+                <td class='xl29' x:str>12101204</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>yes</td>
+                <td class='xl28' x:str>yuni.astrida@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KCP SUMBAWA</td>
+                <td class='xl28' x:str>Retail Funding Officer</td>
+                <td class='xl28' x:str>Yeti Herawati</td>
+                <td class='xl29' x:str>07110850</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>yes</td>
+                <td class='xl28' x:str>yeti.herawati@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KCP SURABAYA DHARMAHUSADA</td>
+                <td class='xl28' x:str>Card & Loan Officer</td>
+                <td class='xl28' x:str>Farhatul Adhimah</td>
+                <td class='xl29' x:str>17118082</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>yes</td>
+                <td class='xl28' x:str></td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KCP SURABAYA DHARMAHUSADA</td>
+                <td class='xl28' x:str>Card & Loan Officer</td>
+                <td class='xl28' x:str>Mohamad Syamsul Ma&#039;arif</td>
+                <td class='xl29' x:str>09025313</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>yes</td>
+                <td class='xl28' x:str></td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KCP SURABAYA DHARMAHUSADA</td>
+                <td class='xl28' x:str>Retail Funding Officer</td>
+                <td class='xl28' x:str>Rico Ruliyanto Roman Arif</td>
+                <td class='xl29' x:str>17118059</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>yes</td>
+                <td class='xl28' x:str>rico.arif@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KCP SURABAYA DHARMAHUSADA</td>
+                <td class='xl28' x:str>Retail Funding Officer</td>
+                <td class='xl28' x:str>Rr Woro Ragilia Aldiatrini</td>
+                <td class='xl29' x:str>17107946</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>yes</td>
+                <td class='xl28' x:str>woro.aldiatrini@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KCP SURABAYA HR.MUHAMMAD</td>
+                <td class='xl28' x:str>Card & Loan Officer</td>
+                <td class='xl28' x:str>Dian Juniarto Kuncoro</td>
+                <td class='xl29' x:str>17118083</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>yes</td>
+                <td class='xl28' x:str></td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KCP SURABAYA HR.MUHAMMAD</td>
+                <td class='xl28' x:str>Card & Loan Officer</td>
+                <td class='xl28' x:str>Ufuk Dwiatmantoro</td>
+                <td class='xl29' x:str>17046294</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>yes</td>
+                <td class='xl28' x:str></td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KCP SURABAYA HR.MUHAMMAD</td>
+                <td class='xl28' x:str>Customer Service</td>
+                <td class='xl28' x:str>Kurnia Cintia Dewi</td>
+                <td class='xl29' x:str>17097718</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>kurnia.dewi@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KCP SURABAYA JEMUR ANDAYANI</td>
+                <td class='xl28' x:str>Card & Loan Officer</td>
+                <td class='xl28' x:str>Yuliana Dewi Warda</td>
+                <td class='xl29' x:str>17118085</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>yes</td>
+                <td class='xl28' x:str></td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KCP SURABAYA KAPAS KRAMPUNG</td>
+                <td class='xl28' x:str>Card & Loan Officer</td>
+                <td class='xl28' x:str>Novia</td>
+                <td class='xl29' x:str>17036083</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>yes</td>
+                <td class='xl28' x:str></td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KCP SURABAYA KAPAS KRAMPUNG</td>
+                <td class='xl28' x:str>Customer Service</td>
+                <td class='xl28' x:str>Rizki Nugra Hani</td>
+                <td class='xl29' x:str>17097719</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>yes</td>
+                <td class='xl28' x:str>rizki.hani@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KCP SURABAYA KEMBANG JEPUN</td>
+                <td class='xl28' x:str>Card & Loan Officer</td>
+                <td class='xl28' x:str>Auddie Vieneza Maully</td>
+                <td class='xl29' x:str>17118093</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>yes</td>
+                <td class='xl28' x:str></td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KCP SURABAYA KENJERAN</td>
+                <td class='xl28' x:str>Card & Loan Officer</td>
+                <td class='xl28' x:str>Joko Subiyanto</td>
+                <td class='xl29' x:str>17118090</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>yes</td>
+                <td class='xl28' x:str></td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KCP SURABAYA KENJERAN</td>
+                <td class='xl28' x:str>Card & Loan Officer</td>
+                <td class='xl28' x:str>Asbul Hariadi</td>
+                <td class='xl29' x:str>17118084</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>yes</td>
+                <td class='xl28' x:str></td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KCP SURABAYA KLAMPIS</td>
+                <td class='xl28' x:str>Retail Funding Officer</td>
+                <td class='xl28' x:str>Nency</td>
+                <td class='xl29' x:str>17107834</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>yes</td>
+                <td class='xl28' x:str>nency.1@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KCP SURABAYA KLAMPIS</td>
+                <td class='xl28' x:str>Retail Funding Officer</td>
+                <td class='xl28' x:str>Caroline Natalia Christian</td>
+                <td class='xl29' x:str>17097708</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>caroline.christian@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KCP SURABAYA MULYOSARI</td>
+                <td class='xl28' x:str>Retail Funding Officer</td>
+                <td class='xl28' x:str>Francyn Magnificat Anggelina W</td>
+                <td class='xl29' x:str>17077087</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>francyn.anggelina@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KCP SURABAYA MULYOSARI</td>
+                <td class='xl28' x:str>Sub Branch Manager</td>
+                <td class='xl28' x:str>Victor Junaedhy Tanusubroto</td>
+                <td class='xl29' x:str>16125324</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>victor.tanusubroto@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KCP SURABAYA NGAGEL</td>
+                <td class='xl28' x:str>Credit Relationship Manager</td>
+                <td class='xl28' x:str>Radityo Dharmawan</td>
+                <td class='xl29' x:str>17107959</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>yes</td>
+                <td class='xl28' x:str>radityo.dharmawan@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KCP SURABAYA NGAGEL</td>
+                <td class='xl28' x:str>Personal Relationship Manager</td>
+                <td class='xl28' x:str>Diana Soebrata</td>
+                <td class='xl29' x:str>17097687</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>yes</td>
+                <td class='xl28' x:str></td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KCP SURABAYA PASAR ATUM</td>
+                <td class='xl28' x:str>Card & Loan Officer</td>
+                <td class='xl28' x:str>Kharis Nasikhuddin</td>
+                <td class='xl29' x:str>17118097</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str></td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KCP SURABAYA PASAR ATUM</td>
+                <td class='xl28' x:str>Card & Loan Officer</td>
+                <td class='xl28' x:str>Della Esthevania Putri</td>
+                <td class='xl29' x:str>17118098</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>yes</td>
+                <td class='xl28' x:str></td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KCP SURABAYA PASAR ATUM</td>
+                <td class='xl28' x:str>Card & Loan Officer</td>
+                <td class='xl28' x:str>Meta Charisa</td>
+                <td class='xl29' x:str>17118099</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>yes</td>
+                <td class='xl28' x:str></td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KCP SURABAYA PASAR ATUM</td>
+                <td class='xl28' x:str>Card & Loan Officer</td>
+                <td class='xl28' x:str>Abd. Rivai Tasim</td>
+                <td class='xl29' x:str>17118096</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str></td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KCP SURABAYA PASAR ATUM</td>
+                <td class='xl28' x:str>Card & Loan Officer</td>
+                <td class='xl28' x:str>Mochamad Imron</td>
+                <td class='xl29' x:str>17118100</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str></td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KCP SURABAYA PASAR ATUM</td>
+                <td class='xl28' x:str>Customer Service</td>
+                <td class='xl28' x:str>Anik Septafiningrum</td>
+                <td class='xl29' x:str>17087469</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>anik.septafiningrum@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KCP SURABAYA PASAR ATUM</td>
+                <td class='xl28' x:str>Retail Funding Officer</td>
+                <td class='xl28' x:str>Adrian The</td>
+                <td class='xl29' x:str>17118067</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>yes</td>
+                <td class='xl28' x:str></td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KCP SURABAYA SIDOARJO</td>
+                <td class='xl28' x:str>Retail Funding Officer</td>
+                <td class='xl28' x:str>Ines Caesarina</td>
+                <td class='xl29' x:str>17107829</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>ines.caesarina@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KCP SURABAYA SUNGKONO</td>
+                <td class='xl28' x:str>Card & Loan Officer</td>
+                <td class='xl28' x:str>Badrun</td>
+                <td class='xl29' x:str>17036206</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str></td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KCP SURABAYA SUNGKONO</td>
+                <td class='xl28' x:str>Card & Loan Officer</td>
+                <td class='xl28' x:str>Hari Irfan Ardiansyah</td>
+                <td class='xl29' x:str>17097679</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>yes</td>
+                <td class='xl28' x:str></td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KCP SURABAYA SUNGKONO</td>
+                <td class='xl28' x:str>Retail Funding Officer</td>
+                <td class='xl28' x:str>Dodo Fitrian Rusiadi</td>
+                <td class='xl29' x:str>17118112</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>yes</td>
+                <td class='xl28' x:str></td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KCP SURABAYA SUNGKONO</td>
+                <td class='xl28' x:str>Retail Funding Officer</td>
+                <td class='xl28' x:str>Elisabeth Novianita Mulyono</td>
+                <td class='xl29' x:str>17108005</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>yes</td>
+                <td class='xl28' x:str></td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KCP SURABAYA SUNGKONO</td>
+                <td class='xl28' x:str>Retail Funding Officer</td>
+                <td class='xl28' x:str>Anis Febriani</td>
+                <td class='xl29' x:str>17107845</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>yes</td>
+                <td class='xl28' x:str>anis.febriani@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KCP SURABAYA TANJUNG PERAK</td>
+                <td class='xl28' x:str>Card & Loan Officer</td>
+                <td class='xl28' x:str>Yeny Sulistya Rahayu</td>
+                <td class='xl29' x:str>17036118</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>yes</td>
+                <td class='xl28' x:str></td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KCP SURABAYA TANJUNG PERAK</td>
+                <td class='xl28' x:str>Card & Loan Officer</td>
+                <td class='xl28' x:str>Dickson Hasiholan</td>
+                <td class='xl29' x:str>12067942</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>yes</td>
+                <td class='xl28' x:str>dickson.hasiholan@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KCP SURABAYA TANJUNG PERAK</td>
+                <td class='xl28' x:str>Operations Supervisor</td>
+                <td class='xl28' x:str>Henryet Damayanti</td>
+                <td class='xl29' x:str>07110855</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>yes</td>
+                <td class='xl28' x:str>henryet.damayanti@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KCP SURABAYA WIYUNG</td>
+                <td class='xl28' x:str>Retail Funding Officer</td>
+                <td class='xl28' x:str>Mikhail Edwin Nugraha Poncogunadi</td>
+                <td class='xl29' x:str>17118056</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>mikhail.poncogunadi@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KCP TULUNGAGUNG</td>
+                <td class='xl28' x:str>Card & Loan Officer</td>
+                <td class='xl28' x:str>David Priyambodo</td>
+                <td class='xl29' x:str>17046382</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>yes</td>
+                <td class='xl28' x:str>david.priyambodo@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KCP UBUD</td>
+                <td class='xl28' x:str>Customer Service</td>
+                <td class='xl28' x:str>Ni Kadek Ayu Sukadewi</td>
+                <td class='xl29' x:str>17097734</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>yes</td>
+                <td class='xl28' x:str>ni.sukadewi@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KCP UBUD</td>
+                <td class='xl28' x:str>Teller</td>
+                <td class='xl28' x:str>Luh Mas Gia Apriliani</td>
+                <td class='xl29' x:str>17107873</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>luh.apriliani@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KK Surabaya Pasar Atum Mall</td>
+                <td class='xl28' x:str>Card & Loan Officer</td>
+                <td class='xl28' x:str>Moh. Nur Shodiq</td>
+                <td class='xl29' x:str>17118058</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>yes</td>
+                <td class='xl28' x:str></td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>KK TRANSMART MATARAM</td>
+                <td class='xl28' x:str>Teller</td>
+                <td class='xl28' x:str>Deddy Supriadi</td>
+                <td class='xl29' x:str>17107849</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>deddy.supriadi@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                <td class='xl28' x:str>Card & Loan Officer (Regional)</td>
+                <td class='xl28' x:str>Aditia Dwi Rangga</td>
+                <td class='xl29' x:str>17087271</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>yes</td>
+                <td class='xl28' x:str></td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                <td class='xl28' x:str>Card & Loan Officer (Regional)</td>
+                <td class='xl28' x:str>Nurfhatiyah</td>
+                <td class='xl29' x:str>17097595</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>yes</td>
+                <td class='xl28' x:str></td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                <td class='xl28' x:str>Card & Loan Officer (Regional)</td>
+                <td class='xl28' x:str>Denies Dwi Ariyanto</td>
+                <td class='xl29' x:str>17056761</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>yes</td>
+                <td class='xl28' x:str></td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                <td class='xl28' x:str>Card & Loan Officer (Regional)</td>
+                <td class='xl28' x:str>Endra Cahyono</td>
+                <td class='xl29' x:str>17087220</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>yes</td>
+                <td class='xl28' x:str></td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                <td class='xl28' x:str>Card & Loan Officer (Regional)</td>
+                <td class='xl28' x:str>I Made T. Suwanda</td>
+                <td class='xl29' x:str>16053571</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>yes</td>
+                <td class='xl28' x:str></td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                <td class='xl28' x:str>Card & Loan Officer (Regional)</td>
+                <td class='xl28' x:str>Septania Wanda Wijaya</td>
+                <td class='xl29' x:str>17036086</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>yes</td>
+                <td class='xl28' x:str></td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                <td class='xl28' x:str>Funding Deputy Regional Head</td>
+                <td class='xl28' x:str>Thomas Purnawarman</td>
+                <td class='xl29' x:str>14120049</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>thomas.purnawarman@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                <td class='xl28' x:str>Regional CCPL Usage & Acquiring Officer</td>
+                <td class='xl28' x:str>Handoyo</td>
+                <td class='xl29' x:str>11081718</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>handoyo.sahid@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                <td class='xl28' x:str>Regional Credit Support Specialist</td>
+                <td class='xl28' x:str>Bendot Eko Baskoro</td>
+                <td class='xl29' x:str>05096372</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>bendot.eko@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                <td class='xl28' x:str>Regional Human Capital Staff</td>
+                <td class='xl28' x:str>Eka Ludfi Destanti</td>
+                <td class='xl29' x:str>05126628</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>yes</td>
+                <td class='xl28' x:str>eka.ludfi@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                <td class='xl28' x:str>Regional Human Capital Staff</td>
+                <td class='xl28' x:str>Stefani Karuniawaty</td>
+                <td class='xl29' x:str>06057135</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>yes</td>
+                <td class='xl28' x:str>stefani.karuniawati@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                <td class='xl28' x:str>Regional Human Capital Staff</td>
+                <td class='xl28' x:str>Nirmala Diina</td>
+                <td class='xl29' x:str>13066221</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>nirmala.diina@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                <td class='xl28' x:str>Regional Human Capital Staff</td>
+                <td class='xl28' x:str>Ratri Paramita</td>
+                <td class='xl29' x:str>13012956</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>yes</td>
+                <td class='xl28' x:str>ratri.paramita@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                <td class='xl28' x:str>Regional Human Capital Staff</td>
+                <td class='xl28' x:str>Isadora Zholina</td>
+                <td class='xl29' x:str>09128756</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>isadora.zholina@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>76</td>
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                
+                <td class='xl28' x:str>Regional Office - Surabaya</td>
+                <td class='xl28' x:str>Regional Human Capital Staff</td>
+                <td class='xl28' x:str>Rosalita Nugraheni</td>
+                <td class='xl29' x:str>10102819</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>rosalita.nugraheni@bankmega.com</td>
+                
+               </tr>
+   
+   		
+			
+  </table>
+ </body>
+</html>

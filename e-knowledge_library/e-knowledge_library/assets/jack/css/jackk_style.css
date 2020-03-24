@@ -1,0 +1,402 @@
+/*!
+ * Jack HRMS 2014 April
+ * Copyright HRMS.
+ * Licensed under HCMG
+ */
+ 
+/* General CSS (basic stAndard CSS)*/ 
+body {
+  padding-top: 50px;
+  padding-bottom: 20px
+}
+.row .col-md-4 h3{
+	/* font-style: italic; */
+}
+.navbar-form .form-group p{
+	 color: #CCCCCC;
+}
+.elapsed_time{
+	font-size:11px;
+	line-height: 0;
+}
+
+.theme-dropdown .dropdown-menu {
+  position: static;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.theme-showcase > p > .btn {
+  margin: 5px 0;
+}
+
+.jumbotron  .nama{
+	font-size: 40px;
+}
+.jumbotron  .font1{
+	font-size: 14px;
+}
+.jumbotron  .about1{
+	line-height: 20px;
+}
+.jumbotron  .about2{
+	 font-size: 14px;
+}
+.nilai{
+	font-weight: bold;
+}
+.success{
+	padding: 7px;
+}
+.test{
+	background-color: #D9EDF7;
+}
+.test2{
+	background-color: #428BCA;
+}
+.test3{
+	background-color: #f0ad4e;
+}
+.primary{
+	background-color:  #428bca;
+}
+.success{
+	background-color:  #5cb85c;
+}
+.info{
+	background-color:     #5bc0de;
+}
+.warning{
+	background-color:  #f0ad4e;
+}
+.danger{
+	background-color:   #d9534f;
+}
+.f_primary{
+	color: #428bca;
+}
+.f_success{
+	color: #5cb85c;
+}
+.f_info{
+	color: #5bc0de;
+}
+.f_warning{
+	color: #f0ad4e;
+}
+.f_danger{
+	color: #d9534f;
+}
+.f_error {
+color: #d44950;
+}
+
+.padding7{
+	padding: 7px;
+	padding-left: 15px;
+}
+.done{
+	font-size: 12px;
+	color: #5cb85c;
+}
+.table-hover-info > tbody > tr:hover > td,
+.table-hover-info> tbody > tr:hover > th {
+  background-color: #d9edf7;
+}
+
+
+.contact-1 li{
+	line-height: 25px;
+}
+.welcome li{
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-top: 10px;	
+	margin-left: -12px;
+}
+.link{
+	color: #428BCA;
+    text-decoration: none;
+	cursor: pointer;
+}
+.link:hover, .link:focus{
+    color: #2A6496;
+    /* text-decoration: underline; */
+
+}
+.link_sts{
+	font-size: 12px;
+	/* color: #5cb85c; */
+}	
+.jack-1{
+	margin-bottom: 0;
+	font-weight: bold;
+}
+.no_navbar{
+	padding-top: 0px;
+}
+.no_margin{
+	margin-bottom: 0px;
+}
+.no_padding{
+	padding-bottom: 0px;
+}
+.hide{
+	display: none;
+}
+.rules{
+	line-height: 2em;
+}
+.bold{
+	font-weight:bold;
+}
+.unbold{
+	font-weight: normal;
+}
+.f20{
+	font-size: 20px;
+}
+
+label.klikradio > input[type='radio']
+{
+	display: none;
+}
+
+
+/* soal  */
+jack {
+/* 	font-family: "Segoe UI",Consolas, Monaco, Courier New, Courier, monospace;*/
+	font-size: 16px;	 
+	color: #002166;
+	color: #000;
+	display: block;
+	padding: 12px 10px 12px 10px;
+	line-height: 30px;
+	margin: 12px 10px 12px 10px;
+	margin-top:0px;
+	margin-bottom:14px;
+	margin-left:20px;
+	margin-right:20px;
+	}
+.font1 {	
+	cursor:pointer;
+	}
+.font1:hover{
+	/* color: #0099CC; */	
+	/* background-color: rgba(0, 0, 0, 0.1); */
+	/* font-weight:bold; */
+	}
+.font2 {
+	padding-left: 15px;
+	padding-right:5px;
+	}
+.font3 {
+	padding-right:9px;
+	}
+.font4 {
+	font-weight:bold;
+	}
+.font5 {
+	font-family: "Segoe UI",Consolas, Monaco, Courier New, Courier, monospace;
+	}
+.font5:hover{
+	background-color: #D9EDF7;
+	background-color: #F5F5F5;
+	background-color: rgba(0, 0, 0, 0.05);
+	}
+.fox1 {
+	display: none;
+/* 	position:relative;
+	margin: 0px;
+	margin-top: 20px;	
+	border: 1px solid rgba(82, 168, 236, 0.9);
+	border: 1px solid rgba(255, 201, 14, 0.99);
+    border-radius: 6px 6px 6px 6px; */
+	}
+#div1 {
+	/* display: block;  */
+	}
+#boxValue {
+	/*  */
+	display: none;
+}
+#rowSendTxt {
+	display: none;
+}
+#idRow {
+	display: none;
+}
+#divNext {
+	display: none;
+}
+.rows3{
+	height: auto;
+	padding: 24px;
+	padding-top: 25px;
+}
+.rows2{
+	height: auto;
+	padding: 14px;
+	padding-top: 15px;
+}	
+.fix2{
+    resize: none
+}	
+
+
+/* Esai_Kompetensi */
+/* chat */
+.chat {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.chat .glyphicon {
+	margin-right: 5px;
+}
+.chat .right .chat-body p{
+	float: right !important;
+	/* margin-right: 15px; */
+	margin-left: 35px;
+	margin-left: 90px;
+}
+.chat .left .chat-body p{
+	/* margin-left: 15px; */
+	margin-right: 35px;
+	margin-right: 90px;
+}
+.chat hr{
+	margin-bottom: 10px;
+	margin-top: 5px;
+}
+.hideme, .hideme1, .hideme2{
+	/*  */
+	display: none;
+}
+.padding20{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.padding15{
+    padding: 15px;
+}
+.padding10{
+    padding: 10px;
+}
+.margin20{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+/* Fixed footer */
+.footer  .container .text-muted {
+    margin: 20px 0;
+}
+.footer  .container .text-p {
+    margin: 20px 0;
+}
+
+/* --------------------------soal---------------------------- */
+jack {
+/* 	font-family: "Segoe UI",Consolas, Monaco, Courier New, Courier, monospace;*/
+	font-size: 16px;	 
+	color: #002166;
+	color: #000;
+	display: block;
+	padding: 12px 10px 12px 10px;
+	line-height: 30px;
+	margin: 12px 10px 12px 10px;
+	margin-top:0px;
+	margin-bottom:14px;
+	margin-left:20px;
+	margin-right:20px;
+	}
+.font1 {	
+	cursor:pointer;
+	}
+.font1:hover{
+	/* color: #0099CC; */	
+	/* background-color: rgba(0, 0, 0, 0.1); */
+	/* font-weight:bold; */
+	}
+.font2 {
+	padding-right:5px;
+	}
+.font3 {
+	padding-right:9px;
+	}
+.font4 {
+	font-weight:bold;
+	}
+.font5 {
+	font-family: "Segoe UI",Consolas, Monaco, Courier New, Courier, monospace;
+	}
+.font5:hover{
+	background-color: #D9EDF7;
+	background-color: #F5F5F5;
+	background-color: rgba(0, 0, 0, 0.05);
+	}
+.fox1 {
+	display: none;
+/* 	position:relative;
+	margin: 0px;
+	margin-top: 20px;	
+	border: 1px solid rgba(82, 168, 236, 0.9);
+	border: 1px solid rgba(255, 201, 14, 0.99);
+    border-radius: 6px 6px 6px 6px; */
+	}
+#div1 {
+	display: block; 
+	}
+#boxValue {
+	/*  */
+	display: none;
+}	
+
+
+/* untuk loading */
+.loading {
+	cursor:wait;
+}
+
+/* ui-datepicker-div */
+#ui-datepicker-div{
+	font-size: 90%;
+	font-family: "Trebuchet MS", "Arial", "Helvetica", "Verdana", "sans-serif";
+}
+
+
+/* Extra small devices (phones, less than 480px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (mobile, 480px and up) */
+@media screen and (max-width: 480px) { 
+	.jumbotron p {
+		font-size: 16px;
+	}
+	.btn {
+    border-radius: 6px 6px 6px 6px;
+    font-size: 14px;
+    line-height: 1.33;
+    padding: 5px 10px;
+	}
+ }
+ 
+/* Small devices (tablets, 768px and up) */
+@media screen and (max-width: 768px) { 
+
+ }
+@media screen and (min-width: 768px) { 
+
+ }
+
+/* Medium devices (desktops, 992px and up) */
+@media screen and (max-width: 992px) { 
+
+ }
+
+/* Large devices (large desktops, 992px and up) */
+@media screen and (max-width: 992px) { 
+
+ }

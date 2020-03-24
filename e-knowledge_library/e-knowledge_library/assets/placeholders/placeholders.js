@@ -1,0 +1,38 @@
+(function(global){"use strict";function addEventListener(elem,event,fn){if(elem.addEventListener){return elem.addEventListener(event,fn,false);}
+if(elem.attachEvent){return elem.attachEvent("on"+event,fn);}}
+function inArray(arr,item){var i,len;for(i=0,len=arr.length;i<len;i++){if(arr[i]===item){return true;}}
+return false;}
+function moveCaret(elem,index){var range;if(elem.createTextRange){range=elem.createTextRange();range.move("character",index);range.select();}else if(elem.selectionStart){elem.focus();elem.setSelectionRange(index,index);}}
+function changeType(elem,type){try{elem.type=type;return true;}catch(e){return false;}}
+global.Placeholders={Utils:{addEventListener:addEventListener,inArray:inArray,moveCaret:moveCaret,changeType:changeType}};}(this));(function(global){"use strict";var validTypes=["text","search","url","tel","email","password","number","textarea"],badKeys=[27,33,34,35,36,37,38,39,40,8,46],placeholderStyleColor="#ccc",placeholderClassName="placeholdersjs",classNameRegExp=new RegExp("(?:^|\\s)"+placeholderClassName+"(?!\\S)"),inputs,textareas,ATTR_CURRENT_VAL="data-placeholder-value",ATTR_ACTIVE="data-placeholder-active",ATTR_INPUT_TYPE="data-placeholder-type",ATTR_FORM_HANDLED="data-placeholder-submit",ATTR_EVENTS_BOUND="data-placeholder-bound",ATTR_OPTION_FOCUS="data-placeholder-focus",ATTR_OPTION_LIVE="data-placeholder-live",ATTR_MAXLENGTH="data-placeholder-maxlength",test=document.createElement("input"),head=document.getElementsByTagName("head")[0],root=document.documentElement,Placeholders=global.Placeholders,Utils=Placeholders.Utils,hideOnInput,liveUpdates,keydownVal,styleElem,styleRules,placeholder,timer,form,elem,len,i;function noop(){}
+function safeActiveElement(){try{return document.activeElement;}catch(err){}}
+function hidePlaceholder(elem,keydownValue){var type,maxLength,valueChanged=(!!keydownValue&&elem.value!==keydownValue),isPlaceholderValue=(elem.value===elem.getAttribute(ATTR_CURRENT_VAL));if((valueChanged||isPlaceholderValue)&&elem.getAttribute(ATTR_ACTIVE)==="true"){elem.removeAttribute(ATTR_ACTIVE);elem.value=elem.value.replace(elem.getAttribute(ATTR_CURRENT_VAL),"");elem.className=elem.className.replace(classNameRegExp,"");maxLength=elem.getAttribute(ATTR_MAXLENGTH);if(parseInt(maxLength,10)>=0){elem.setAttribute("maxLength",maxLength);elem.removeAttribute(ATTR_MAXLENGTH);}
+type=elem.getAttribute(ATTR_INPUT_TYPE);if(type){elem.type=type;}
+return true;}
+return false;}
+function showPlaceholder(elem){var type,maxLength,val=elem.getAttribute(ATTR_CURRENT_VAL);if(elem.value===""&&val){elem.setAttribute(ATTR_ACTIVE,"true");elem.value=val;elem.className+=" "+placeholderClassName;maxLength=elem.getAttribute(ATTR_MAXLENGTH);if(!maxLength){elem.setAttribute(ATTR_MAXLENGTH,elem.maxLength);elem.removeAttribute("maxLength");}
+type=elem.getAttribute(ATTR_INPUT_TYPE);if(type){elem.type="text";}else if(elem.type==="password"){if(Utils.changeType(elem,"text")){elem.setAttribute(ATTR_INPUT_TYPE,"password");}}
+return true;}
+return false;}
+function handleElem(node,callback){var handleInputsLength,handleTextareasLength,handleInputs,handleTextareas,elem,len,i;if(node&&node.getAttribute(ATTR_CURRENT_VAL)){callback(node);}else{handleInputs=node?node.getElementsByTagName("input"):inputs;handleTextareas=node?node.getElementsByTagName("textarea"):textareas;handleInputsLength=handleInputs?handleInputs.length:0;handleTextareasLength=handleTextareas?handleTextareas.length:0;for(i=0,len=handleInputsLength+handleTextareasLength;i<len;i++){elem=i<handleInputsLength?handleInputs[i]:handleTextareas[i-handleInputsLength];callback(elem);}}}
+function disablePlaceholders(node){handleElem(node,hidePlaceholder);}
+function enablePlaceholders(node){handleElem(node,showPlaceholder);}
+function makeFocusHandler(elem){return function(){if(hideOnInput&&elem.value===elem.getAttribute(ATTR_CURRENT_VAL)&&elem.getAttribute(ATTR_ACTIVE)==="true"){Utils.moveCaret(elem,0);}else{hidePlaceholder(elem);}};}
+function makeBlurHandler(elem){return function(){showPlaceholder(elem);};}
+function makeKeydownHandler(elem){return function(e){keydownVal=elem.value;if(elem.getAttribute(ATTR_ACTIVE)==="true"){if(keydownVal===elem.getAttribute(ATTR_CURRENT_VAL)&&Utils.inArray(badKeys,e.keyCode)){if(e.preventDefault){e.preventDefault();}
+return false;}}};}
+function makeKeyupHandler(elem){return function(){hidePlaceholder(elem,keydownVal);if(elem.value===""){elem.blur();Utils.moveCaret(elem,0);}};}
+function makeClickHandler(elem){return function(){if(elem===safeActiveElement()&&elem.value===elem.getAttribute(ATTR_CURRENT_VAL)&&elem.getAttribute(ATTR_ACTIVE)==="true"){Utils.moveCaret(elem,0);}};}
+function makeSubmitHandler(form){return function(){disablePlaceholders(form);};}
+function newElement(elem){if(elem.form){form=elem.form;if(typeof form==="string"){form=document.getElementById(form);}
+if(!form.getAttribute(ATTR_FORM_HANDLED)){Utils.addEventListener(form,"submit",makeSubmitHandler(form));form.setAttribute(ATTR_FORM_HANDLED,"true");}}
+Utils.addEventListener(elem,"focus",makeFocusHandler(elem));Utils.addEventListener(elem,"blur",makeBlurHandler(elem));if(hideOnInput){Utils.addEventListener(elem,"keydown",makeKeydownHandler(elem));Utils.addEventListener(elem,"keyup",makeKeyupHandler(elem));Utils.addEventListener(elem,"click",makeClickHandler(elem));}
+elem.setAttribute(ATTR_EVENTS_BOUND,"true");elem.setAttribute(ATTR_CURRENT_VAL,placeholder);if(hideOnInput||elem!==safeActiveElement()){showPlaceholder(elem);}}
+Placeholders.nativeSupport=test.placeholder!==void 0;if(!Placeholders.nativeSupport){inputs=document.getElementsByTagName("input");textareas=document.getElementsByTagName("textarea");hideOnInput=root.getAttribute(ATTR_OPTION_FOCUS)==="false";liveUpdates=root.getAttribute(ATTR_OPTION_LIVE)!=="false";styleElem=document.createElement("style");styleElem.type="text/css";styleRules=document.createTextNode("."+placeholderClassName+" { color:"+placeholderStyleColor+"; }");if(styleElem.styleSheet){styleElem.styleSheet.cssText=styleRules.nodeValue;}else{styleElem.appendChild(styleRules);}
+head.insertBefore(styleElem,head.firstChild);for(i=0,len=inputs.length+textareas.length;i<len;i++){elem=i<inputs.length?inputs[i]:textareas[i-inputs.length];placeholder=elem.attributes.placeholder;if(placeholder){placeholder=placeholder.nodeValue;if(placeholder&&Utils.inArray(validTypes,elem.type)){newElement(elem);}}}
+timer=setInterval(function(){for(i=0,len=inputs.length+textareas.length;i<len;i++){elem=i<inputs.length?inputs[i]:textareas[i-inputs.length];placeholder=elem.attributes.placeholder;if(placeholder){placeholder=placeholder.nodeValue;if(placeholder&&Utils.inArray(validTypes,elem.type)){if(!elem.getAttribute(ATTR_EVENTS_BOUND)){newElement(elem);}
+if(placeholder!==elem.getAttribute(ATTR_CURRENT_VAL)||(elem.type==="password"&&!elem.getAttribute(ATTR_INPUT_TYPE))){if(elem.type==="password"&&!elem.getAttribute(ATTR_INPUT_TYPE)&&Utils.changeType(elem,"text")){elem.setAttribute(ATTR_INPUT_TYPE,"password");}
+if(elem.value===elem.getAttribute(ATTR_CURRENT_VAL)){elem.value=placeholder;}
+elem.setAttribute(ATTR_CURRENT_VAL,placeholder);}}}else if(elem.getAttribute(ATTR_ACTIVE)){hidePlaceholder(elem);elem.removeAttribute(ATTR_CURRENT_VAL);}}
+if(!liveUpdates){clearInterval(timer);}},100);}
+Utils.addEventListener(global,"beforeunload",function(){Placeholders.disable();});Placeholders.disable=Placeholders.nativeSupport?noop:disablePlaceholders;Placeholders.enable=Placeholders.nativeSupport?noop:enablePlaceholders;}(this));

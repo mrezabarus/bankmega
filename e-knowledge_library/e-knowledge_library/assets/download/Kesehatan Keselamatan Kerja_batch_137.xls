@@ -1,0 +1,1940 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel" xmlns="http://www.w3.org/TR/REC-html40">
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="ProgId" content="Excel.Sheet"/>
+  <meta name="Generator" content="WPS Office ET"/>
+  <!--[if gte mso 9]>
+   <xml>
+    <o:DocumentProperties>
+     <o:Author>mbm</o:Author>
+     <o:Created>2015-08-07T10:10:44</o:Created>
+     <o:LastSaved>2017-09-08T16:25:47</o:LastSaved>
+    </o:DocumentProperties>
+    <o:CustomDocumentProperties>
+     <o:KSOProductBuildVer dt:dt="string">1033-9.1.0.4674</o:KSOProductBuildVer>
+    </o:CustomDocumentProperties>
+   </xml>
+  <![endif]-->
+  <style>
+<!-- @page
+	{margin:0.98in 0.75in 0.98in 0.75in;
+	mso-header-margin:0.51in;
+	mso-footer-margin:0.51in;}
+tr
+	{mso-height-source:auto;
+	mso-ruby-visibility:none;}
+col
+	{mso-width-source:auto;
+	mso-ruby-visibility:none;}
+br
+	{mso-data-placement:same-cell;}
+.font0
+	{color:#000000;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"Times New Roman";
+	mso-generic-font-family:auto;
+	mso-font-charset:134;}
+.font1
+	{color:#000000;
+	font-size:10.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"Calibri";
+	mso-generic-font-family:auto;
+	mso-font-charset:134;}
+.font2
+	{color:#000000;
+	font-size:10.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"Calibri";
+	mso-generic-font-family:auto;
+	mso-font-charset:134;}
+.font3
+	{color:#800080;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:underline;
+	text-underline-style:single;
+	font-family:"Times New Roman";
+	mso-generic-font-family:auto;
+	mso-font-charset:134;}
+.font4
+	{color:#0000FF;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:underline;
+	text-underline-style:single;
+	font-family:"Times New Roman";
+	mso-generic-font-family:auto;
+	mso-font-charset:134;}
+.style0
+	{mso-number-format:"General";
+	text-align:general;
+	vertical-align:middle;
+	white-space:nowrap;
+	mso-rotate:0;
+	color:#000000;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Times New Roman;
+	border:none;
+	mso-protection:locked visible;
+	mso-style-name:"Normal";
+	mso-style-id:0;}
+.style16
+	{mso-number-format:"_ * \#\,\#\#0\.00_ \;_ * \\-\#\,\#\#0\.00_ \;_ * \0022-\0022??_ \;_ \@_ ";
+	mso-style-name:"Comma";
+	mso-style-id:3;}
+.style17
+	{mso-number-format:"_\(\0022$\0022* \#\,\#\#0\.00_\)\;_\(\0022$\0022* \\\(\#\,\#\#0\.00\\\)\;_\(\0022$\0022* \0022-\0022??_\)\;_\(\@_\)";
+	mso-style-name:"Currency";
+	mso-style-id:4;}
+.style18
+	{mso-number-format:"_ * \#\,\#\#0_ \;_ * \\-\#\,\#\#0_ \;_ * \0022-\0022_ \;_ \@_ ";
+	mso-style-name:"Comma[0]";
+	mso-style-id:6;}
+.style19
+	{mso-number-format:"0%";
+	mso-style-name:"Percent";
+	mso-style-id:5;}
+.style20
+	{mso-number-format:"_\(\0022$\0022* \#\,\#\#0_\)\;_\(\0022$\0022* \\\(\#\,\#\#0\\\)\;_\(\0022$\0022* \0022-\0022_\)\;_\(\@_\)";
+	mso-style-name:"Currency[0]";
+	mso-style-id:7;}
+.style21
+	{color:#0000FF;
+	font-size:12.0pt;
+	text-decoration:underline;
+	text-underline-style:single;
+	font-family:Times New Roman;
+	mso-style-name:"Hyperlink";
+	mso-style-id:8;}
+.style22
+	{color:#800080;
+	font-size:12.0pt;
+	text-decoration:underline;
+	text-underline-style:single;
+	font-family:Times New Roman;
+	mso-style-name:"Followed Hyperlink";
+	mso-style-id:9;}
+td
+	{mso-style-parent:style0;
+	padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	mso-number-format:"General";
+	text-align:general;
+	vertical-align:middle;
+	white-space:nowrap;
+	mso-rotate:0;
+	color:#000000;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Times New Roman;
+	border:none;
+	mso-protection:locked visible;}
+.xl24
+	{mso-style-parent:style0;
+	text-align:center;
+	font-size:10.0pt;
+	font-weight:700;
+	font-family:Calibri;}
+.xl25
+	{mso-style-parent:style0;
+	text-align:center;
+	font-size:10.0pt;
+	font-family:Calibri;}
+.xl26
+	{mso-style-parent:style0;
+	text-align:center;
+	font-size:10.0pt;
+	font-family:Calibri;}
+.xl27
+	{mso-style-parent:style0;
+	text-align:left;
+	font-size:10.0pt;
+	font-family:Calibri;}
+.xl28
+	{mso-style-parent:style0;
+	text-align:left;
+	font-size:10.0pt;
+	font-family:Calibri;}
+.xl29
+	{mso-style-parent:style0;
+	text-align:center;
+	font-size:10.0pt;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:134;}
+ -->  </style>
+  <!--[if gte mso 9]>
+   <xml>
+    <x:ExcelWorkbook>
+     <x:ExcelWorksheets>
+      <x:ExcelWorksheet>
+       <x:Name>Sheet1</x:Name>
+       <x:WorksheetOptions>
+        <x:DefaultRowHeight>380</x:DefaultRowHeight>
+        <x:Unsynced/>
+        <x:Selected/>
+        <x:Panes>
+         <x:Pane>
+          <x:Number>3</x:Number>
+          <x:ActiveCol>0</x:ActiveCol>
+          <x:ActiveRow>0</x:ActiveRow>
+         </x:Pane>
+        </x:Panes>
+        <x:ProtectContents>False</x:ProtectContents>
+        <x:ProtectObjects>False</x:ProtectObjects>
+        <x:ProtectScenarios>False</x:ProtectScenarios>
+        <x:PageBreakZoom>100</x:PageBreakZoom>
+        <x:Print>
+         <x:ValidPrinterInfo/>
+         <x:PaperSizeIndex>9</x:PaperSizeIndex>
+        </x:Print>
+       </x:WorksheetOptions>
+      </x:ExcelWorksheet>
+      <x:ExcelWorksheet>
+       <x:Name>Sheet2</x:Name>
+       <x:WorksheetOptions>
+        <x:DefaultRowHeight>315</x:DefaultRowHeight>
+        <x:Panes>
+         <x:Pane>
+          <x:Number>3</x:Number>
+          <x:ActiveCol>0</x:ActiveCol>
+          <x:ActiveRow>0</x:ActiveRow>
+         </x:Pane>
+        </x:Panes>
+        <x:ProtectContents>False</x:ProtectContents>
+        <x:ProtectObjects>False</x:ProtectObjects>
+        <x:ProtectScenarios>False</x:ProtectScenarios>
+        <x:PageBreakZoom>100</x:PageBreakZoom>
+        <x:Print>
+         <x:ValidPrinterInfo/>
+         <x:PaperSizeIndex>9</x:PaperSizeIndex>
+        </x:Print>
+       </x:WorksheetOptions>
+      </x:ExcelWorksheet>
+      <x:ExcelWorksheet>
+       <x:Name>Sheet3</x:Name>
+       <x:WorksheetOptions>
+        <x:DefaultRowHeight>315</x:DefaultRowHeight>
+        <x:Panes>
+         <x:Pane>
+          <x:Number>3</x:Number>
+          <x:ActiveCol>0</x:ActiveCol>
+          <x:ActiveRow>0</x:ActiveRow>
+         </x:Pane>
+        </x:Panes>
+        <x:ProtectContents>False</x:ProtectContents>
+        <x:ProtectObjects>False</x:ProtectObjects>
+        <x:ProtectScenarios>False</x:ProtectScenarios>
+        <x:PageBreakZoom>100</x:PageBreakZoom>
+        <x:Print>
+         <x:ValidPrinterInfo/>
+         <x:PaperSizeIndex>9</x:PaperSizeIndex>
+        </x:Print>
+       </x:WorksheetOptions>
+      </x:ExcelWorksheet>
+     </x:ExcelWorksheets>
+     <x:ProtectStructure>False</x:ProtectStructure>
+     <x:ProtectWindows>False</x:ProtectWindows>
+     <x:SelectedSheets>0</x:SelectedSheets>
+     <x:WindowHeight>8130</x:WindowHeight>
+     <x:WindowWidth>15240</x:WindowWidth>
+    </x:ExcelWorkbook>
+   </xml>
+  <![endif]-->
+ </head>
+ <body link="blue" vlink="purple" class="xl26">
+  <table width="1291" border="0" cellpadding="0" cellspacing="0" style='width:1057.50pt;border-collapse:collapse;table-layout:fixed;'>
+   <tr height="42.67" class="xl24" style='height:32.00pt;mso-height-source:userset;mso-height-alt:640;'>
+    <td class="xl24" height="42.67" width="72" style='height:32.00pt;width:54.00pt;' x:str>ID jadwal</td>
+    <td class="xl24" width="171" style='width:128.25pt;' x:str>Regional</td>
+    <td class="xl24" width="171" style='width:128.25pt;' x:str>Organisasi</td>
+    <td class="xl24" width="171" style='width:128.25pt;' x:str>Posisi detail</td>
+    <td class="xl24" width="234" style='width:175.50pt;' x:str>Nama</td>
+    <td class="xl24" width="72" style='width:54.00pt;' x:str>Nip</td>
+    <td class="xl24" width="72" style='width:54.00pt;' x:str>Login</td>
+    <td class="xl24" width="72" style='width:54.00pt;' x:str>Pretest</td>
+    <td class="xl24" width="72" style='width:54.00pt;' x:str>Duration</td>
+    <td class="xl24" width="72" style='width:54.00pt;' x:str>Posttest</td>
+    <td class="xl24" width="159" style='width:119.25pt;' x:str>Serial</td>
+    <td class="xl24" width="72" style='width:54.00pt;' x:str>Resign</td>
+    <td class="xl24" width="234" style='width:175.50pt;' x:str>Email</td>
+   </tr>	  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>137</td>
+                <td class='xl28' x:str>KPNO</td>
+                
+                <td class='xl28' x:str>Digital Ecosystem Development</td>
+                <td class='xl28' x:str>Digital Ecosystem Development Specialist</td>
+                <td class='xl28' x:str>Muhamad Ragil Ramadhan</td>
+                <td class='xl29' x:str>19124168</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>70</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>80</td>
+                <td class='xl29' x:str>SN-EK038124168040320</td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str></td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>137</td>
+                <td class='xl28' x:str>KPNO</td>
+                
+                <td class='xl28' x:str>Digital Ecosystem Development</td>
+                <td class='xl28' x:str>Digital Ecosystem Development Specialist</td>
+                <td class='xl28' x:str>Taufik</td>
+                <td class='xl29' x:str>19123306</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>85</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>100</td>
+                <td class='xl29' x:str>SN-EK038123306060320</td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str></td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>137</td>
+                <td class='xl28' x:str>KPNO</td>
+                
+                <td class='xl28' x:str>Digital Ecosystem Development</td>
+                <td class='xl28' x:str>Digital Ecosystem Development Specialist</td>
+                <td class='xl28' x:str>Ashadi Muliawan Sejati</td>
+                <td class='xl29' x:str>19113233</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>80</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>100</td>
+                <td class='xl29' x:str>SN-EK038113233040320</td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str></td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>137</td>
+                <td class='xl28' x:str>KPNO</td>
+                
+                <td class='xl28' x:str>Analytics & Strategic Development</td>
+                <td class='xl28' x:str>Analytics & Strategic Development Specialist</td>
+                <td class='xl28' x:str>Dwiandra Annas Putra</td>
+                <td class='xl29' x:str>19113204</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>80</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>90</td>
+                <td class='xl29' x:str>SN-EK038113204060320</td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str></td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>137</td>
+                <td class='xl28' x:str>KPNO</td>
+                
+                <td class='xl28' x:str>Digital Ecosystem Development</td>
+                <td class='xl28' x:str>Digital Ecosystem Development Specialist</td>
+                <td class='xl28' x:str>Ririn Zulandra</td>
+                <td class='xl29' x:str>19113190</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>65</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>85</td>
+                <td class='xl29' x:str>SN-EK038113190060320</td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str></td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>137</td>
+                <td class='xl28' x:str>KPNO</td>
+                
+                <td class='xl28' x:str>Digital Ecosystem Development</td>
+                <td class='xl28' x:str>Digital Ecosystem Development Specialist</td>
+                <td class='xl28' x:str>Maulana Jayadi</td>
+                <td class='xl29' x:str>19113044</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>45</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>80</td>
+                <td class='xl29' x:str>SN-EK038113044060320</td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str></td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>137</td>
+                <td class='xl28' x:str>KPNO</td>
+                
+                <td class='xl28' x:str>Analytics & Strategic Development</td>
+                <td class='xl28' x:str>Analytics & Strategic Development Specialist</td>
+                <td class='xl28' x:str>Amanda Husna</td>
+                <td class='xl29' x:str>18111206</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>85</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>90</td>
+                <td class='xl29' x:str>SN-EK038111206060320</td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>amanda.husna@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>137</td>
+                <td class='xl28' x:str>KPNO</td>
+                
+                <td class='xl28' x:str>Digital Ecosystem Development</td>
+                <td class='xl28' x:str>Digital Ecosystem Development Specialist</td>
+                <td class='xl28' x:str>Octosa Ryan Adi Putra</td>
+                <td class='xl29' x:str>18111108</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>50</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>95</td>
+                <td class='xl29' x:str>SN-EK038111108040320</td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>octosa.putra@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>137</td>
+                <td class='xl28' x:str>KPNO</td>
+                
+                <td class='xl28' x:str>Digital Ecosystem Development</td>
+                <td class='xl28' x:str>Digital Ecosystem Development Specialist</td>
+                <td class='xl28' x:str>Erlangga Al Farozi</td>
+                <td class='xl29' x:str>19103042</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>60</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>90</td>
+                <td class='xl29' x:str>SN-EK038103042050320</td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>erlangga.farozi@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>137</td>
+                <td class='xl28' x:str>KPNO</td>
+                
+                <td class='xl28' x:str>Analytics & Strategic Development</td>
+                <td class='xl28' x:str>Analytics & Strategic Development Specialist</td>
+                <td class='xl28' x:str>I Gusti Agung Ayu Dianintha Andari</td>
+                <td class='xl29' x:str>19103041</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>75</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>75</td>
+                <td class='xl29' x:str>SN-EK038103041050320</td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>dianintha.andari@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>137</td>
+                <td class='xl28' x:str>KPNO</td>
+                
+                <td class='xl28' x:str>Digital Ecosystem Development</td>
+                <td class='xl28' x:str>Digital Ecosystem Development Specialist</td>
+                <td class='xl28' x:str>Siti Sriwati Sitorus</td>
+                <td class='xl29' x:str>19103016</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>80</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>80</td>
+                <td class='xl29' x:str>SN-EK038103016040320</td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>siti.sitorus@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>137</td>
+                <td class='xl28' x:str>KPNO</td>
+                
+                <td class='xl28' x:str>Digital Ecosystem Development</td>
+                <td class='xl28' x:str>Digital Ecosystem Development Specialist</td>
+                <td class='xl28' x:str>Muhammad Rifai</td>
+                <td class='xl29' x:str>19102971</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>90</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>95</td>
+                <td class='xl29' x:str>SN-EK038102971060320</td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>rifai.rifai@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>137</td>
+                <td class='xl28' x:str>KPNO</td>
+                
+                <td class='xl28' x:str>Digital Ecosystem Development</td>
+                <td class='xl28' x:str>Digital Ecosystem Development Specialist</td>
+                <td class='xl28' x:str>Dwi Septha Kurniawan</td>
+                <td class='xl29' x:str>19102970</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>50</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>75</td>
+                <td class='xl29' x:str>SN-EK038102970040320</td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>dwi.septha@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>137</td>
+                <td class='xl28' x:str>KPNO</td>
+                
+                <td class='xl28' x:str>Digital Ecosystem Development</td>
+                <td class='xl28' x:str>Digital Ecosystem Development Specialist</td>
+                <td class='xl28' x:str>Eka Yudha Permana</td>
+                <td class='xl29' x:str>19102953</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>75</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>90</td>
+                <td class='xl29' x:str>SN-EK038102953040320</td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>eka.permana@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>137</td>
+                <td class='xl28' x:str>KPNO</td>
+                
+                <td class='xl28' x:str>Analytics & Strategic Development</td>
+                <td class='xl28' x:str>Analytics & Strategic Development Specialist</td>
+                <td class='xl28' x:str>Ratna Kirana</td>
+                <td class='xl29' x:str>19102952</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>90</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>95</td>
+                <td class='xl29' x:str>SN-EK038102952060320</td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>ratna.kirana@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>137</td>
+                <td class='xl28' x:str>KPNO</td>
+                
+                <td class='xl28' x:str>Analytics & Strategic Development</td>
+                <td class='xl28' x:str>Analytics & Strategic Development Specialist</td>
+                <td class='xl28' x:str>Qinan Prayoga</td>
+                <td class='xl29' x:str>19102951</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>40</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>95</td>
+                <td class='xl29' x:str>SN-EK038102951050320</td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>qinan.prayoga@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>137</td>
+                <td class='xl28' x:str>KPNO</td>
+                
+                <td class='xl28' x:str>Analytics & Strategic Development</td>
+                <td class='xl28' x:str>Analytics & Strategic Development Specialist</td>
+                <td class='xl28' x:str>Muhammad Rizqi Andrian</td>
+                <td class='xl29' x:str>19102941</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>85</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>100</td>
+                <td class='xl29' x:str>SN-EK038102941050320</td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>rizqi.andrian@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>137</td>
+                <td class='xl28' x:str>KPNO</td>
+                
+                <td class='xl28' x:str>Digital Ecosystem Development</td>
+                <td class='xl28' x:str>Digital Ecosystem Development Specialist</td>
+                <td class='xl28' x:str>Andi Suhandi</td>
+                <td class='xl29' x:str>19102940</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>5</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>100</td>
+                <td class='xl29' x:str>SN-EK038102940040320</td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>andi.suhandi@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>137</td>
+                <td class='xl28' x:str>KPNO</td>
+                
+                <td class='xl28' x:str>Analytics & Strategic Development</td>
+                <td class='xl28' x:str>Analytics & Strategic Development Specialist</td>
+                <td class='xl28' x:str>Rikhi Ariyanto</td>
+                <td class='xl29' x:str>19102939</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>80</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>85</td>
+                <td class='xl29' x:str>SN-EK038102939040320</td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>rikhi.ariyanto@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>137</td>
+                <td class='xl28' x:str>KPNO</td>
+                
+                <td class='xl28' x:str>Analytics & Strategic Development</td>
+                <td class='xl28' x:str>Analytics & Strategic Development Specialist</td>
+                <td class='xl28' x:str>Yimmi Ricardo</td>
+                <td class='xl29' x:str>19102938</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>90</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>90</td>
+                <td class='xl29' x:str>SN-EK038102938060320</td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>yimmi.ricardo@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>137</td>
+                <td class='xl28' x:str>KPNO</td>
+                
+                <td class='xl28' x:str>Analytics & Strategic Development</td>
+                <td class='xl28' x:str>Analytics & Strategic Development Specialist</td>
+                <td class='xl28' x:str>Rionald Chancellor</td>
+                <td class='xl29' x:str>19102937</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>65</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>80</td>
+                <td class='xl29' x:str>SN-EK038102937040320</td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>rionald.chancellor@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>137</td>
+                <td class='xl28' x:str>KPNO</td>
+                
+                <td class='xl28' x:str>Analytics & Strategic Development</td>
+                <td class='xl28' x:str>Analytics & Strategic Development Specialist</td>
+                <td class='xl28' x:str>Muhammad Nurul Akbar</td>
+                <td class='xl29' x:str>19092891</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>85</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>95</td>
+                <td class='xl29' x:str>SN-EK038092891060320</td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>muhammad.akbar@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>137</td>
+                <td class='xl28' x:str>KPNO</td>
+                
+                <td class='xl28' x:str>Digital Ecosystem Development</td>
+                <td class='xl28' x:str>Digital Ecosystem Development Specialist</td>
+                <td class='xl28' x:str>Reza Wahyu Suparto</td>
+                <td class='xl29' x:str>19092890</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>65</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>100</td>
+                <td class='xl29' x:str>SN-EK038092890060320</td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>reza.suparto@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>137</td>
+                <td class='xl28' x:str>KPNO</td>
+                
+                <td class='xl28' x:str>Analytics & Strategic Development</td>
+                <td class='xl28' x:str>Analytics & Strategic Development Specialist</td>
+                <td class='xl28' x:str>Friyanti Ananta Sudirman</td>
+                <td class='xl29' x:str>19092847</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>20</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>90</td>
+                <td class='xl29' x:str>SN-EK038092847060320</td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>friyanti.sudirman@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>137</td>
+                <td class='xl28' x:str>KPNO</td>
+                
+                <td class='xl28' x:str>Digital Ecosystem Development</td>
+                <td class='xl28' x:str>Digital Ecosystem Development Specialist</td>
+                <td class='xl28' x:str>Rizqi Akbar</td>
+                <td class='xl29' x:str>19092809</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>35</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>85</td>
+                <td class='xl29' x:str>SN-EK038092809060320</td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>rizqi.akbar@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>137</td>
+                <td class='xl28' x:str>KPNO</td>
+                
+                <td class='xl28' x:str>Digital Ecosystem Development</td>
+                <td class='xl28' x:str>Digital Ecosystem Development Specialist</td>
+                <td class='xl28' x:str>Rio Permana</td>
+                <td class='xl29' x:str>19092757</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>75</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>90</td>
+                <td class='xl29' x:str>SN-EK038092757040320</td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>rio.permana@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>137</td>
+                <td class='xl28' x:str>KPNO</td>
+                
+                <td class='xl28' x:str>Digital Ecosystem Development</td>
+                <td class='xl28' x:str>Digital Ecosystem Development Specialist</td>
+                <td class='xl28' x:str>Dwi Amelia Yuniza</td>
+                <td class='xl29' x:str>19092756</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>90</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>95</td>
+                <td class='xl29' x:str>SN-EK038092756040320</td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>dwi.yuniza@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>137</td>
+                <td class='xl28' x:str>KPNO</td>
+                
+                <td class='xl28' x:str>Digital Ecosystem Development</td>
+                <td class='xl28' x:str>Digital Ecosystem Development Specialist</td>
+                <td class='xl28' x:str>Awaluddin</td>
+                <td class='xl29' x:str>19092745</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>65</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>85</td>
+                <td class='xl29' x:str>SN-EK038092745060320</td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>awaluddin.awaluddin@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>137</td>
+                <td class='xl28' x:str>KPNO</td>
+                
+                <td class='xl28' x:str>Analytics & Strategic Development</td>
+                <td class='xl28' x:str>Analytics & Strategic Development Specialist</td>
+                <td class='xl28' x:str>Johanna Anastasia</td>
+                <td class='xl29' x:str>19092744</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>75</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>95</td>
+                <td class='xl29' x:str>SN-EK038092744050320</td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>johanna.anastasia@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>137</td>
+                <td class='xl28' x:str>KPNO</td>
+                
+                <td class='xl28' x:str>Analytics & Strategic Development</td>
+                <td class='xl28' x:str>Analytics & Strategic Development Specialist</td>
+                <td class='xl28' x:str>Imaniar Nahjan Radhita</td>
+                <td class='xl29' x:str>19092637</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>95</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>95</td>
+                <td class='xl29' x:str>SN-EK038092637050320</td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>imaniar.radhita@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>137</td>
+                <td class='xl28' x:str>KPNO</td>
+                
+                <td class='xl28' x:str>Digital Ecosystem Development</td>
+                <td class='xl28' x:str>Digital Ecosystem Development Specialist</td>
+                <td class='xl28' x:str>Ahmad Rifai Miftahusaid</td>
+                <td class='xl29' x:str>19082732</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>65</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>70</td>
+                <td class='xl29' x:str>SN-EK038082732060320</td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>ahmad.miftahusaid@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>137</td>
+                <td class='xl28' x:str>KPNO</td>
+                
+                <td class='xl28' x:str>Analytics & Strategic Development</td>
+                <td class='xl28' x:str>Analytics & Strategic Development Specialist</td>
+                <td class='xl28' x:str>Arini Annisa</td>
+                <td class='xl29' x:str>19082475</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>40</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>80</td>
+                <td class='xl29' x:str>SN-EK038082475060320</td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>arini.annisa@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>137</td>
+                <td class='xl28' x:str>KPNO</td>
+                
+                <td class='xl28' x:str>Digital Ecosystem Development</td>
+                <td class='xl28' x:str>Digital Ecosystem Development Specialist</td>
+                <td class='xl28' x:str>Whisnu Jaka Pondan</td>
+                <td class='xl29' x:str>19072387</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>40</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>85</td>
+                <td class='xl29' x:str>SN-EK038072387060320</td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>whisnu.pondan@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>137</td>
+                <td class='xl28' x:str>KPNO</td>
+                
+                <td class='xl28' x:str>Digital Ecosystem Development</td>
+                <td class='xl28' x:str>Digital Ecosystem Development Specialist</td>
+                <td class='xl28' x:str>Henri Wilson Tompodung</td>
+                <td class='xl29' x:str>19072328</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>75</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>90</td>
+                <td class='xl29' x:str>SN-EK038072328060320</td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>henri.tompodung@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>137</td>
+                <td class='xl28' x:str>KPNO</td>
+                
+                <td class='xl28' x:str>Analytics & Strategic Development</td>
+                <td class='xl28' x:str>Analytics & Strategic Development Specialist</td>
+                <td class='xl28' x:str>Achirul Akbar</td>
+                <td class='xl29' x:str>19072327</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>60</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>80</td>
+                <td class='xl29' x:str>SN-EK038072327050320</td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>achirul.akbar@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>137</td>
+                <td class='xl28' x:str>KPNO</td>
+                
+                <td class='xl28' x:str>Digital Ecosystem Development</td>
+                <td class='xl28' x:str>Digital Ecosystem Development Specialist</td>
+                <td class='xl28' x:str>Arini Octavina</td>
+                <td class='xl29' x:str>19072326</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>10</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>95</td>
+                <td class='xl29' x:str>SN-EK038072326060320</td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>arini.octavina@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>137</td>
+                <td class='xl28' x:str>KPNO</td>
+                
+                <td class='xl28' x:str>Digital Ecosystem Development</td>
+                <td class='xl28' x:str>Digital Ecosystem Development Specialist</td>
+                <td class='xl28' x:str>Yosia Suherman</td>
+                <td class='xl29' x:str>19072321</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>75</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>90</td>
+                <td class='xl29' x:str>SN-EK038072321060320</td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>yosia.suherman@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>137</td>
+                <td class='xl28' x:str>KPNO</td>
+                
+                <td class='xl28' x:str>Digital Ecosystem Development</td>
+                <td class='xl28' x:str>Digital Ecosystem Development Specialist</td>
+                <td class='xl28' x:str>Muhammad Randy Surya Perdana</td>
+                <td class='xl29' x:str>19062236</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>80</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>75</td>
+                <td class='xl29' x:str>SN-EK038062236040320</td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>muhammad.perdana@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>137</td>
+                <td class='xl28' x:str>KPNO</td>
+                
+                <td class='xl28' x:str>Digital Ecosystem Development</td>
+                <td class='xl28' x:str>Digital Ecosystem Development Specialist</td>
+                <td class='xl28' x:str>Rian Eka Cahya</td>
+                <td class='xl29' x:str>19062235</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>75</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>90</td>
+                <td class='xl29' x:str>SN-EK038062235060320</td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>rian.cahya@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>137</td>
+                <td class='xl28' x:str>KPNO</td>
+                
+                <td class='xl28' x:str>Digital Ecosystem Development</td>
+                <td class='xl28' x:str>Digital Ecosystem Development Specialist</td>
+                <td class='xl28' x:str>Krisniagasari Taslim</td>
+                <td class='xl29' x:str>19062229</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>60</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>70</td>
+                <td class='xl29' x:str>SN-EK038062229040320</td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>krisniagasari.taslim@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>137</td>
+                <td class='xl28' x:str>KPNO</td>
+                
+                <td class='xl28' x:str>Analytics & Strategic Development</td>
+                <td class='xl28' x:str>Analytics & Strategic Development Specialist</td>
+                <td class='xl28' x:str>Reni Meilani</td>
+                <td class='xl29' x:str>19062221</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>60</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>80</td>
+                <td class='xl29' x:str>SN-EK038062221040320</td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>reni.meilani@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>137</td>
+                <td class='xl28' x:str>KPNO</td>
+                
+                <td class='xl28' x:str>Analytics & Strategic Development</td>
+                <td class='xl28' x:str>Analytics & Strategic Development Specialist</td>
+                <td class='xl28' x:str>Christin Stefphanie</td>
+                <td class='xl29' x:str>19062220</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>75</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>80</td>
+                <td class='xl29' x:str>SN-EK038062220050320</td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>christin.stefphanie@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>137</td>
+                <td class='xl28' x:str>KPNO</td>
+                
+                <td class='xl28' x:str>Digital Ecosystem Development</td>
+                <td class='xl28' x:str>Digital Ecosystem Development Specialist</td>
+                <td class='xl28' x:str>Oki Ayodya Irawan</td>
+                <td class='xl29' x:str>19062192</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>65</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>95</td>
+                <td class='xl29' x:str>SN-EK038062192050320</td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>oki.irawan@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>137</td>
+                <td class='xl28' x:str>KPNO</td>
+                
+                <td class='xl28' x:str>Analytics & Strategic Development</td>
+                <td class='xl28' x:str>Analytics & Strategic Development Specialist</td>
+                <td class='xl28' x:str>Andri Achmad Rivaldi</td>
+                <td class='xl29' x:str>19062190</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>90</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>90</td>
+                <td class='xl29' x:str>SN-EK038062190040320</td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>andri.rivaldi@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>137</td>
+                <td class='xl28' x:str>KPNO</td>
+                
+                <td class='xl28' x:str>Analytics & Strategic Development</td>
+                <td class='xl28' x:str>Analytics & Strategic Development Specialist</td>
+                <td class='xl28' x:str>Bethanny Putri Supriadi</td>
+                <td class='xl29' x:str>19062186</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>85</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>75</td>
+                <td class='xl29' x:str>SN-EK038062186060320</td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>bethanny.supriadi@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>137</td>
+                <td class='xl28' x:str>KPNO</td>
+                
+                <td class='xl28' x:str>Digital Ecosystem Development</td>
+                <td class='xl28' x:str>Digital Ecosystem Development Specialist</td>
+                <td class='xl28' x:str>Bima Satriya Putra</td>
+                <td class='xl29' x:str>19062110</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>65</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>90</td>
+                <td class='xl29' x:str>SN-EK038062110060320</td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>bima.putra@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>137</td>
+                <td class='xl28' x:str>KPNO</td>
+                
+                <td class='xl28' x:str>Digital Ecosystem Development</td>
+                <td class='xl28' x:str>Digital Ecosystem Development Specialist</td>
+                <td class='xl28' x:str>Henny Ramayanti Poniman</td>
+                <td class='xl29' x:str>19062105</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>80</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>85</td>
+                <td class='xl29' x:str>SN-EK038062105060320</td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>henny.poniman@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>137</td>
+                <td class='xl28' x:str>KPNO</td>
+                
+                <td class='xl28' x:str>Digital Ecosystem Development</td>
+                <td class='xl28' x:str>Digital Ecosystem Development Specialist</td>
+                <td class='xl28' x:str>Evelyn Naftalie</td>
+                <td class='xl29' x:str>19062104</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>0</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>100</td>
+                <td class='xl29' x:str>SN-EK038062104050320</td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>evelyn.naftalie@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>137</td>
+                <td class='xl28' x:str>KPNO</td>
+                
+                <td class='xl28' x:str>Analytics & Strategic Development</td>
+                <td class='xl28' x:str>Analytics & Strategic Development Specialist</td>
+                <td class='xl28' x:str>Ismail Aditya Hermawan</td>
+                <td class='xl29' x:str>19062099</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>90</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>95</td>
+                <td class='xl29' x:str>SN-EK038062099060320</td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>ismail.hermawan@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>137</td>
+                <td class='xl28' x:str>KPNO</td>
+                
+                <td class='xl28' x:str>Digital Ecosystem Development</td>
+                <td class='xl28' x:str>Digital Ecosystem Development Specialist</td>
+                <td class='xl28' x:str>Ariyo Wicaksono</td>
+                <td class='xl29' x:str>19062097</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>60</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>90</td>
+                <td class='xl29' x:str>SN-EK038062097040320</td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>ariyo.wicaksono@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>137</td>
+                <td class='xl28' x:str>KPNO</td>
+                
+                <td class='xl28' x:str>Analytics & Strategic Development</td>
+                <td class='xl28' x:str>Analytics & Strategic Development Specialist</td>
+                <td class='xl28' x:str>Hernisa Clara Amelia</td>
+                <td class='xl29' x:str>19062096</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>75</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>85</td>
+                <td class='xl29' x:str>SN-EK038062096050320</td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>hernisa.amelia@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>137</td>
+                <td class='xl28' x:str>KPNO</td>
+                
+                <td class='xl28' x:str>Digital Ecosystem Development</td>
+                <td class='xl28' x:str>Digital Ecosystem Development Specialist</td>
+                <td class='xl28' x:str>Giovanni Permata Dewi</td>
+                <td class='xl29' x:str>19052081</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>70</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>90</td>
+                <td class='xl29' x:str>SN-EK038052081060320</td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>giovanni.dewi@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>137</td>
+                <td class='xl28' x:str>KPNO</td>
+                
+                <td class='xl28' x:str>Analytics & Strategic Development</td>
+                <td class='xl28' x:str>Analytics & Strategic Development Specialist</td>
+                <td class='xl28' x:str>Andre Adithia Masora</td>
+                <td class='xl29' x:str>19052049</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>50</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>75</td>
+                <td class='xl29' x:str>SN-EK038052049050320</td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>andre.masora@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>137</td>
+                <td class='xl28' x:str>KPNO</td>
+                
+                <td class='xl28' x:str>Digital Ecosystem Development</td>
+                <td class='xl28' x:str>Digital Ecosystem Development Specialist</td>
+                <td class='xl28' x:str>Andy Pangaribuan</td>
+                <td class='xl29' x:str>19052024</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>60</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>85</td>
+                <td class='xl29' x:str>SN-EK038052024060320</td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>andy.pangaribuan@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>137</td>
+                <td class='xl28' x:str>KPNO</td>
+                
+                <td class='xl28' x:str>Digital Ecosystem Development</td>
+                <td class='xl28' x:str>Digital Ecosystem Development Specialist</td>
+                <td class='xl28' x:str>Imam Kusuma Dwipraja</td>
+                <td class='xl29' x:str>19052023</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>55</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>85</td>
+                <td class='xl29' x:str>SN-EK038052023060320</td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>imam.dwipraja@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>137</td>
+                <td class='xl28' x:str>KPNO</td>
+                
+                <td class='xl28' x:str>Digital Ecosystem Development</td>
+                <td class='xl28' x:str>Digital Ecosystem Development Specialist</td>
+                <td class='xl28' x:str>Machmum Aliefiya</td>
+                <td class='xl29' x:str>19051977</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>5</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>85</td>
+                <td class='xl29' x:str>SN-EK038051977060320</td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>machmum.aliefiya@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>137</td>
+                <td class='xl28' x:str>KPNO</td>
+                
+                <td class='xl28' x:str>Analytics & Strategic Development</td>
+                <td class='xl28' x:str>Analytics & Strategic Development Specialist</td>
+                <td class='xl28' x:str>Sakabumi Wahyudi</td>
+                <td class='xl29' x:str>19041973</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>85</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>95</td>
+                <td class='xl29' x:str>SN-EK038041973060320</td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>sakabumi.wahyudi@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>137</td>
+                <td class='xl28' x:str>KPNO</td>
+                
+                <td class='xl28' x:str>Analytics & Strategic Development</td>
+                <td class='xl28' x:str>Analytics & Strategic Development Specialist</td>
+                <td class='xl28' x:str>Prispayana Vidro Amero</td>
+                <td class='xl29' x:str>19041966</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>65</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>80</td>
+                <td class='xl29' x:str>SN-EK038041966060320</td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>prispayana.amero@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>137</td>
+                <td class='xl28' x:str>KPNO</td>
+                
+                <td class='xl28' x:str>Analytics & Strategic Development</td>
+                <td class='xl28' x:str>Analytics & Strategic Development Specialist</td>
+                <td class='xl28' x:str>C. Emerson Dewanto</td>
+                <td class='xl29' x:str>19041965</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>75</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>90</td>
+                <td class='xl29' x:str>SN-EK038041965050320</td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>emerson.dewanto@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>137</td>
+                <td class='xl28' x:str>KPNO</td>
+                
+                <td class='xl28' x:str>Analytics & Strategic Development</td>
+                <td class='xl28' x:str>Analytics & Strategic Development Specialist</td>
+                <td class='xl28' x:str>Josephine Carla</td>
+                <td class='xl29' x:str>19041916</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>90</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>100</td>
+                <td class='xl29' x:str>SN-EK038041916060320</td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>josephine.carla@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>137</td>
+                <td class='xl28' x:str>KPNO</td>
+                
+                <td class='xl28' x:str>Analytics & Strategic Development</td>
+                <td class='xl28' x:str>Analytics & Strategic Development Specialist</td>
+                <td class='xl28' x:str>Jumiaty Oclivinda</td>
+                <td class='xl29' x:str>19041878</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>90</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>90</td>
+                <td class='xl29' x:str>SN-EK038041878060320</td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>jumiaty.oclivinda@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>137</td>
+                <td class='xl28' x:str>KPNO</td>
+                
+                <td class='xl28' x:str>Analytics & Strategic Development</td>
+                <td class='xl28' x:str>Analytics & Strategic Development Specialist</td>
+                <td class='xl28' x:str>Muhammad Agung Agriza</td>
+                <td class='xl29' x:str>19041846</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>85</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>100</td>
+                <td class='xl29' x:str>SN-EK038041846040320</td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>muhammad.agriza@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>137</td>
+                <td class='xl28' x:str>KPNO</td>
+                
+                <td class='xl28' x:str>Analytics & Strategic Development</td>
+                <td class='xl28' x:str>Analytics & Strategic Development Specialist</td>
+                <td class='xl28' x:str>Abshar Aryun</td>
+                <td class='xl29' x:str>20024289</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>70</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>90</td>
+                <td class='xl29' x:str>SN-EK038024289050320</td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>abshar.aryun@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>137</td>
+                <td class='xl28' x:str>KPNO</td>
+                
+                <td class='xl28' x:str>Digital Ecosystem Development</td>
+                <td class='xl28' x:str>Digital Ecosystem Development Specialist</td>
+                <td class='xl28' x:str>Nabil</td>
+                <td class='xl29' x:str>20014223</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>75</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>100</td>
+                <td class='xl29' x:str>SN-EK038014223060320</td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str></td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>137</td>
+                <td class='xl28' x:str>KPNO</td>
+                
+                <td class='xl28' x:str>Analytics & Strategic Development</td>
+                <td class='xl28' x:str>Analytics & Strategic Development Specialist</td>
+                <td class='xl28' x:str>Yessy Caline</td>
+                <td class='xl29' x:str>20014209</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>85</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>90</td>
+                <td class='xl29' x:str>SN-EK038014209060320</td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str></td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>137</td>
+                <td class='xl28' x:str>KPNO</td>
+                
+                <td class='xl28' x:str>Analytics & Strategic Development</td>
+                <td class='xl28' x:str>Analytics & Strategic Development Specialist</td>
+                <td class='xl28' x:str>Ilma Dinnia Alghani</td>
+                <td class='xl29' x:str>20014204</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>70</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>100</td>
+                <td class='xl29' x:str>SN-EK038014204040320</td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str></td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>137</td>
+                <td class='xl28' x:str>KPNO</td>
+                
+                <td class='xl28' x:str>Analytics & Strategic Development</td>
+                <td class='xl28' x:str>Analytics & Strategic Development Specialist</td>
+                <td class='xl28' x:str>Stevan Gerardo Soplanit</td>
+                <td class='xl29' x:str>19011491</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>90</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str>90</td>
+                <td class='xl29' x:str>SN-EK038011491050320</td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>stevan.soplanit@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>137</td>
+                <td class='xl28' x:str>KPNO</td>
+                
+                <td class='xl28' x:str>Digital Ecosystem Development</td>
+                <td class='xl28' x:str>Digital Ecosystem Development Specialist</td>
+                <td class='xl28' x:str>Didik Firmansyah</td>
+                <td class='xl29' x:str>20024301</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>100</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str></td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>137</td>
+                <td class='xl28' x:str>KPNO</td>
+                
+                <td class='xl28' x:str>Digital Ecosystem Development</td>
+                <td class='xl28' x:str>Digital Ecosystem Development Specialist</td>
+                <td class='xl28' x:str>Muhammad Qahfi Triananto</td>
+                <td class='xl29' x:str>19072329</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>80</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>qahfi.triananto@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>137</td>
+                <td class='xl28' x:str>KPNO</td>
+                
+                <td class='xl28' x:str>Digital Ecosystem Development</td>
+                <td class='xl28' x:str>Digital Ecosystem Development Head</td>
+                <td class='xl28' x:str>Reza Rudyanto Pramono</td>
+                <td class='xl29' x:str>19021597</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>70</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>reza.pramono@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>137</td>
+                <td class='xl28' x:str>KPNO</td>
+                
+                <td class='xl28' x:str>Digital Ecosystem Development</td>
+                <td class='xl28' x:str>Digital Ecosystem Development Specialist</td>
+                <td class='xl28' x:str>Vicky Dwi Kurniawan</td>
+                <td class='xl29' x:str>19062222</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>65</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>vicky.kurniawan@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>137</td>
+                <td class='xl28' x:str>KPNO</td>
+                
+                <td class='xl28' x:str>Analytics & Strategic Development</td>
+                <td class='xl28' x:str>Analytics & Strategic Development Specialist</td>
+                <td class='xl28' x:str>Triyan Arif Wibowo</td>
+                <td class='xl29' x:str>18121411</td>
+                <td class='xl29' x:str>1</td>
+                <td class='xl29' x:str>15</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>triyan.wibowo@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>137</td>
+                <td class='xl28' x:str>KPNO</td>
+                
+                <td class='xl28' x:str>Analytics & Strategic Development</td>
+                <td class='xl28' x:str>Analytics & Strategic Development Specialist</td>
+                <td class='xl28' x:str>Intan Komalasari</td>
+                <td class='xl29' x:str>19031801</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>intan.komalasari@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>137</td>
+                <td class='xl28' x:str>KPNO</td>
+                
+                <td class='xl28' x:str>Analytics & Strategic Development</td>
+                <td class='xl28' x:str>Analytics & Strategic Development Specialist</td>
+                <td class='xl28' x:str>Ignatius David Pangemanan</td>
+                <td class='xl29' x:str>19062257</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>ignatius.pangemanan@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>137</td>
+                <td class='xl28' x:str>KPNO</td>
+                
+                <td class='xl28' x:str>Analytics & Strategic Development</td>
+                <td class='xl28' x:str>Analytics & Strategic Development Specialist</td>
+                <td class='xl28' x:str>Cinantya Rahmadita</td>
+                <td class='xl29' x:str>19062188</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>cinantya.rahmadita@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>137</td>
+                <td class='xl28' x:str>KPNO</td>
+                
+                <td class='xl28' x:str>Digital Ecosystem Development</td>
+                <td class='xl28' x:str>Digital Ecosystem Development Specialist</td>
+                <td class='xl28' x:str>Alfian Rahman</td>
+                <td class='xl29' x:str>19021684</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>alfian.rahman@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>137</td>
+                <td class='xl28' x:str>KPNO</td>
+                
+                <td class='xl28' x:str>Digital Ecosystem Development</td>
+                <td class='xl28' x:str>Digital Ecosystem Development Specialist</td>
+                <td class='xl28' x:str>Yudha Prama Djunaedi</td>
+                <td class='xl29' x:str>19062241</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>yudha.djunaedi@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>137</td>
+                <td class='xl28' x:str>KPNO</td>
+                
+                <td class='xl28' x:str>Digital Ecosystem Development</td>
+                <td class='xl28' x:str>Digital Ecosystem Development Specialist</td>
+                <td class='xl28' x:str>Andreas Jati Adi Buwana</td>
+                <td class='xl29' x:str>19113069</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>andreas.buwana@bankmega.com</td>
+                
+               </tr>
+   
+   		
+				  
+
+               <tr height='25.33' class='xl25' style='height:19.00pt;mso-height-source:userset;mso-height-alt:380;'>
+                <td class='xl25' height='25.33' style='height:19.00pt;' x:num>137</td>
+                <td class='xl28' x:str>KPNO</td>
+                
+                <td class='xl28' x:str>Digital Ecosystem Development</td>
+                <td class='xl28' x:str>Digital Ecosystem Development Specialist</td>
+                <td class='xl28' x:str>Bangkit Permana</td>
+                <td class='xl29' x:str>19062234</td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl29' x:str></td>
+                <td class='xl28' x:str>bangkit.permana@bankmega.com</td>
+                
+               </tr>
+   
+   		
+			
+  </table>
+ </body>
+</html>
