@@ -1,0 +1,186 @@
+html, body {
+  font-family: Verdana,sans-serif;
+  color: #000;
+}
+BODY, TD {
+	font-family:arial;
+	font-size:10pt;
+}
+.err {
+	color:red;
+}
+.errtxt {
+	color:red;
+}
+.textarea {
+	border:1 inset
+}
+.select {
+	font-family:arial; font-size:10pt;
+}
+.text {
+	font-family:arial; font-size:10pt; border:1 inset
+}
+img, logout{
+	color: #FFFFFF;
+	border:#FFFFFF;
+	text-decoration: none;
+	font-family: Tahoma, Verdana;
+	font-size: 12px
+}
+a, A:link, a:visited, a:active{
+	color: #0000aa;
+	text-decoration: none;
+	font-family: Tahoma, Verdana;
+	font-size: 12px
+}
+A:hover{
+	color: #ff0000;
+	text-decoration: none;
+	font-family: Tahoma, Verdana;
+	font-size: 12px
+}
+p, tr, td, ul, li{
+	color: #000000; 
+	font-family: Tahoma, Verdana; 
+	font-size: 12px
+}
+.header1, h1{
+	color: #ffffff;
+	background: #4682B4;
+	font-weight: bold;
+	font-family: Tahoma, Verdana;
+	font-size: 13px; margin: 0px;
+	padding: 2px;
+}
+.header2, h2{
+	color: #000000; 
+	background: #DBEAF5; 
+	font-weight: bold; 
+	font-family: Tahoma, Verdana; 
+	font-size: 12px;
+}
+.intd{
+	color: #000000; 
+	font-family: Tahoma, Verdana; 
+	font-size: 11px; 
+	padding-left: 15px; 
+	padding-right: 15px;
+}
+.ctrl{
+	font-family: Tahoma, Verdana, sans-serif; 
+	font-size: 12px; width: 100%; 
+}
+form{ 
+	margin: 2px;
+}
+.button {
+	border : solid 1px #cccccc;
+	background: #E9ECEF;
+	color : #666666;
+	font-weight : bold;
+	font-size : 11px;
+	padding: 3px;
+}
+#wrapper {
+        border: 0px;
+        margin: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0px;
+}
+
+#header {
+        background-color: #FFF;
+        background-position: right top;
+        border-bottom: 4px solid #C64934;
+        background: url(../images/header_bg.png);
+}
+
+.login {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 6em;
+	padding: 15px;
+	border: 1px solid #cccccc;
+	width: 350px;
+	background: #F1F3F5;
+}
+	
+.login h1 {
+	background: url(../images/login_header.png) no-repeat;
+	background-position: left top;
+	color: #333;
+	margin: 0px;
+	height: 50px;
+	padding: 15px 4px 0 50px;
+ 	text-align: left;
+	font-size: 1.5em;
+}
+
+.login p {
+	padding: 0 1em 0 1em;
+	}
+
+.loginlogo p {
+	padding: 0 1em;
+	}
+	
+.form-block {
+	border: 1px solid #cccccc;
+	background: #E9ECEF;
+	padding-top: 15px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+}
+
+.login-form {
+	text-align: left;
+	float: center;
+	width: 80%;
+}
+
+.login-text {
+	text-align: left;
+	width: 40%;
+	float: left;
+}
+
+.inputlabel {
+	font-weight: bold;
+	text-align: left;
+	}
+
+.inputbox {
+	width: 150px;
+	margin: 1px;
+	border: 1px solid #cccccc;
+	}
+
+.clr {
+    clear:both;
+    }
+
+.ctr {
+	text-align: center;
+}
+
+.version {
+	font-size: 0.8em;
+}
+
+.footer {
+
+}
+
+.message {
+	margin-top: 10px; 
+	padding: 7px; 
+	width: 400px;
+	border: 1px solid #B22222;
+	background: #F1F3F5;
+	color: #B22222;	
+	font-weight: bold;
+	font-size: 13px;
+}

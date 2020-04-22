@@ -1,0 +1,635 @@
+<html>
+<head><title>Edit Table</title>
+<meta http-equiv="Expires" content="0">
+<style>
+  body,	table, td, .button{background: buttonface;font-family:verdana,helvetica;font-size:8pt;margin:2px;}
+  .text {font-family:"verdana";font-size:8pt;padding:5px 0px 5px 0px;}
+  .controls{width:100%;text-align:right;margin-top:5px;margin-right:3px}
+	select {font-family:verdana,helvetica;font-size:8pt;margin:2px;border:1px inset;margin:2px;}
+	.itext {font-family:verdana,helvetica;font-size:8pt;margin:2px;border:1px inset;}
+	.ibutton {font-family:verdana,helvetica;font-size:8pt;margin:2px;border:1px outset;}
+	.a_normal {cursor:hand;text-decoration:none;color:black}
+	.a_selected {cursor:default;color:000000;font-weight:bold}
+	.a_hover {cursor:hand;text-decoration:underline;color:black}
+</style>
+
+<script language="JScript" for="window" event="onload">
+	var vIn = window.dialogArguments;
+	setState(1);
+  for ( elem in vIn ) {
+		if (vIn[elem] != null) {
+	    switch( elem ) {
+				case "td_nowrap" : setCurrSel(td_nowrap,(vIn[elem]?"Yes":"No")); break;
+				case "td_width" : td_width.value = vIn[elem]; break;
+				case "td_height" : td_height.value = vIn[elem]; break;
+				case "td_colspan" : td_colspan.value = vIn[elem]; break;
+				case "td_rowspan" : td_rowspan.value = vIn[elem]; break;
+				case "td_background" : td_background.value = vIn[elem]; break;
+				case "td_bgcolor" : setCurrSel(td_bgcolor,vIn[elem]);td_custom_bgcolor.value=vIn[elem]; break;
+				case "td_bordercolor" : setCurrSel(td_bordercolor,vIn[elem]);td_custom_bordercolor.value=vIn[elem]; break;
+				case "td_bordercolorlight" : setCurrSel(td_bordercolorlight,vIn[elem]);td_custom_bordercolorlight.value=vIn[elem]; break;
+				case "td_bordercolordark" : setCurrSel(td_bordercolordark,vIn[elem]);td_custom_bordercolordark.value=vIn[elem]; break;
+				case "td_valign" : setCurrSel(td_valign,vIn[elem]); break;
+				case "td_align" : setCurrSel(td_align,vIn[elem]); break;
+				case "td_class" : td_class.value = vIn[elem]; break;
+				case "td_style" : td_style.value = vIn[elem]; break;
+				case "tr_class" : tr_class.value = vIn[elem]; break;
+				case "tr_style" : tr_style.value = vIn[elem]; break;
+				case "tr_bgcolor" : setCurrSel(tr_bgcolor,vIn[elem]);tr_custom_bgcolor.value=vIn[elem]; break;
+				case "tr_bordercolor" : setCurrSel(tr_bordercolor,vIn[elem]);tr_custom_bordercolor.value=vIn[elem]; break;
+				case "tr_bordercolorlight" : setCurrSel(tr_bordercolor,vIn[elem]);tr_custom_bordercolorlight.value=vIn[elem]; break;
+				case "tr_bordercolordark" : setCurrSel(tr_bordercolordark,vIn[elem]);tr_custom_bordercolordark.value=vIn[elem]; break;
+				case "table_align" : setCurrSel(table_align,vIn[elem]); break;
+				case "table_border" : table_border.value = vIn[elem]; break;
+				case "table_bordercolor" : setCurrSel(table_bordercolor,vIn[elem]);table_custom_bordercolor.value=vIn[elem]; break;
+				case "table_bordercolorlight" : setCurrSel(table_bordercolorlight,vIn[elem]);table_custom_bordercolorlight.value=vIn[elem]; break;
+				case "table_bordercolordark" : setCurrSel(table_bordercolordark,vIn[elem]);table_custom_bordercolordark.value=vIn[elem]; break;
+				case "table_cellpadding" : table_cellpadding.value = vIn[elem]; break;
+				case "table_cellspacing" : table_cellspacing.value = vIn[elem]; break;
+				case "table_width" : table_width.value = vIn[elem]; break;
+				case "table_height" : table_height.value = vIn[elem]; break;
+				case "table_background" : table_background.value = vIn[elem]; break;
+				case "table_bgcolor" : setCurrSel(table_bgcolor,vIn[elem]);table_custom_bgcolor.value=vIn[elem]; break;
+				case "table_class" : table_class.value = vIn[elem]; break;
+				case "table_style" : table_style.value = vIn[elem]; break;
+	    }
+		}
+  }
+</script>
+
+<script language="JScript" for="btnApply" event="onclick">
+	var vOut = new Array();
+	if (td_align.value != "current") vOut["td_align"] = td_align.value;
+	if (td_valign.value != "current") vOut["td_valign"] = td_valign.value;
+	if (td_nowrap.value != "current") vOut["td_nowrap"] = (td_nowrap.value == "1")?true:false;
+	vOut["td_width"] = td_width.value;
+	vOut["td_height"] = td_height.value;
+	vOut["td_colspan"] = td_colspan.value;
+	vOut["td_rowspan"] = td_rowspan.value;
+	if (td_bgcolor.value != "current") vOut["td_bgcolor"] = (td_bgcolor.value == "custom")?td_custom_bgcolor.value:td_bgcolor.value;
+	vOut["td_background"] = td_background.value;
+	if (td_bordercolor.value != "current") vOut["td_bordercolor"] = (td_bordercolor.value == "custom")?td_custom_bordercolor.value:td_bordercolor.value;
+	if (td_bordercolorlight.value != "current") vOut["td_bordercolorlight"] = (td_bordercolorlight.value == "custom")?td_custom_bordercolorlight.value:td_bordercolorlight.value;
+	if (td_bordercolordark.value != "current") vOut["td_bordercolordark"] = (td_bordercolordark.value == "custom")?td_custom_bordercolordark.value:td_bordercolordark.value;
+	vOut["td_class"] = td_class.value;
+	vOut["td_style"] = td_style.value;
+	if (tr_bgcolor.value != "current") vOut["tr_bgcolor"] = (tr_bgcolor.value == "custom")?tr_custom_bgcolor.value:tr_bgcolor.value;
+	if (tr_bordercolor.value != "current") vOut["tr_bordercolor"] = (tr_bordercolor.value == "custom")?tr_custom_bordercolor.value:tr_bordercolor.value;
+	if (tr_bordercolorlight.value != "current") vOut["tr_bordercolorlight"] = (tr_bordercolorlight.value == "custom")?tr_custom_bordercolorlight.value:tr_bordercolorlight.value;
+	if (tr_bordercolordark.value != "current") vOut["tr_bordercolordark"] = (tr_bordercolordark.value == "custom")?tr_custom_bordercolordark.value:tr_bordercolordark.value;
+	vOut["tr_class"] = tr_class.value;
+	vOut["tr_style"] = tr_style.value;
+	if (table_align.value != "current") vOut["table_align"] = table_align.value;
+	vOut["table_width"] = table_width.value;
+	vOut["table_height"] = table_height.value;
+	vOut["table_cellpadding"] = table_cellpadding.value;
+	vOut["table_cellspacing"] = table_cellspacing.value;
+	if (table_bgcolor.value != "current") vOut["table_bgcolor"] = (table_bgcolor.value == "custom")?table_custom_bgcolor.value:table_bgcolor.value;
+	vOut["table_background"] = table_background.value;
+	if (table_bordercolor.value != "current") vOut["table_bordercolor"] = (table_bordercolor.value == "custom")?table_custom_bordercolor.value:table_bordercolor.value;
+	if (table_bordercolorlight.value != "current") vOut["table_bordercolorlight"] = (table_bordercolorlight.value == "custom")?table_custom_bordercolorlight.value:table_bordercolorlight.value;
+	if (table_bordercolordark.value != "current") vOut["table_bordercolordark"] = (table_bordercolordark.value == "custom")?table_custom_bordercolordark.value:table_bordercolordark.value;
+	vOut["table_border"] = table_border.value;
+	vOut["table_class"] = table_class.value;
+	vOut["table_style"] = table_style.value;
+	window.returnValue = vOut;
+	window.close();
+</script>
+
+<script language="JScript" defer>
+<!--
+	var DocState = 1;
+	
+	function ImgPicker(frm) {
+		vOut = window.showModalDialog("imgpicker.php","","dialogHeight: 300px; dialogWidth: 545px;center: Yes; help: No; resizable: No; status: No;");
+		if (vOut!=null) frm.value = vOut;
+	}
+
+	function enableform(sel,frm) {
+		frm.disabled = (sel != 1);
+		if(!frm.disabled) frm.focus();
+	}
+	
+	function amover(id) {
+		if (eval("a"+DocState) == id) 
+			id.className = "a_selected";
+		else
+			id.className = "a_hover";
+	}
+	
+	function amout(id) {
+		if (eval("a"+DocState) == id) 
+			id.className = "a_selected";
+		else
+			id.className = "a_normal";
+	}
+	
+	function setState(state) {
+		switch(state) {
+			case "1" :
+				a1.className = "a_selected";
+				a2.className = "a_normal";
+				a3.className = "a_normal";
+				d1.style.visibility = "";
+				d2.style.visibility = "hidden";
+				d3.style.visibility = "hidden";
+				d1.style.display = "";
+				d2.style.display = "none";
+				d3.style.display = "none";
+				DocState = "1";
+				break;
+			case "2" : 
+				a2.className = "a_selected";
+				a1.className = "a_normal";
+				a3.className = "a_normal";
+				d1.style.visibility = "hidden";
+				d2.style.visibility = "";
+				d3.style.visibility = "hidden";
+				d1.style.display ="none";
+				d2.style.display = "";
+				d3.style.display = "none";
+				DocState = "2";
+				break;
+			case "3" : 
+				a3.className = "a_selected";
+				a2.className = "a_normal";
+				a1.className = "a_normal";
+				d1.style.visibility = "hidden";
+				d2.style.visibility = "hidden";
+				d3.style.visibility = "";
+				d1.style.display="none";
+				d2.style.display="none";
+				d3.style.display= "";
+				DocState = "3";
+				break;
+			default :
+				a1.className = "a_selected";
+				a2.className = "a_normal";
+				a3.className = "a_normal";
+				d1.style.visibility = "";
+				d2.style.visibility = "hidden";
+				d3.style.visibility = "hidden";
+				d1.style.display="";
+				d2.style.display="none";
+				d3.style.display="none";
+				DocState = "1";
+			break;
+		}
+	}
+//-->
+</script>
+<script language="JScript">
+	function setCurrSel(frm,val) {
+		if (val == "") frm.options[frm.options.selectedIndex].text = "Current Value";
+		else frm.options[frm.options.selectedIndex].text = val + " (Current)";
+	}
+  function isInt() {
+    return ((event.keyCode >= 48) && (event.keyCode <= 57))
+  }
+  function isHex() {
+    return (((event.keyCode >= 48) && (event.keyCode <= 57)) || ((event.keyCode >= 65) && (event.keyCode <= 70)) || ((event.keyCode >= 97) && (event.keyCode <= 102)) || (event.keyCode == 35))
+  }
+  function isInt2() {
+    return (((event.keyCode >= 48) && (event.keyCode <= 57)) || (event.keyCode == 37) )
+  }
+</script>
+</head>
+
+<body scroll="no">
+<fieldset style="width:398px;height:230px"><legend><a id="a1" onclick="setState('1');" class="a_normal" onmouseover="amover(this);" onmouseout="amout(this);">Cell</a> | <a id="a2" onclick="setState('2');" class="a_normal" onmouseover="amover(this);" onmouseout="amout(this);">Row</a> | <a id="a3" onclick="setState('3');" class="a_normal" onmouseover="amover(this);" onmouseout="amout(this);">Table</a></legend>
+	<div id="d1" style="margin:3px;padding:2px;border:1px inset;width:388px;height:209px;overflow-y:scroll;overflow-x:hidden">
+		<table cellpadding="3" cellspacing="0" border="0">
+			<tr>
+				<td>Horizontal Alignment</td>
+				<td><select name="td_align" style="width:160">
+					<option value="current" selected>Current Value
+					<option value="left">Left
+					<option value="center">Center
+					<option value="right">Right
+					<option value="justify">Justify
+				</select></td>
+			</tr>
+			<tr>
+				<td>Vertical Alignment</td>
+				<td><select name="td_valign" style="width:160">
+					<option value="current" selected>Current Value
+					<option value="top">Top
+					<option value="bottom">Bottom
+					<option value="middle">Middle
+					<option value="baseline">Base Line
+				</select></td>
+			</tr>
+			<tr>
+				<td>No Wrap</td>
+				<td><select name="td_nowrap" style="width:160">
+					<option value="current" selected>Current Value
+					<option value="1">Yes
+					<option value="0">No
+				</select></td>
+			</tr>
+		</table>
+		<table cellpadding="3" cellspacing="0" border="0">
+			<tr>
+				<td>Cell Width</td>
+				<td><input type="text" name="td_width" class="itext" style="width:60px" onkeypress="event.returnValue=isInt2();"></td>
+				<td>&nbsp;&nbsp;Row Spanning</td>
+				<td><input type="text" name="td_rowspan" class="itext" style="width:60px" onkeypress="event.returnValue=isInt();"></td>
+			</tr>
+			<tr>
+				<td>Cell Height</td>
+				<td><input type="text" name="td_height" class="itext" style="width:60px" onkeypress="event.returnValue=isInt2();"></td>
+				<td>&nbsp;&nbsp;Column Spanning</td>
+				<td><input type="text" name="td_colspan" class="itext" style="width:60px" onkeypress="event.returnValue=isInt();"></td>
+			</tr>
+		</table>
+		<table cellpadding="3" cellspacing="0" border="0">
+			<tr>
+				<td>Background Color</td>
+				<td><select name="td_bgcolor" style="width:160" onchange="enableform(this.selectedIndex,td_custom_bgcolor);">
+					<option value="current" selected>Current Value
+					<option value="custom">Custom Value
+					<option value="">Transparent
+					<option value="black" style="color:black;">Black
+					<option value="FFFFFF" style="color:white;background:black">White
+					<option value="green" style="color:green">Green
+					<option value="maroon" style="color:maroon">Maroon
+					<option value="olive" style="color:olive">Olive
+					<option value="navy" style="color:navy">Navy
+					<option value="purple" style="color:purple">Purple
+					<option value="gray" style="color:gray">Gray
+					<option value="yellow" style="color:yellow">Yellow
+					<option value="lime" style="color:lime">Lime
+					<option value="aqua" style="color:aqua">Aqua
+					<option value="fuchsia" style="color:fuchsia">Fuchsia
+					<option value="silver" style="color:silver">Silver
+					<option value="red" style="color:red">Red
+					<option value="blue" style="color:blue">Blue
+					<option value="teal" style="color:teal">Teal
+				</select></td>
+				<td><input type="text" maxlength="7" name="td_custom_bgcolor" class="itext" style="width:60px" disabled onkeypress="event.returnValue=isHex();"></td>
+			</tr>
+			<tr>
+				<td>Background Image</td>
+				<td><input type="text" class="itext" name="td_background" style="width:160px"></td>
+				<td><input type="button" class="ibutton" style="width:60px" value="Browse" onclick="ImgPicker(td_background);"></td>
+			</tr>
+			<tr>
+				<td>Border Color</td>
+				<td><select name="td_bordercolor" style="width:160" onchange="enableform(this.selectedIndex,td_custom_bordercolor);">
+					<option value="current" selected>Current Value
+					<option value="custom">Custom Value
+					<option value="">Transparent
+					<option value="black" style="color:black;">Black
+					<option value="FFFFFF" style="color:white;background:black">White
+					<option value="green" style="color:green">Green
+					<option value="maroon" style="color:maroon">Maroon
+					<option value="olive" style="color:olive">Olive
+					<option value="navy" style="color:navy">Navy
+					<option value="purple" style="color:purple">Purple
+					<option value="gray" style="color:gray">Gray
+					<option value="yellow" style="color:yellow">Yellow
+					<option value="lime" style="color:lime">Lime
+					<option value="aqua" style="color:aqua">Aqua
+					<option value="fuchsia" style="color:fuchsia">Fuchsia
+					<option value="silver" style="color:silver">Silver
+					<option value="red" style="color:red">Red
+					<option value="blue" style="color:blue">Blue
+					<option value="teal" style="color:teal">Teal
+				</select></td>
+				<td><input type="text" maxlength="7" name="td_custom_bordercolor" class="itext" style="width:60px" disabled onkeypress="event.returnValue=isHex();"></td>
+			</tr>
+			<tr>
+				<td>Border Color Light</td>
+				<td><select name="td_bordercolorlight" style="width:160" onchange="enableform(this.selectedIndex,td_custom_bordercolorlight);">
+					<option value="current" selected>Current Value
+					<option value="custom">Custom Value
+					<option value="">Transparent
+					<option value="black" style="color:black;">Black
+					<option value="FFFFFF" style="color:white;background:black">White
+					<option value="green" style="color:green">Green
+					<option value="maroon" style="color:maroon">Maroon
+					<option value="olive" style="color:olive">Olive
+					<option value="navy" style="color:navy">Navy
+					<option value="purple" style="color:purple">Purple
+					<option value="gray" style="color:gray">Gray
+					<option value="yellow" style="color:yellow">Yellow
+					<option value="lime" style="color:lime">Lime
+					<option value="aqua" style="color:aqua">Aqua
+					<option value="fuchsia" style="color:fuchsia">Fuchsia
+					<option value="silver" style="color:silver">Silver
+					<option value="red" style="color:red">Red
+					<option value="blue" style="color:blue">Blue
+					<option value="teal" style="color:teal">Teal
+				</select></td>
+				<td><input type="text" maxlength="7" name="td_custom_bordercolorlight" class="itext" style="width:60px" disabled onkeypress="event.returnValue=isHex();"></td>
+			</tr>
+			<tr>
+				<td>Border Color Dark</td>
+				<td><select name="td_bordercolordark" style="width:160" onchange="enableform(this.selectedIndex,td_custom_bordercolordark);">
+					<option value="current" selected>Current Value
+					<option value="custom">Custom Value
+					<option value="">Transparent
+					<option value="black" style="color:black;">Black
+					<option value="FFFFFF" style="color:white;background:black">White
+					<option value="green" style="color:green">Green
+					<option value="maroon" style="color:maroon">Maroon
+					<option value="olive" style="color:olive">Olive
+					<option value="navy" style="color:navy">Navy
+					<option value="purple" style="color:purple">Purple
+					<option value="gray" style="color:gray">Gray
+					<option value="yellow" style="color:yellow">Yellow
+					<option value="lime" style="color:lime">Lime
+					<option value="aqua" style="color:aqua">Aqua
+					<option value="fuchsia" style="color:fuchsia">Fuchsia
+					<option value="silver" style="color:silver">Silver
+					<option value="red" style="color:red">Red
+					<option value="blue" style="color:blue">Blue
+					<option value="teal" style="color:teal">Teal
+				</select></td>
+				<td><input type="text" maxlength="7" name="td_custom_bordercolordark" class="itext" style="width:60px" disabled onkeypress="event.returnValue=isHex();"></td>
+			</tr>
+		</table>
+		<table cellpadding="3" cellspacing="0" border="0">
+			<tr>
+				<td>Class</td>
+				<td><input type="text" class="itext" name="td_class" style="width:308px"></td>
+			</tr>
+			<tr>
+				<td>Style</td>
+				<td><input type="text" class="itext" name="td_style" style="width:308px"></td>
+			</tr>
+		</table>
+	</div>
+	<div id="d2" style="margin:3px;padding:2px;border:1px inset;width:388px;height:209px;overflow-y:hidden;overflow-x:hidden;visibility:hidden;display:none">
+		<table cellpadding="3" cellspacing="0" border="0">
+			<tr>
+				<td>Background Color</td>
+				<td><select name="tr_bgcolor" style="width:160" onchange="enableform(this.selectedIndex,tr_custom_bgcolor);">
+					<option value="current" selected>Current Value
+					<option value="custom">Custom Value
+					<option value="">Transparent
+					<option value="black" style="color:black;">Black
+					<option value="FFFFFF" style="color:white;background:black">White
+					<option value="green" style="color:green">Green
+					<option value="maroon" style="color:maroon">Maroon
+					<option value="olive" style="color:olive">Olive
+					<option value="navy" style="color:navy">Navy
+					<option value="purple" style="color:purple">Purple
+					<option value="gray" style="color:gray">Gray
+					<option value="yellow" style="color:yellow">Yellow
+					<option value="lime" style="color:lime">Lime
+					<option value="aqua" style="color:aqua">Aqua
+					<option value="fuchsia" style="color:fuchsia">Fuchsia
+					<option value="silver" style="color:silver">Silver
+					<option value="red" style="color:red">Red
+					<option value="blue" style="color:blue">Blue
+					<option value="teal" style="color:teal">Teal
+				</select></td>
+				<td><input type="text" maxlength="7" name="tr_custom_bgcolor" class="itext" style="width:60px" disabled onkeypress="event.returnValue=isHex();"></td>
+			</tr>
+			<tr>
+				<td>Border Color</td>
+				<td><select name="tr_bordercolor" style="width:160" onchange="enableform(this.selectedIndex,tr_custom_bordercolor);">
+					<option value="current" selected>Current Value
+					<option value="custom">Custom Value
+					<option value="">Transparent
+					<option value="black" style="color:black;">Black
+					<option value="FFFFFF" style="color:white;background:black">White
+					<option value="green" style="color:green">Green
+					<option value="maroon" style="color:maroon">Maroon
+					<option value="olive" style="color:olive">Olive
+					<option value="navy" style="color:navy">Navy
+					<option value="purple" style="color:purple">Purple
+					<option value="gray" style="color:gray">Gray
+					<option value="yellow" style="color:yellow">Yellow
+					<option value="lime" style="color:lime">Lime
+					<option value="aqua" style="color:aqua">Aqua
+					<option value="fuchsia" style="color:fuchsia">Fuchsia
+					<option value="silver" style="color:silver">Silver
+					<option value="red" style="color:red">Red
+					<option value="blue" style="color:blue">Blue
+					<option value="teal" style="color:teal">Teal
+				</select></td>
+				<td><input type="text" maxlength="7" name="tr_custom_bordercolor" class="itext" style="width:60px" disabled onkeypress="event.returnValue=isHex();"></td>
+			</tr>
+			<tr>
+				<td>Border Color Light</td>
+				<td><select name="tr_bordercolorlight" style="width:160" onchange="enableform(this.selectedIndex,tr_custom_bordercolorlight);">
+					<option value="current" selected>Current Value
+					<option value="custom">Custom Value
+					<option value="">Transparent
+					<option value="black" style="color:black;">Black
+					<option value="FFFFFF" style="color:white;background:black">White
+					<option value="green" style="color:green">Green
+					<option value="maroon" style="color:maroon">Maroon
+					<option value="olive" style="color:olive">Olive
+					<option value="navy" style="color:navy">Navy
+					<option value="purple" style="color:purple">Purple
+					<option value="gray" style="color:gray">Gray
+					<option value="yellow" style="color:yellow">Yellow
+					<option value="lime" style="color:lime">Lime
+					<option value="aqua" style="color:aqua">Aqua
+					<option value="fuchsia" style="color:fuchsia">Fuchsia
+					<option value="silver" style="color:silver">Silver
+					<option value="red" style="color:red">Red
+					<option value="blue" style="color:blue">Blue
+					<option value="teal" style="color:teal">Teal
+				</select></td>
+				<td><input type="text" maxlength="7" name="tr_custom_bordercolorlight" class="itext" style="width:60px" disabled onkeypress="event.returnValue=isHex();"></td>
+			</tr>
+			<tr>
+				<td>Border Color Dark</td>
+				<td><select name="tr_bordercolordark" style="width:160" onchange="enableform(this.selectedIndex,tr_custom_bordercolordark);">
+					<option value="current" selected>Current Value
+					<option value="custom">Custom Value
+					<option value="">Transparent
+					<option value="black" style="color:black;">Black
+					<option value="FFFFFF" style="color:white;background:black">White
+					<option value="green" style="color:green">Green
+					<option value="maroon" style="color:maroon">Maroon
+					<option value="olive" style="color:olive">Olive
+					<option value="navy" style="color:navy">Navy
+					<option value="purple" style="color:purple">Purple
+					<option value="gray" style="color:gray">Gray
+					<option value="yellow" style="color:yellow">Yellow
+					<option value="lime" style="color:lime">Lime
+					<option value="aqua" style="color:aqua">Aqua
+					<option value="fuchsia" style="color:fuchsia">Fuchsia
+					<option value="silver" style="color:silver">Silver
+					<option value="red" style="color:red">Red
+					<option value="blue" style="color:blue">Blue
+					<option value="teal" style="color:teal">Teal
+				</select></td>
+				<td><input type="text" maxlength="7" name="tr_custom_bordercolordark" class="itext" style="width:60px" disabled onkeypress="event.returnValue=isHex();"></td>
+			</tr>
+		</table>
+		<table cellpadding="3" cellspacing="0" border="0">
+			<tr>
+				<td>Class</td>
+				<td><input type="text" class="itext" name="tr_class" style="width:305px"></td>
+			</tr>
+			<tr>
+				<td>Style</td>
+				<td><input type="text" class="itext" name="tr_style" style="width:305px"></td>
+			</tr>
+		</table>
+	</div>
+	<div id="d3" style="margin:3px;padding:2px;border:1px inset;width:388px;height:209px;overflow-y:scroll;overflow-x:hidden;visibility:hidden;display:none">
+		<table cellpadding="3" cellspacing="0" border="0">
+			<tr>
+				<td>Horizontal Alignment</td>
+				<td><select name="table_align" style="width:160">
+					<option value="current" selected>Current Value
+					<option value="left">Left
+					<option value="center">Center
+					<option value="right">Right
+					<option value="justify">Justify
+				</select></td>
+			</tr>
+		</table>
+		<table cellpadding="3" cellspacing="0" border="0">
+			<tr>
+				<td>Width</td>
+				<td><input type="text" name="table_width" class="itext" style="width:60px" onkeypress="event.returnValue=isInt2();"></td>
+				<td>&nbsp;&nbsp;Cell Padding</td>
+				<td><input type="text" name="table_cellpadding" class="itext" style="width:60px" onkeypress="event.returnValue=isInt();"></td>
+			</tr>
+			<tr>
+				<td>Height</td>
+				<td><input type="text" name="table_height" class="itext" style="width:60px" onkeypress="event.returnValue=isInt2();"></td>
+				<td>&nbsp;&nbsp;Cell Spacing</td>
+				<td><input type="text" name="table_cellspacing" class="itext" style="width:60px" onkeypress="event.returnValue=isInt();"></td>
+			</tr>
+		</table>
+		<table cellpadding="3" cellspacing="0" border="0">
+			<tr>
+				<td>Background Color</td>
+				<td><select name="table_bgcolor" style="width:160" onchange="enableform(this.selectedIndex,table_custom_bgcolor);">
+					<option value="current" selected>Current Value
+					<option value="custom">Custom Value
+					<option value="">Transparent
+					<option value="black" style="color:black;">Black
+					<option value="FFFFFF" style="color:white;background:black">White
+					<option value="green" style="color:green">Green
+					<option value="maroon" style="color:maroon">Maroon
+					<option value="olive" style="color:olive">Olive
+					<option value="navy" style="color:navy">Navy
+					<option value="purple" style="color:purple">Purple
+					<option value="gray" style="color:gray">Gray
+					<option value="yellow" style="color:yellow">Yellow
+					<option value="lime" style="color:lime">Lime
+					<option value="aqua" style="color:aqua">Aqua
+					<option value="fuchsia" style="color:fuchsia">Fuchsia
+					<option value="silver" style="color:silver">Silver
+					<option value="red" style="color:red">Red
+					<option value="blue" style="color:blue">Blue
+					<option value="teal" style="color:teal">Teal
+				</select></td>
+				<td><input type="text" maxlength="7" name="table_custom_bgcolor" class="itext" style="width:60px" disabled onkeypress="event.returnValue=isHex();"></td>
+			</tr>
+			<tr>
+				<td>Background Image</td>
+				<td><input type="text" class="itext" name="table_background" style="width:160px"></td>
+				<td><input type="button" class="ibutton" style="width:60px" value="Browse" onclick="ImgPicker(table_background);"></td>
+			</tr>
+			<tr>
+				<td>Border</td>
+				<td colspan="2"><input type="text" class="itext" name="table_border" style="width:60px" onkeypress="event.returnValue=isInt();"></td>
+			</tr>
+			<tr>
+				<td>Border Color</td>
+				<td><select name="table_bordercolor" style="width:160" onchange="enableform(this.selectedIndex,table_custom_bordercolor);">
+					<option value="current" selected>Current Value
+					<option value="custom">Custom Value
+					<option value="">Transparent
+					<option value="black" style="color:black;">Black
+					<option value="FFFFFF" style="color:white;background:black">White
+					<option value="green" style="color:green">Green
+					<option value="maroon" style="color:maroon">Maroon
+					<option value="olive" style="color:olive">Olive
+					<option value="navy" style="color:navy">Navy
+					<option value="purple" style="color:purple">Purple
+					<option value="gray" style="color:gray">Gray
+					<option value="yellow" style="color:yellow">Yellow
+					<option value="lime" style="color:lime">Lime
+					<option value="aqua" style="color:aqua">Aqua
+					<option value="fuchsia" style="color:fuchsia">Fuchsia
+					<option value="silver" style="color:silver">Silver
+					<option value="red" style="color:red">Red
+					<option value="blue" style="color:blue">Blue
+					<option value="teal" style="color:teal">Teal
+				</select></td>
+				<td><input type="text" maxlength="7" name="table_custom_bordercolor" class="itext" style="width:60px" disabled onkeypress="event.returnValue=isHex();"></td>
+			</tr>
+			<tr>
+				<td>Border Color Light</td>
+				<td><select name="table_bordercolorlight" style="width:160" onchange="enableform(this.selectedIndex,table_custom_bordercolorlight);">
+					<option value="current" selected>Current Value
+					<option value="custom">Custom Value
+					<option value="">Transparent
+					<option value="black" style="color:black;">Black
+					<option value="FFFFFF" style="color:white;background:black">White
+					<option value="green" style="color:green">Green
+					<option value="maroon" style="color:maroon">Maroon
+					<option value="olive" style="color:olive">Olive
+					<option value="navy" style="color:navy">Navy
+					<option value="purple" style="color:purple">Purple
+					<option value="gray" style="color:gray">Gray
+					<option value="yellow" style="color:yellow">Yellow
+					<option value="lime" style="color:lime">Lime
+					<option value="aqua" style="color:aqua">Aqua
+					<option value="fuchsia" style="color:fuchsia">Fuchsia
+					<option value="silver" style="color:silver">Silver
+					<option value="red" style="color:red">Red
+					<option value="blue" style="color:blue">Blue
+					<option value="teal" style="color:teal">Teal
+				</select></td>
+				<td><input type="text" maxlength="7" name="table_custom_bordercolorlight" class="itext" style="width:60px" disabled onkeypress="event.returnValue=isHex();"></td>
+			</tr>
+			<tr>
+				<td>Border Color Dark</td>
+				<td><select name="table_bordercolordark" style="width:160" onchange="enableform(this.selectedIndex,table_custom_bordercolordark);">
+					<option value="current" selected>Current Value
+					<option value="custom">Custom Value
+					<option value="">Transparent
+					<option value="black" style="color:black;">Black
+					<option value="FFFFFF" style="color:white;background:black">White
+					<option value="green" style="color:green">Green
+					<option value="maroon" style="color:maroon">Maroon
+					<option value="olive" style="color:olive">Olive
+					<option value="navy" style="color:navy">Navy
+					<option value="purple" style="color:purple">Purple
+					<option value="gray" style="color:gray">Gray
+					<option value="yellow" style="color:yellow">Yellow
+					<option value="lime" style="color:lime">Lime
+					<option value="aqua" style="color:aqua">Aqua
+					<option value="fuchsia" style="color:fuchsia">Fuchsia
+					<option value="silver" style="color:silver">Silver
+					<option value="red" style="color:red">Red
+					<option value="blue" style="color:blue">Blue
+					<option value="teal" style="color:teal">Teal
+				</select></td>
+				<td><input type="text" maxlength="7" name="table_custom_bordercolordark" class="itext" style="width:60px" disabled onkeypress="event.returnValue=isHex();"></td>
+			</tr>
+		</table>
+		<table cellpadding="3" cellspacing="0" border="0">
+			<tr>
+				<td>Class</td>
+				<td><input type="text" class="itext" name="table_class" style="width:308px"></td>
+			</tr>
+			<tr>
+				<td>Style</td>
+				<td><input type="text" class="itext" name="table_style" style="width:308px"></td>
+			</tr>
+		</table>
+	</div>
+</fieldset>
+<fieldset style="width:394px;">
+	<table cellpadding="2" cellspacing="0" border="0" width="100%">
+		<tr>
+			<td align="left" valign="middle"><input id="btnApply" class="ibutton" type="button" value="  Apply  ">&nbsp;&nbsp;<input type="button" class="ibutton" value=" Cancel " onclick="window.close();"></td>
+		</tr>
+	</table>
+</fieldset>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head><title>Insert Table</title>
+<style>
+  body,	table, td, .button{background: buttonface;font-family:verdana,helvetica;font-size:8pt;margin:2px;}
+  .text {font-family:"verdana";font-size:8pt;padding:5px 0px 5px 0px;}
+  .controls{width:100%;text-align:right;margin-top:5px;margin-right:3px}
+	select {font-family:verdana,helvetica;font-size:8pt;margin:2px;border:1px inset;margin:2px;}
+	.itext {font-family:verdana,helvetica;font-size:8pt;margin:2px;border:1px inset;}
+	.ibutton {font-family:verdana,helvetica;font-size:8pt;margin:2px;border:1px outset;}
+	a {text-decoration:none;color:black}
+	a:hover {text-decoration:underline}
+	.a_normal {cursor:hand;text-decoration:none;color:black}
+	.a_selected {cursor:default;color:black;font-weight:bold}
+	.a_hover {cursor:hand;text-decoration:underline;color:black}
+</style>
+<script language="JScript">
+  function isInt() {
+    return ((event.keyCode >= 48) && (event.keyCode <= 57))
+  }
+  function isInt2() {
+    return (((event.keyCode >= 48) && (event.keyCode <= 57)) || (event.keyCode <= 37))
+  }
+</script>
+<script language="JScript" for="OK" event="onclick">
+  var arr = new Array();
+  arr["border"] = tbBorder.value;  
+  arr["rows"] = tbRows.value;
+  arr["columns"] = tbColumns.value;
+  arr["padding"] = tbPadding.value;
+  arr["spacing"] = tbSpacing.value;
+  arr["width"] = tbWidth.value;
+  arr["style"] = tbStyle.value;
+  window.returnValue = arr;
+  window.close();
+</script>
+</head>
+
+<body scroll="no">
+<fieldset style="width:250px;"><legend>Insert Table</legend>
+	<table cellpadding="3" cellspacing="0" border="0" width="100%">
+		<tr>
+			<td>
+				<table cellpadding="3" cellspacing="0" border="0" align="center">
+					<tr>
+					  <td class="text">Rows:</td>
+					  <td class="inputs"><input name="tbRows" type="text" class="itext" size="3" maxlength="2" onkeypress="event.returnValue=isInt();" value="2"></td>  
+					  <td class="text">Columns:</td>
+					  <td class="inputs"><input name="tbColumns" type="text" class="itext" size="3" maxlength="2" onkeypress="event.returnValue=isInt();" value="2"></td>  
+					</tr>
+					<tr>
+					  <td class="text">Padding:</td>
+					  <td class="inputs"><input name="tbPadding" type="text" class="itext" size="3" maxlength="2" onkeypress="event.returnValue=isInt();" value="0"></td>  
+					  <td class="text">Spacing:</td>
+					  <td class="inputs"><input name="tbSpacing" type="text" class="itext" size="3" maxlength="2" onkeypress="event.returnValue=isInt();" value="0"></td>  
+					</tr>
+					<tr>
+					  <td class="text">Width:</td>
+					  <td class="inputs"><input name="tbWidth" type="text" class="itext" size="3" maxlength="4" onkeypress="event.returnValue=isInt2();" value="75%"></td>  
+					  <td class="text">Border:</td>
+					  <td class="inputs"><input name="tbBorder" type="text" class="itext" size="3" maxlength="1" onkeypress="event.returnValue=isInt();" value="1"></td>  
+					</tr>
+					<tr>
+					  <td class="text">Style:</td>
+					  <td class="inputs" colspan="3"><input name="tbStyle" type="text" class="itext" size="25" maxlength="255"></td>  
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+</fieldset>
+<fieldset style="width:250px;">
+	<table cellpadding="4" cellspacing="0" border="0" width="100%">
+		<tr>
+			<td align="center" valign="middle"><input id="OK" type="button" class="ibutton" value="Insert Table">&nbsp;&nbsp;<input type="button" class="ibutton" value="    Cancel    " onclick="window.close();"></td>
+		</tr>
+	</table>
+</fieldset>
+</body>
+</html>

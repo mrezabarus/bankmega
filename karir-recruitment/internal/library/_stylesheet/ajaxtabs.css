@@ -1,0 +1,86 @@
+.shadetabs{
+padding: 3px 0;
+margin-left: 0;
+margin-top: 1px;
+margin-bottom: 0;
+font: bold 12px Verdana;
+list-style-type: none;
+text-align: left; /*set to left, center, or right to align the menu as desired*/
+background-image: url(images/v_10.jpg)
+}
+
+.shadetabs li{
+display: inline;
+margin: 0;
+}
+
+.shadetabs li a{
+text-decoration: none;
+padding: 3px 7px;
+margin-right: 3px;
+border: 1px solid #778;
+color: #2d2b2b;
+background-image:url(../../tab/images/v_10.jpg);
+}
+
+.shadetabs li a:visited{
+color: #2d2b2b;
+}
+
+.shadetabs li a:hover{
+text-decoration: underline;
+color: #2d2b2b;
+}
+
+.shadetabs li.selected{
+position: relative;
+top: 1px;
+}
+
+.shadetabs li.selected a{ /*selected main tab style */
+background-image: url(shadeactive.gif);
+border-bottom-color: white;
+border-spacing:inherit;
+}
+
+.shadetabs li.selected a:hover{ /*selected main tab style */
+text-decoration: none;
+}
+
+.contentstyle{
+border: 1px solid gray;
+width: 450px;
+margin-bottom: 1em;
+padding: 20px;
+border-bottom-style:solid;
+}
+
+.buttonA {
+	FONT-WEIGHT: bold; 
+	FONT-SIZE: 11px;
+	font-variant:normal;
+	COLOR: #000000; 
+}
+BODY {
+        FONT-SIZE: 12px; 
+		FONT-FAMILY: Arial, Tahoma, Verdana
+}
+TD {
+        FONT-SIZE: 12px; 
+		FONT-FAMILY: Arial, Tahoma, Verdana
+}
+TABLE.corner {
+        BORDER-RIGHT: #000000 1px solid; 
+        BORDER-LEFT: #000000 1px solid; 
+		BORDER-TOP: #000000 1px solid; 
+		BORDER-BOTTOM: #000000 1px solid; 
+		PADDING-RIGHT: 1px; 
+		PADDING-LEFT: 1px; 
+		PADDING-TOP: 1px;
+		padding-bottom:5px;
+		FONT-WEIGHT: bold; 
+		FONT-SIZE: 10px; 
+		BACKGROUND: #ffffff; 
+		COLOR: #000000; 
+		FONT-FAMILY: Arial, Tahoma, Verdana; 
+}

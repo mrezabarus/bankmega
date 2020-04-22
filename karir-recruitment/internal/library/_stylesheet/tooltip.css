@@ -1,0 +1,71 @@
+/* Begin ToolTip CSS */
+    /* upper left arrow div */
+    #upper_left_arrow {
+      position: absolute;
+      left: -300px;
+      z-index: 101;
+      visibility: hidden;
+    }
+
+    /* upper right arrow div */
+    #upper_right_arrow {
+      position: absolute;
+      left: -300px;
+      z-index: 101;
+      direction: rtl;
+      text-align: right;
+      visibility: hidden;
+    }
+
+    /* lower left arrow div */
+    #lower_left_arrow {
+      position: absolute;
+      left: -300px;
+      z-index: 101;
+      visibility: hidden;
+    }
+
+    /* lower right arrow div */
+    #lower_right_arrow {
+      position: absolute;
+      left: -300px;
+      z-index: 101;
+      direction: rtl;
+      text-align: right;
+      visibility: hidden;
+    }
+
+    /* main class for pointer arrow */
+    .arrow {
+      border-color: black;
+      border-right-style: solid;
+      border-right-width: 2px;
+      border-left-style: solid;
+      border-left-width: 1px;
+      overflow:hidden;
+      height: 1px;
+      font-size: 1px;
+    }
+
+    /* provides border or 'tip' for arrow */
+    .arrow_tip {
+      background-color: black;
+      height: 1px;
+      font-size: 1px;
+    }
+
+    /* main tip div */
+    #dhtmltooltip{
+      position: absolute;
+      left: -300px;
+      width: 150px;
+      border: 1px solid black;
+      padding: 2px;
+      background-color: lightyellow; 
+      visibility: hidden;
+      z-index: 100;
+
+      /*Remove below line to remove shadow. Below line should always appear last within this CSS*/
+      filter: progid:DXImageTransform.Microsoft.Shadow(color=gray,direction=135);
+
+/* End ToolTip CSS */

@@ -1,0 +1,4 @@
+[04-Nov-2013 10:39:51 Asia/Jakarta] PHP Fatal error:  Call to undefined function listLast() in /home/xolut246/public_html/client/mega/internal/includes/ceklogin.php on line 2
+[04-Nov-2013 10:39:51 Asia/Jakarta] PHP Fatal error:  Call to undefined function cmsDB() in /home/xolut246/public_html/client/mega/internal/includes/cekloginfront.php on line 2
+[04-Nov-2013 10:39:51 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '[' in /home/xolut246/public_html/client/mega/internal/includes/recordlist2.php on line 599
+[04-Nov-2013 10:39:52 Asia/Jakarta] PHP Fatal error:  Call to undefined function cmsDB() in /home/xolut246/public_html/client/mega/internal/includes/template_recordlist.php on line 18

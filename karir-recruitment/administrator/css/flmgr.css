@@ -1,0 +1,20 @@
+.flm_text {border:inset 1; font-family:verdana; font-size:11px;}
+.flm_button {border:outset 1; font-family:verdana; font-size:11px;}
+.flm_combo {font-family:verdana; font-size:11px;}
+.flm_textarea {border:inset 1;}
+
+.dirtree_norm {font-family:Verdana; font-size:11px;color:#000000;text-decoration:none}
+.dirtree_norm:hover {text-decoration:underline}
+.dirtree_sel {font-family:Verdana; font-size:11px;color:#FFFFFF;background-color:#3366CC;text-decoration:none}
+
+.fl_currpath {font-family:Verdana; font-size:11px;}
+.fl_listtitle {font-family:Verdana; font-size:11px;color:white;background-color:#3366CC;}
+.fl_list_odd {font-family:Verdana; font-size:11px;color:black;background-color:#FFFFFF;}
+.fl_list_even {font-family:Verdana; font-size:11px;color:black;background-color:#EFF3FC;}
+.fl_listfooter {font-family:Verdana; font-size:11px;color:black;}
+
+.flm_td {font-family:Verdana; font-size:11px;}
+.flm_td_odd {font-family:Verdana; font-size:11px;color:black;background-color:#FFFFFF;}
+.flm_td_even {font-family:Verdana; font-size:11px;color:black;background-color:#EFF3FC;}
+.flm_td_title1 {font-family:Verdana; font-size:11px;background-color:#3366CC;color:#FFFFFF;}
+.flm_td_title2 {font-family:Verdana; font-size:11px;background-color:#6B8FDA;color:#FFFFFF;}
