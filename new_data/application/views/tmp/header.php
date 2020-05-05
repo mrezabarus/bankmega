@@ -22,16 +22,18 @@
         <link href="<?php echo base_url();?>template/assets/plugins/font-awesome/css/all.min.css" rel="stylesheet">
         <link href="<?php echo base_url();?>template/assets/plugins/waves/waves.min.css" rel="stylesheet">
         <link href="<?php echo base_url();?>template/assets/plugins/nvd3/nv.d3.min.css" rel="stylesheet">
+        <link href="<?php echo base_url();?>template/assets/plugins/select2/css/select2.min.css" rel="stylesheet">
 
       
         <!-- Theme Styles -->
-        <link href="<?php echo base_url();?>template/assets/css/alpha.min.css" rel="stylesheet">
+        <link href="<?php echo base_url();?>template/assets/css/alpha.css" rel="stylesheet">
         <link href="<?php echo base_url();?>template/assets/css/custom.css" rel="stylesheet">
 
         <!-- Javascripts -->
         <script src="<?php echo base_url();?>template/assets/plugins/jquery/jquery-3.4.1.min.js"></script>
         <script src="<?php echo base_url();?>template/assets/plugins/bootstrap/popper.min.js"></script>
         <script src="<?php echo base_url();?>template/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+        <script src="<?php echo base_url();?>template/assets/plugins/select2/js/select2.min.js"></script>
         <script src="<?php echo base_url();?>template/assets/plugins/waves/waves.min.js"></script>
         <script src="<?php echo base_url();?>template/assets/plugins/jquery-slimscroll/jquery.slimscroll.min.js"></script>
         <script src="<?php echo base_url();?>template/assets/plugins/d3/d3.min.js"></script>

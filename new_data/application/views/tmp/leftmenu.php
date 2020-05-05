@@ -21,7 +21,7 @@
                 <ul class="sidebar-menu list-unstyled">
                     <li>
                         <a href="#" class="waves-effect waves-grey active">
-                            <i class="material-icons">settings_input_svideo</i>List Job
+                            <i class="material-icons">settings_input_svideo</i>Pendidikan
                         </a>
                     </li>
                     <li>

@@ -18,7 +18,7 @@ class Home extends CI_Controller {
 		$datauser 				= $data['userlogin'];
 		$data['userdetail']		= $this->user_model->user_detail($datauser);
 		//$data['listposisi']		= $this->user_model->listAllJob($datauser);
-
+		$data['jenjang']		= $this->user_model->jenjang_pendidikan();
 		
 		
 		$this->load->view('tmp/header', $data);
@@ -27,6 +27,21 @@ class Home extends CI_Controller {
 		// $this->load->view('tmp/rightmenu');
 		$this->load->view('tmp/footer');
 		//$this->load->view('welcome', $data);
+	}
+
+	function data_pendidikan(){
+		$data['userlogin']		= $this->session->userdata("username");
+
+		$datauser 				= $data['userlogin'];
+
+        $data=$this->user_model->pendidikanList($datauser);
+        echo json_encode($data);
+	}
+
+	function get_pendidikan(){
+		$id=$this->input->get('id');
+        $data=$this->user_model->get_pendidikan_by_code($id);
+        echo json_encode($data);
 	}
 
 	// public function soalkuesioner($id)

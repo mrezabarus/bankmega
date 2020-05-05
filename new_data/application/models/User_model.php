@@ -43,282 +43,32 @@ class User_Model extends CI_Model{
 		//return $query->row()->id_group;
 		return $query->row_array();
 	}
-
-	function listAllJob($id_user)
+	function pendidikanList($iduser)
 	{
-		$query 		= $this->db->query("
-										SELECT * 
-										from (
-										
-											SELECT * 
-											from position_title
-											where report_id_pos_title in 
-											(
-												SELECT id_pos_title
-												from employee_detail
-												where employeeid = '$id_user'
-											)
-											UNION /*kedua*/
-											(
-											SELECT * 
-											from position_title
-											where report_id_pos_title in 
-												(
-												SELECT id_pos_title
-												from position_title
-												where report_id_pos_title in 
-													(
-														SELECT id_pos_title
-														from employee_detail
-														where employeeid = '$id_user'
-													)
-												)
-											)
-											UNION /*ketiga*/
-											(
-											SELECT * 
-											from position_title
-											where report_id_pos_title in 
-												(
-													SELECT id_pos_title
-													from position_title
-													where report_id_pos_title in 
-														(
-															SELECT id_pos_title
-															from position_title
-															where report_id_pos_title in 
-																(
-																	SELECT id_pos_title
-																	from employee_detail
-																	where employeeid = '$id_user'
-																)
-														)
-												)
-											)
-											UNION /* KE EMPAT */
-											(
-											SELECT * 
-											from position_title
-											where report_id_pos_title in 
-												(
-												SELECT id_pos_title 
-												from position_title
-												where report_id_pos_title in 
-													(
-														SELECT id_pos_title
-														from position_title
-														where report_id_pos_title in 
-															(
-																SELECT id_pos_title
-																from position_title
-																where report_id_pos_title in 
-																	(
-																		SELECT id_pos_title
-																		from employee_detail
-																		where employeeid = '$id_user'
-																	)
-															)
-													)
-												)
-											)
-											UNION /* KE LIMA */
-											(
-												SELECT * 
-												from position_title
-												where report_id_pos_title in 
-												(
-												SELECT id_pos_title 
-												from position_title
-												where report_id_pos_title in 
-													(
-													SELECT id_pos_title 
-													from position_title
-													where report_id_pos_title in 
-														(
-															SELECT id_pos_title
-															from position_title
-															where report_id_pos_title in 
-																(
-																	SELECT id_pos_title
-																	from position_title
-																	where report_id_pos_title in 
-																		(
-																			SELECT id_pos_title
-																			from employee_detail
-																			where employeeid = '$id_user'
-																		)
-																)
-														)
-													)
-												)
-											)
-											UNION /* KE Enam */
-											(
-												SELECT * 
-												from position_title
-												where report_id_pos_title in 
-												(
-													SELECT id_pos_title 
-													from position_title
-													where report_id_pos_title in 
-													(
-													SELECT id_pos_title 
-													from position_title
-													where report_id_pos_title in 
-														(
-														SELECT id_pos_title 
-														from position_title
-														where report_id_pos_title in 
-															(
-																SELECT id_pos_title
-																from position_title
-																where report_id_pos_title in 
-																	(
-																		SELECT id_pos_title
-																		from position_title
-																		where report_id_pos_title in 
-																			(
-																				SELECT id_pos_title
-																				from employee_detail
-																				where employeeid = '$id_user'
-																			)
-																	)
-															)
-														)
-													)
-												)
-											)
-											UNION /* KE Tujuh */
-											(
-												SELECT * 
-												from position_title
-												where report_id_pos_title in 
-												(
-													SELECT position_title 
-													from position_title
-													where report_id_pos_title in 
-													(
-														SELECT id_pos_title 
-														from position_title
-														where report_id_pos_title in 
-														(
-														SELECT id_pos_title 
-														from position_title
-														where report_id_pos_title in 
-															(
-															SELECT id_pos_title 
-															from position_title
-															where report_id_pos_title in 
-																(
-																	SELECT id_pos_title
-																	from position_title
-																	where report_id_pos_title in 
-																		(
-																			SELECT id_pos_title
-																			from position_title
-																			where report_id_pos_title in 
-																				(
-																					SELECT id_pos_title
-																					from employee_detail
-																					where employeeid = '$id_user'
-																				)
-																		)
-																)
-															)
-														)
-													)
-												)
-												
-											)
-										)A
-										
-										group by A.id_pos_title
-										order by A.position_title asc
-		");
-		/*
-		$query 		= $this->db->query("
-										SELECT * 
-										from job
-										where id_job in (
-											SELECT job_id 
-											from posisi
-											where org_id in (
-												SELECT orgid 
-												from organization
-												where parent_id in (
-													SELECT org_id
-													from posisi
-													where active = 'YES'
-													and position_id in (
-														SELECT a.positionid
-														from employee_detail a
-														where a.employeeid = '$id_user'
-														group by a.positionid
-													)
-												)
-											)
-											and active = 'YES'
-										)
-										");
-		*/
-		return $query->result();
+		$hasil=$this->db->query("SELECT * FROM tbl_emp_pendidikan where employeeid = '$iduser'");
+        return $hasil->result();
 	}
 
-	function view_tbl_soal(){
-		$this->db->select('*');
-		$this->db->from('soal');
-
-		$query = $this->db->get();		
-	
-		$chekRow = $query->num_rows;
-		if($chekRow != "0")
-		{
-			return $query->result();
-		}
-	}
-
-	function nama_kuesioner(){
-		$query 		= $this->db->query("SELECT * from soal");
-
-		return $query->result();
-	}
-
-	function soal_kuisioner_1()
+	function get_pendidikan_by_code($id)
 	{
-		$query 		= $this->db->query("Select * from soal_kuesioner_1");
-		return $query->result();
+		$hsl=$this->db->query("SELECT * FROM tbl_emp_pendidikan WHERE id='$id'");
+        if($hsl->num_rows()>0){
+            foreach ($hsl->result() as $data) {
+                $hasil=array(
+					'id' => $data->id,
+                    'jenjang_pendidikan' => $data->jenjang_pendidikan,
+					'nama_institusi' => $data->nama_institusi,
+					'studi' => $data->studi,
+					'gelar' => $data->gelar,
+                    );
+            }
+        }
+        return $hasil;
 	}
 
-	function soal_kuisioner_2()
+	function jenjang_pendidikan()
 	{
-		$query 		= $this->db->query("Select * from soal_kuesioner_2");
-		return $query->result();
-	}
-
-	function soal_kuesioner(){
-		$query 		= $this->db->query("SELECT * from soal limit 1");
-
-		return $query->result();
-	}
-
-	function detail_soal($namasoal)
-	{
-		$query 		= $this->db->query("SELECT * from $namasoal");
-		echo "SELECT * from $namasoal";
-		return $query->result();
-	}
-
-	function listSoal(){
-		return $this->db->select('*')
-	                ->from('soal')
-				    ->get()
-					->row();
-	}
-
-	function jumlahSoal(){
-		return $this->db->select('*')
-	                ->from('soal')
-				    ->get()
-					->num_row();
+		$hasil=$this->db->query("SELECT * FROM master_jenjang_pendidikan order by nama desc");
+        return $hasil->result();
 	}
 }
