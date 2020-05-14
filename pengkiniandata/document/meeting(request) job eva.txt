@@ -1,0 +1,9 @@
+dashboard sebelah kanan (browser)
+bikin total job di bawahnya
+total jobdesc yg sudah ada
+
+
+group by job(job eva)
+
+list soal tampil semuanya aja
+ada beberapa kuesioner 
