@@ -1,0 +1,9 @@
+<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="<?php echo base_url();?>assets/jquery/jquery.js"></script>
+    <script src="<?php echo base_url();?>assets/js/popper.min.js"></script>
+    <script src="<?php echo base_url();?>assets/bootstrap-4.2/js/bootstrap.min.js"></script>
+    <script src="<?php echo base_url();?>assets/js/holder.min.js"></script>
+    </body>
+</html>
