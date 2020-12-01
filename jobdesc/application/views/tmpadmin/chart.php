@@ -36,8 +36,8 @@ Chart.defaults.global.defaultFontSize = 18;
 
 var comparefilejob = {
     labels: [
-        "File",
-        "Job"
+        "Not Available",
+        "Available"
     ],
     datasets: [
         {
