@@ -4,7 +4,7 @@
         
             <div class="card card-signin my-5">
                 <div class="card-header" style="background-color: #43425D; color:#fff;">
-                    <h5>Compare posisi and job</h5>
+                    <h5>Compare Position and Job</h5>
                 </div>
                 <div class="card-body">
                     <canvas id="posjob" width="600" height="400"></canvas>
