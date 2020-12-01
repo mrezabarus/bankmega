@@ -1,33 +1,56 @@
 <script>
 
-var oilCanvas = document.getElementById("oilChart");
+var posjobCanvas = document.getElementById("posjob");
 
 Chart.defaults.global.defaultFontFamily = "Lato";
 Chart.defaults.global.defaultFontSize = 18;
 
-var oilData = {
+var compareposjob = {
     labels: [
-        "Saudi Arabia",
-        "Russia",
-        "Iraq",
-        "United Arab Emirates",
-        "Canada"
+        "Position Title",
+        "Job"
     ],
     datasets: [
         {
-            data: [133.3, 86.2, 52.2, 51.2, 50.2],
+            data: [<?php echo $totalpos;?>, <?php echo $totaljob;?>],
             backgroundColor: [
                 "#FF6384",
-                "#63FF84",
-                "#84FF63",
-                "#8463FF",
-                "#6384FF"
+                "#63FF84"
             ]
         }]
 };
 
-var pieChart = new Chart(oilCanvas, {
+var pieChart = new Chart(posjobCanvas, {
   type: 'pie',
-  data: oilData
+  data: compareposjob
+});
+</script>
+
+
+<script>
+
+var filejobCanvas = document.getElementById("filepos");
+
+Chart.defaults.global.defaultFontFamily = "Lato";
+Chart.defaults.global.defaultFontSize = 18;
+
+var comparefilejob = {
+    labels: [
+        "File",
+        "Job"
+    ],
+    datasets: [
+        {
+            data: [<?php echo $totalfile;?>, <?php echo $totaljobs;?>],
+            backgroundColor: [
+                "#FF6384",
+                "#63FF84"
+            ]
+        }]
+};
+
+var pieChart = new Chart(filejobCanvas, {
+  type: 'doughnut',
+  data: comparefilejob
 });
 </script>

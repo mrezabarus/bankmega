@@ -161,6 +161,75 @@ class Modeldb extends CI_Model {
         return $query->result();
     }
 
+    function compareposjob(){
+        $query = $this->db->query("SELECT
+                                        x.totalJob,
+                                        y.totalPositionTitle
+                                    FROM
+                                        (
+                                            SELECT
+                                                COUNT(id_job) AS totalJob
+                                            FROM
+                                                (
+                                                    SELECT
+                                                        id_job
+                                                    FROM
+                                                        job a
+                                                    LEFT JOIN posisi b ON a.id_job = b.job_id
+                                                    WHERE
+                                                        a.id_job != ''
+                                                    GROUP BY
+                                                        b.position_title_id
+                                                ) AS A
+                                        ) AS x,
+                                        (
+                                            SELECT
+                                                COUNT(id) AS totalPositionTitle
+                                            FROM
+                                                (
+                                                    SELECT
+                                                        id
+                                                    FROM
+                                                        position_title a
+                                                    WHERE
+                                                        a.active = 'YES'
+                                                ) AS B
+                                        ) AS y");
+        return $query->row_array();
+    }
+
+    function compareposfile(){
+        $query = $this->db->query("
+                                SELECT x.totalJob, y.totalFile FROM 
+                                    (
+                                        SELECT 
+                                        COUNT(id_job) as totalJob
+                                        from (
+                                        SELECT
+                                        id_job
+                                        FROM
+                                        job a
+                                        LEFT JOIN posisi b ON a.id_job = b.job_id
+                                        WHERE
+                                        a.id_job != ''
+                                        GROUP BY
+                                        b.position_title_id
+                                        )A
+                                    ) as x, 
+                                    (
+                                        SELECT COUNT(id_file) as totalFile
+                                        FROM(
+                                        SELECT * 
+                                        from tbl_file
+                                        where status = 'Y'
+                                        and job_code_new is not null
+                                        group by job_code_new
+                                        )B
+                                    ) as y
+                                ");
+        return $query->row_array();
+    }
+
     function detailuser($id_user){
         $query = $this->db->query("
                                 SELECT 

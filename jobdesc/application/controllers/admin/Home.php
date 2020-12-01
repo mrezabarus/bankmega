@@ -48,10 +48,20 @@ class home extends CI_Controller {
 
 		if($groupstat = 'admin' AND $groupfilter == 'YES'){
 			//menampilkan list job		
+			$data['composjob']	= $this->modeldb->compareposjob();
 			$data['listjob']    = $this->modeldb->listjobadminfilter($id_group_menu);
 			$data['totaljob']	= $this->modeldb->countalljobadmin($id_group_menu);
 		}
 		else{
+			//untuk chart
+			$data['composjob']	= $this->modeldb->compareposjob();
+			$chart['totaljob']	= $data['composjob']['totalJob'];
+			$chart['totalpos']	= $data['composjob']['totalPositionTitle'];
+
+			$data['composfile']	= $this->modeldb->compareposfile();
+			$chart['totaljobs']	= $data['composfile']['totalJob'];
+			$chart['totalfile']	= $data['composfile']['totalFile'];
+			
 			//menampilkan list job		
 			$data['listjob']    = $this->modeldb->listjobadmin();
 			//menampilkan total jobdesc
@@ -67,9 +77,9 @@ class home extends CI_Controller {
         
 		$this->load->view('tmpadmin/header', $data);
         $this->load->view('admin/home', $data);
-        $this->load->view('tmpadmin/leftside', $data);
+        //$this->load->view('tmpadmin/leftside', $data);
 		$this->load->view('tmpadmin/footer');
-		$this->load->view('tmpadmin/chart');
+		$this->load->view('tmpadmin/chart', $chart);
 	}
 	
 	public function setupparam()
