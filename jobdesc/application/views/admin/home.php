@@ -1,6 +1,6 @@
 <div class="container">
     <div class="row">
-        <div class="col-sm-5 col-md-7 col-lg-5">
+        <div class="col-sm-6 col-md-7 col-lg-6">
         
             <div class="card card-signin my-5">
                 <div class="card-header" style="background-color: #43425D; color:#fff;">
@@ -12,7 +12,7 @@
             </div>
         </div>
 
-        <div class="col-sm-4 col-md-7 col-lg-4">
+        <div class="col-sm-6 col-md-7 col-lg-6">
         
             <div class="card card-signin my-5">
                 <div class="card-header" style="background-color: #43425D; color:#fff;">

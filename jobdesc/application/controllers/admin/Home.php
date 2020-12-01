@@ -47,8 +47,16 @@ class home extends CI_Controller {
 
 
 		if($groupstat = 'admin' AND $groupfilter == 'YES'){
-			//menampilkan list job		
-			$data['composjob']	= $this->modeldb->compareposjob();
+			//untuk chart
+			$data['composjob']	= $this->modeldb->compareposjobfilter($id_group_menu);
+			$chart['totaljob']	= $data['composjob']['totalJob'];
+			$chart['totalpos']	= $data['composjob']['totalPositionTitle'];
+
+			$data['composfile']	= $this->modeldb->compareposfilefilter($id_group_menu);
+			$chart['totaljobs']	= $data['composfile']['totalJob'];
+			$chart['totalfile']	= $data['composfile']['totalFile'];
+
+			//menampilkan list job					
 			$data['listjob']    = $this->modeldb->listjobadminfilter($id_group_menu);
 			$data['totaljob']	= $this->modeldb->countalljobadmin($id_group_menu);
 		}

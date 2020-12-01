@@ -198,6 +198,55 @@ class Modeldb extends CI_Model {
         return $query->row_array();
     }
 
+    function compareposjobfilter($id_group){
+        $query = $this->db->query("SELECT
+                                    x.totalJob,
+                                    y.totalPositionTitle
+                                    FROM
+                                    (
+                                            SELECT
+                                        COUNT(id_job) AS totalJob
+                                        FROM
+                                            (
+                                                    SELECT
+                                                            id_job
+                                                    FROM
+                                                            job a
+                                                    LEFT JOIN posisi b ON a.id_job = b.job_id
+                                                    WHERE
+                                                            1
+                                                            and b.position_title_id in (
+                                                                SELECT id_pos_title
+                                                                from position_title a
+                                                                left join tbl_access b
+                                                                on a.id = b.posisi
+                                                                where b.id_group = '$id_group'
+                                                            )
+                                                    GROUP BY
+                                                            b.position_title_id
+                                            ) AS A
+                                    
+                                    ) AS x,
+                                    (
+                                            SELECT
+                                        COUNT(id) AS totalPositionTitle
+                                    FROM
+                                    (
+                                        SELECT
+                                                a.id
+                                        FROM
+                                        position_title a
+                                        LEFT join tbl_access b
+                                        on a.id = b.posisi
+                                        WHERE
+                                        a.active = 'YES'
+                                        and b.id_group = '$id_group'
+                                    ) AS B
+                                    
+                                    ) AS y");
+        return $query->row_array();
+    }
+
     function compareposfile(){
         $query = $this->db->query("
                                 SELECT x.totalJob, y.totalFile FROM 
@@ -224,6 +273,61 @@ class Modeldb extends CI_Model {
                                         where status = 'Y'
                                         and job_code_new is not null
                                         group by job_code_new
+                                        )B
+                                    ) as y
+                                ");
+        return $query->row_array();
+    }
+
+    function compareposfilefilter($id_group){
+        $query = $this->db->query("
+                                    SELECT x.totalJob, y.totalFile FROM 
+                                    (
+                                            SELECT 
+                                            COUNT(id_job) as totalJob
+                                        from (
+                                            SELECT
+                                                id_job
+                                            FROM
+                                            job a
+                                            LEFT JOIN posisi b ON a.id_job = b.job_id
+                                            WHERE
+                                            a.id_job != ''
+                                            
+                                            and b.position_title_id in (
+                                                    SELECT id_pos_title
+                                                    from position_title a
+                                                    left join tbl_access b
+                                                    on a.id = b.posisi
+                                                    where b.id_group = '$id_group'
+                                            )
+                                            GROUP BY
+                                            b.position_title_id
+                                    )A
+                                    ) as x, 
+                                    (		
+                                    SELECT COUNT(totalFile) as totalFile
+                                        FROM 
+                                        (
+                                            SELECT 
+                                            COUNT(id_file) as totalFile
+                                                FROM(
+                                                SELECT * 
+                                                from tbl_file
+                                                where status = 'Y'
+                                                and job_code_new is not null
+                                                group by job_code_new
+                                            )AA
+                                            RIGHT JOIN posisi b ON AA.job_code_new = b.job_id
+                                            where 1
+                                            and b.position_title_id in (
+                                                            SELECT id_pos_title
+                                                            from position_title a
+                                                            left join tbl_access b
+                                                            on a.id = b.posisi
+                                                            where b.id_group = '$id_group'
+                                                    )
+                                            group by AA.job_code_new
                                         )B
                                     ) as y
                                 ");
