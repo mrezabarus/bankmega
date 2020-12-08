@@ -61,6 +61,7 @@
             
         ?>
 
+        
         <nav class="navbar navbar-expand-md navbar-custom fixed-top">
             <a class="navbar-brand" href="#"><i class="fas fa-briefcase">&nbsp;</i>Jobdesc</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -75,7 +76,9 @@
                     $url_db     = $e->menu_href;
                     $url_val2   = substr($url_db, strrpos($url_db, '/') + 1);
 
-                    if(strtolower($url_val)==strtolower($url_val2)){
+                    $url_db_par = $e->menu_parent;
+
+                    if(strtolower($menuparent)==strtolower($url_db_par)){
                         $active = "active";
                     }
                     else{

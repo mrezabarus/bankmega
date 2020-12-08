@@ -4,6 +4,7 @@
     <script src="<?php echo base_url();?>assets/jquery/jquery.js"></script>
     <script src="<?php echo base_url();?>assets/js/popper.min.js"></script>
     <script src="<?php echo base_url();?>assets/bootstrap-4.2/js/bootstrap.min.js"></script>
+    
     <script src="<?php echo base_url();?>assets/js/holder.min.js"></script>
 
     <script src="<?php echo base_url();?>assets/js/jquery.dataTables.min.js"></script>

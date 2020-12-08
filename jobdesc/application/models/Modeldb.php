@@ -334,6 +334,46 @@ class Modeldb extends CI_Model {
         return $query->row_array();
     }
 
+    /* DIREKTORAT, ORGANIZATION , POSITION TITLE FORM */
+    function get_direktorat(){
+        $query = $this->db->query("SELECT * from direktorat where flag_active = 'YES'");
+        return $query;
+    }
+
+    function get_organisasi($id){
+        $query = $this->db->query("SELECT * 
+                                    from organization_group a
+                                    left join organization b
+                                    on a.org_group_id = b.org_group_id
+                                    where a.flag_active = 'YES'
+                                    and b.direktorat = '$id'
+                                    group by a.org_group_code");
+        return $query->result();
+    }
+
+    function get_pos_title($idorggrp){
+        $query = $this->db->query("SELECT * 
+                                    from position_title a
+                                    left join posisi b
+                                    on a.id_pos_title = b.position_title_id
+                                    where 1
+                                    and b.org_group = '$idorggrp'
+                                    group by a.id_pos_title");
+        return $query->result();
+    }
+
+    /* END SEARCH */
+
+    function getjobfamily(){
+        $query = $this->db->query("
+                                    SELECT * 
+                                    FROM job_family
+                                    where flagactive = 'Y'
+                                ");
+
+        return $query->result();
+    }
+
     function detailuser($id_user){
         $query = $this->db->query("
                                 SELECT 
