@@ -336,7 +336,11 @@ class Modeldb extends CI_Model {
 
     /* DIREKTORAT, ORGANIZATION , POSITION TITLE FORM */
     function get_direktorat(){
-        $query = $this->db->query("SELECT * from direktorat where flag_active = 'YES'");
+        $query = $this->db->query("
+                                    SELECT * from direktorat 
+                                    where flag_active = 'YES'
+                                    and dir_group_code NOT IN ('A','N')
+                                    ");
         return $query;
     }
 
@@ -457,6 +461,16 @@ class Modeldb extends CI_Model {
         
         return $query->row_array();
     }
+
+    function savejob($direktorat,$organization,$postitle,$jobname){
+        $data = array(
+				'id_job'=>'TEST',
+				'job_title'=>$jobname
+            );  
+        $result= $this->db->insert('job',$data);
+        return $result;
+    }
+
 
 
 }

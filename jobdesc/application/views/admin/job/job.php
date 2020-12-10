@@ -66,7 +66,7 @@
                                     <td>
                                         <a href="<?php echo base_url();?>index.php/admin/job/view/<?php echo $e->position_id;?>"><i class="fas fa-binoculars"></i></a>
                                         <a href="<?php echo base_url();?>index.php/admin/job/add/<?php echo $e->position_id;?>"><i class="fas fa-plus"></i></a></i></a>
-                                        <a href="<?php echo base_url();?>index.php/admin/job/edit/<?php echo $e->position_id;?>"><i class="fas fa-edit"></i></a></i></a>
+                                        <!-- <a href="<?php echo base_url();?>index.php/admin/job/edit/<?php echo $e->position_id;?>"><i class="fas fa-edit"></i></a></i></a> -->
                                     </td>
                                 </tr>
                             <?php $a++; ?>
@@ -125,7 +125,7 @@
             
             <div class="form-group">
                 <label for="exampleInputEmail1">Job Name</label>
-                <input type="text" class="form-control" id="jobfamily" aria-describedby="emailHelp" placeholder="Job Family Name">
+                <input type="text" class="form-control" id="jobname" placeholder="Job Name">
                 
             </div>
             
@@ -133,7 +133,7 @@
         </div>
         <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+            <button type="button" class="btn btn-primary" id="saveaddjoblist">Save changes</button>
         </div>
         </form>
         </div>

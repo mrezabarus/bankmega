@@ -75,6 +75,18 @@ class job extends CI_Controller {
         $this->load->view('tmpadmin/leftside', $data);
 		$this->load->view('tmpadmin/footer');
 		$this->load->view('tmpadmin/js_search');
+		$this->load->view('tmpadmin/js_job_post');
+	}
+	
+	public function addjoblist()
+	{
+		$direktorat 	= $this->input->post('direktorat');
+		$organization 	= $this->input->post('organization');
+		$postitle 		= $this->input->post('postitle');
+		$jobname 		= $this->input->post('jobname');
+
+		$result			= $this->modeldb->savejob($direktorat,$organization,$postitle,$jobname);
+		echo json_decode($result);
     }
 
     public function add()
