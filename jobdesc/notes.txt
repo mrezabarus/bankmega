@@ -1,3 +1,0 @@
-catatan:
-
-harus ada kode job title di table job jika ingin satu position beberapa job
