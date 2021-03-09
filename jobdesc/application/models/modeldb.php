@@ -437,11 +437,30 @@ class Modeldb extends CI_Model {
         //                             order by position_name ASC
         //                         ");        
         $query = $this->db->query("SELECT
-                                        a.position_id,
-                                        a.position_name,
-                                        a.job_id
+                                        position_id,
+                                        position_name,
+                                        job_id
                                     FROM
-                                        (
+                                        posisi
+                                    WHERE
+                                        report_to = '$id_report_to'
+                                    UNION
+                                        SELECT
+                                            position_id,
+                                            position_name,
+                                            job_id
+                                        FROM
+                                            posisi
+                                        WHERE
+                                            report_to IN (
+                                                SELECT
+                                                    position_id
+                                                FROM
+                                                    posisi
+                                                WHERE
+                                                    report_to = '$id_report_to'
+                                            )
+                                        UNION
                                             SELECT
                                                 position_id,
                                                 position_name,
@@ -449,17 +468,21 @@ class Modeldb extends CI_Model {
                                             FROM
                                                 posisi
                                             WHERE
-                                                active = 'YES'
-                                            AND report_to IN (
-                                                SELECT
-                                                    position_id
-                                                FROM
-                                                    posisi
-                                                WHERE
-                                                    1
-                                                AND active = 'YES'
-                                                AND report_to = '$id_report_to'
-                                            )
+                                                report_to IN (
+                                                    SELECT
+                                                        position_id
+                                                    FROM
+                                                        posisi
+                                                    WHERE
+                                                        report_to IN (
+                                                            SELECT
+                                                                position_id
+                                                            FROM
+                                                                posisi
+                                                            WHERE
+                                                                report_to = '$id_report_to'
+                                                        )
+                                                )
                                             UNION
                                                 SELECT
                                                     position_id,
@@ -468,9 +491,28 @@ class Modeldb extends CI_Model {
                                                 FROM
                                                     posisi
                                                 WHERE
-                                                    1
-                                                AND active = 'YES'
-                                                AND report_to = '$id_report_to'
+                                                    report_to IN (
+                                                        SELECT
+                                                            position_id
+                                                        FROM
+                                                            posisi
+                                                        WHERE
+                                                            report_to IN (
+                                                                SELECT
+                                                                    position_id
+                                                                FROM
+                                                                    posisi
+                                                                WHERE
+                                                                    report_to IN (
+                                                                        SELECT
+                                                                            position_id
+                                                                        FROM
+                                                                            posisi
+                                                                        WHERE
+                                                                            report_to = '$id_report_to'
+                                                                    )
+                                                            )
+                                                    )
                                                 UNION
                                                     SELECT
                                                         position_id,
@@ -479,30 +521,37 @@ class Modeldb extends CI_Model {
                                                     FROM
                                                         posisi
                                                     WHERE
-                                                        active = 'YES'
-                                                    AND report_to IN (
-                                                        SELECT
-                                                            position_id
-                                                        FROM
-                                                            posisi
-                                                        WHERE
-                                                            1
-                                                        AND active = 'YES'
-                                                        AND report_to IN (
+                                                        report_to IN (
                                                             SELECT
                                                                 position_id
                                                             FROM
                                                                 posisi
                                                             WHERE
-                                                                1
-                                                            AND active = 'YES'
-                                                            AND report_to = '$id_report_to'
+                                                                report_to IN (
+                                                                    SELECT
+                                                                        position_id
+                                                                    FROM
+                                                                        posisi
+                                                                    WHERE
+                                                                        report_to IN (
+                                                                            SELECT
+                                                                                position_id
+                                                                            FROM
+                                                                                posisi
+                                                                            WHERE
+                                                                                report_to IN (
+                                                                                    SELECT
+                                                                                        position_id
+                                                                                    FROM
+                                                                                        posisi
+                                                                                    WHERE
+                                                                                        report_to = '$id_report_to'
+                                                                                )
+                                                                        )
+                                                                )
                                                         )
-                                                    )
-                                        ) A
-                                    
-                                    GROUP BY
-                                    A.job_id");
+                                                    GROUP BY
+                                                        position_id");
         return $query->result();
     }
 
@@ -514,7 +563,7 @@ class Modeldb extends CI_Model {
                                             a.id_job,
                                             a.job_title,
                                             b.position_id,
-	b.position_name
+	                                        b.position_name
                                         FROM
                                             job a
                                         LEFT JOIN posisi b ON a.position_code = b.position_id
@@ -609,6 +658,7 @@ class Modeldb extends CI_Model {
                                                         b.report_to = '$id_report_to'
                                         )A
                                         ORDER BY A.job_title");
+        
         
         return $query->result();
     }
@@ -779,11 +829,89 @@ class Modeldb extends CI_Model {
                 'send_to'=>$id_user,
                 'date_send'=>$now,
                 'send_by'=>$admin,
-                'created_date'=>$now
+                'created_date'=>$now,
+                'created_by'=>$id_user,
+                'flagdel'=>'0'
             );  
         $result= $this->db->insert('job_data',$data);
         return $result;
     }
+    
+    //check status jobdata
+    function checkjobdata($id_group){
+        $query = $this->db->query("
+                                    SELECT COUNT(*) as total
+                                    from job_data
+                                    where job_id = '$id_group'
+                                ");
+        return $query->row_array();
+    }
+
+
+    // get data report //
+    function profiljabatan($id_job){
+        $query = $this->db->query("SELECT 
+                                    b.position_id
+                                    , b.position_name
+                                    , c.position_name as posisi_supervisor
+                                    , d.org_group_detail as unit_kerja
+                                    , e.dir_group_name
+                                    from job a
+                                    left join posisi b
+                                    on a.position_code = b.position_id
+                                    left join posisi c
+                                    on b.report_to = c.position_id
+                                    left join organization_group d
+                                    on b.org_group = d.org_group_id
+                                    left join direktorat e
+                                    on b.dir = e.id_dir
+                                    where a.id_job = '$id_job'
+                                    group by b.position_id");
+        return $query->row();
+    }
+
+    function gettggjwb($id_job){
+        $query = $this->db->query("SELECT *
+                                    from job_tugas_tgg_jwb
+                                    where job_id = '$id_job'");
+        return $query->result();
+    }
+
+    function getkewenangan($id_job){
+        $query = $this->db->query("SELECT *
+                                    from job_kewenangan
+                                    where job_id = '$id_job'");
+        return $query->result();
+    }
+
+    function getpendidikan($id_job){
+        $query = $this->db->query("SELECT *
+                                    from job_edukasi
+                                    where job_id = '$id_job'");
+        return $query->row();
+    }
+
+    function getpengalaman($id_job){
+        $query = $this->db->query("SELECT *
+                                    from job_pengalaman
+                                    where job_id = '$id_job'");
+        return $query->row();
+    }
+
+    function getjobpeng($id_job){
+        $query = $this->db->query("SELECT *
+                                    from job_pengalaman_kerja
+                                    where job_id = '$id_job'");
+        return $query->result();
+    }
+    
+    function getkompetensi($id_job){
+        $query = $this->db->query("SELECT *
+                                    from job_kompetensi_sikap
+                                    where job_id = '$id_job'");
+        return $query->result();
+    }
+    // end get data report //
 
 }
 ?>

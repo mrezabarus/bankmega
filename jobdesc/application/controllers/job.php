@@ -98,7 +98,14 @@ class job extends CI_Controller {
 
 		$data['direktorat']	= $this->modeldb->get_direktorat();
 
-		$savejobdata		= $this->modeldb->savejobdata($id_job,$id_user,$now,$admin,$now);
+		//check jobdesc data
+		$data['checkdata'] 	= $this->modeldb->checkjobdata($id_job);
+		$checkdata			= $data['checkdata']['total'];
+		if($checkdata < 1){
+			$savejobdata		= $this->modeldb->savejobdata($id_job,$id_user,$now,$admin,$now);
+		}else{}
+				
+		
 		//user detail       
 		$data['userdet']    = $this->modeldb->userdetail($id_user);	
 		$data['menu']		= $this->modeldb->menuadmin($id_group);
@@ -210,6 +217,18 @@ class job extends CI_Controller {
 		//$data = json_decode(stripslashes($_POST['data']));
 		//echo '<pre>';  print_r($tgs); echo '</pre>';
 		
+	}
+
+	function review($id_job){
+		$data['profil'] 	= $this->modeldb->profiljabatan($id_job);
+		$data['respons']	= $this->modeldb->gettggjwb($id_job);
+		$data['kewenangan']	= $this->modeldb->getkewenangan($id_job);
+		$data['pendidikan']	= $this->modeldb->getpendidikan($id_job);
+		$data['experience']	= $this->modeldb->getpengalaman($id_job);
+		$data['jobpeng']	= $this->modeldb->getjobpeng($id_job);		
+		$data['kompetensi']	= $this->modeldb->getkompetensi($id_job);
+
+		$this->load->view('job/preview', $data);
 	}
 }
 ?>

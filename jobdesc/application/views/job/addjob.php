@@ -1,3 +1,9 @@
+<script>
+window.onbeforeunload = function(event)
+{
+    return confirm("Confirm refresh");
+};
+</script>
 <div class="container">
     <div class="row">
         <div class="col-sm-9 col-md-7 col-lg-9">
@@ -5,7 +11,8 @@
             
 
             <div class="card card-signin my-5">                
-                <h5 class="card-header" style="background-color: #43425D; color:#fff;">Job Desc Info</h5>
+                <h5 class="card-header" style="background-color: #43425D; color:#fff;">Job Desc Info
+                </h5>
                 
                 <div class="card-body">
                     <table class="table">
@@ -20,8 +27,12 @@
                                 <td><?php echo $detailjob->job_title;?></td>
                             </tr>
                             <tr>
-                                <th scope="row">Position Title</th>
-                                <td><?php echo $detailjob->position_title;?></td>
+                                <th scope="row">Send To</th>
+                                <td>
+                                <select name="sendto" id="sendto">
+                                    <option value="volvo">Admin</option>
+                                </select>
+                                </td>
                             </tr>
                         </tbody>
                     </table>        
@@ -30,7 +41,8 @@
 
 
             <div class="card card-signin my-5">                
-                <h5 class="card-header" style="background-color: #43425D; color:#fff;">Job Desc Detail</h5>
+                <h5 class="card-header" style="background-color: #43425D; color:#fff;">Job Desc Detail
+                <small class="float-sm-right"><a href="<?php echo base_url();?>index.php/job/review/<?php echo $id_job;?>" data-toggle="modal" data-target="#exampleModal">Preview</a></small></h5>
                 <div class="card-body">
                     
                     <div class="bs-example">
