@@ -754,23 +754,60 @@ class Modeldb extends CI_Model {
     }
 
     /* SAVE JOB DESC */
+    function savejobstatus($jobid,$status,$now,$id_user){
+        $data = array(
+				
+                'job_id'=>$jobid,
+                'keterangan'=>$status,
+                'date_created'=>$now,
+                'created_by'=>$id_user
+            );  
+        $result= $this->db->insert('job_data_status',$data);
+        return $result;
+    }
+
     function savetugas($tgs_tgg_jwb,$jobid, $now, $id_user){
         $data = array(
 				'tugas_tgg_jwb'=>$tgs_tgg_jwb,
                 'job_id'=>$jobid,
                 'date_created'=>$now,
-                'created_by'=>$id_user
+                'created_by'=>$id_user,
+                'flag_del'=>'0'
             );  
         $result= $this->db->insert('job_tugas_tgg_jwb',$data);
         return $result;
     }
+    function updateflag($id_job, $tablename){
+        
+        $query = $this->db->query("
+                                Update
+                                $tablename
+                                set flag_del = '1'
+                                where job_id = '$id_job'
+                                "); 
+        return $query;
+    }
 
+    // function checktugas($id_job,$tgs){
+        
+    //     $query = $this->db->query("
+    //                             SELECT 
+    //                             * 
+    //                             from 
+    //                             job_tugas_tgg_jwb
+    //                             where job_id = '$id_job'
+    //                             and tugas_tgg_jwb = '$tgs'
+    //                             "); 
+    //     return $query->num_rows();
+    // }
+    
     function savekewenangan($tgs_tgg_jwb,$jobid, $now, $id_user){
         $data = array(
 				'kewenangan'=>$tgs_tgg_jwb,
                 'job_id'=>$jobid,
                 'date_created'=>$now,
-                'created_by'=>$id_user
+                'created_by'=>$id_user,
+                'flag_del'=>'0'
             );  
         $result= $this->db->insert('job_kewenangan',$data);
         return $result;
@@ -782,7 +819,8 @@ class Modeldb extends CI_Model {
                 'education'=>$jurusan,
                 'job_id'=>$jobid,
                 'date_created'=>$now,
-                'created_by'=>$id_user
+                'created_by'=>$id_user,
+                'flag_del'=>'0'
             );  
         $result= $this->db->insert('job_edukasi',$data);
         return $result;
@@ -793,7 +831,8 @@ class Modeldb extends CI_Model {
 				'min_pengalaman'=>$tgs_tgg_jwb,
                 'job_id'=>$jobid,
                 'date_created'=>$now,
-                'created_by'=>$id_user
+                'created_by'=>$id_user,
+                'flag_del'=>'0'
             );  
         $result= $this->db->insert('job_pengalaman',$data);
         return $result;
@@ -804,7 +843,8 @@ class Modeldb extends CI_Model {
 				'pengalaman'=>$tgs_tgg_jwb,
                 'job_id'=>$jobid,
                 'date_created'=>$now,
-                'created_by'=>$id_user
+                'created_by'=>$id_user,
+                'flag_del'=>'0'
             );  
         $result= $this->db->insert('job_pengalaman_kerja',$data);
         return $result;
@@ -815,10 +855,113 @@ class Modeldb extends CI_Model {
 				'sikap'=>$tgs_tgg_jwb,
                 'job_id'=>$jobid,
                 'date_created'=>$now,
-                'created_by'=>$id_user
+                'created_by'=>$id_user,
+                'flag_del'=>'0'
             );  
         $result= $this->db->insert('job_kompetensi_sikap',$data);
         return $result;
+    }    
+    /* END SAVE JOB DESC */
+
+
+    /* SHOW JOB TUGAS yang sudah di input */
+    function showtugas($id_job){
+        $query = $this->db->query("
+                                    SELECT *
+                                    from job_tugas_tgg_jwb
+                                    where job_id = '$id_job'
+                                    and flag_del = '0'
+                                ");
+        return $query->result();
+    }
+    function showtugasactive($id_job){
+        $query = $this->db->query("
+                                    SELECT COUNT(*) as total
+                                    from job_tugas_tgg_jwb
+                                    where job_id = '$id_job'
+                                    and flag_del = '0'
+                                ");
+        return $query->row_array();
+    }
+
+    /* SHOW JOB Kewenangan yang sudah di input */
+    function showkwn($id_job){
+        $query = $this->db->query("
+                                    SELECT *
+                                    from job_kewenangan
+                                    where job_id = '$id_job'
+                                    and flag_del = '0'
+                                ");
+        return $query->result();
+    }
+    function showkwnactive($id_job){
+        $query = $this->db->query("
+                                    SELECT COUNT(*) as total
+                                    from job_kewenangan
+                                    where job_id = '$id_job'
+                                    and flag_del = '0'
+                                ");
+        return $query->row_array();
+    }
+
+    /* SHOW JOB Experience yang sudah di input */
+    function showexp($id_job){
+        $query = $this->db->query("
+                                    SELECT *
+                                    from job_pengalaman_kerja
+                                    where job_id = '$id_job'
+                                    and flag_del = '0'
+                                ");
+        return $query->result();
+    }
+    function showexpactive($id_job){
+        $query = $this->db->query("
+                                    SELECT COUNT(*) as total
+                                    from job_pengalaman_kerja
+                                    where job_id = '$id_job'
+                                    and flag_del = '0'
+                                ");
+        return $query->row_array();
+    }
+
+    function showedu($id_job){
+        $query = $this->db->query("
+                                    SELECT *
+                                    from job_edukasi
+                                    where job_id = '$id_job'
+                                    and flag_del = '0'
+                                ");
+        return $query->row_array();
+    }
+
+    function showexptime($id_job){
+        $query = $this->db->query("
+                                    SELECT *
+                                    from job_pengalaman
+                                    where job_id = '$id_job'
+                                    and flag_del = '0'
+                                ");
+        return $query->row_array();
+    }
+
+    /* SHOW JOB KOMPTENSI yang sudah di input */
+    function showkom($id_job){
+        $query = $this->db->query("
+                                    SELECT *
+                                    from job_kompetensi_sikap
+                                    where job_id = '$id_job'
+                                    and flag_del = '0'
+                                ");
+        return $query->result();
+    }
+    function showkomactive($id_job){
+        $query = $this->db->query("
+                                    SELECT COUNT(*) as total
+                                    from job_kompetensi_sikap
+                                    where job_id = '$id_job'
+                                    and flag_del = '0'
+                                ");
+        return $query->row_array();
     }
 
     //fungsi untuk menyimpan list job
@@ -838,13 +981,32 @@ class Modeldb extends CI_Model {
     }
     
     //check status jobdata
-    function checkjobdata($id_group){
+    function checkjobdata($id_job){
         $query = $this->db->query("
                                     SELECT COUNT(*) as total
                                     from job_data
-                                    where job_id = '$id_group'
+                                    where job_id = '$id_job'
                                 ");
         return $query->row_array();
+    }
+    //check status jobdata
+    function checkjobdataactive($id_job){
+        $query = $this->db->query("
+                                    SELECT COUNT(*) as total
+                                    from job_data
+                                    where job_id = '$id_job'
+                                    and flagdel = '0'
+                                ");
+        return $query->row_array();
+    }
+
+    function updatejob($id, $tablename){
+        $query = $this->db->query("Update
+                                $tablename
+                                set flag_del = '1'
+                                where id = '$id'
+                                "); 
+        return $query;
     }
 
 
@@ -873,42 +1035,48 @@ class Modeldb extends CI_Model {
     function gettggjwb($id_job){
         $query = $this->db->query("SELECT *
                                     from job_tugas_tgg_jwb
-                                    where job_id = '$id_job'");
+                                    where job_id = '$id_job'
+                                    and flag_del = '0'");
         return $query->result();
     }
 
     function getkewenangan($id_job){
         $query = $this->db->query("SELECT *
                                     from job_kewenangan
-                                    where job_id = '$id_job'");
+                                    where job_id = '$id_job'
+                                    and flag_del = '0'");
         return $query->result();
     }
 
     function getpendidikan($id_job){
         $query = $this->db->query("SELECT *
                                     from job_edukasi
-                                    where job_id = '$id_job'");
+                                    where job_id = '$id_job'
+                                    and flag_del = '0'");
         return $query->row();
     }
 
     function getpengalaman($id_job){
         $query = $this->db->query("SELECT *
                                     from job_pengalaman
-                                    where job_id = '$id_job'");
+                                    where job_id = '$id_job'
+                                    and flag_del = '0'");
         return $query->row();
     }
 
     function getjobpeng($id_job){
         $query = $this->db->query("SELECT *
                                     from job_pengalaman_kerja
-                                    where job_id = '$id_job'");
+                                    where job_id = '$id_job'
+                                    and flag_del = '0'");
         return $query->result();
     }
     
     function getkompetensi($id_job){
         $query = $this->db->query("SELECT *
                                     from job_kompetensi_sikap
-                                    where job_id = '$id_job'");
+                                    where job_id = '$id_job'
+                                    and flag_del = '0'");
         return $query->result();
     }
     // end get data report //

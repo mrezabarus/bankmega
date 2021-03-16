@@ -58,35 +58,5 @@ class home extends CI_Controller {
 		$this->load->view('tmp/js_job_post');
 	}
 	
-	public function job()
-	{
-        $id_user            = $this->session->userdata('username');
-		//$data['id_user']    = $this->session->userdata('username'); 
-
-		//user detail       
-        $data['userdet']    = $this->modeldb->userdetail($id_user);
-
-		//ambil data job title user yang login
-        $data['emppos'] 	= $this->modeldb->empjob($id_user);
-		$emppos				= $data['emppos']['EmpJobTtl'];
-		
-		$data['direktorat']	= $this->modeldb->get_direktorat();
-
-		$data['countjob']	= $this->modeldb->countjob();
-		$totaljob 			= $data['countjob']['total'];
-
-		//menampilkan list job
-		$data['listjob']    = $this->modeldb->listjob($emppos);
-		
-		//menampilkan total jobdesc
-		$data['totaljob']	= $this->modeldb->countjobdesc($emppos);
-        
-		$this->load->view('tmp/header');
-		$this->load->view('job/job', $data);
-		$this->load->view('tmp/leftside', $data);
-		$this->load->view('tmp/footer');
-		$this->load->view('tmp/js_search');
-		$this->load->view('tmp/js_job_post');
-    }
 }
 ?>

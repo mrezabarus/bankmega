@@ -23,76 +23,78 @@
     </head>
     
     <style>
-    th { font-size: 12px; }
-    td { font-size: 11px; }
+    th { font-size: 16px; }
+    td { font-size: 14px; }
+    body{
+        background-color:#fff;
+    }
     </style>
     
     <body>
-        <div class="container">
-            
+        
             <div class="row">
-                <div class="col-md-8"><img class="d-block" src="<?php echo base_url();?>assets/images/logo_mega.png" alt="" width="150"></div>
-                <div class="col-md-4"><p>Deskripsi Jabatan<p><h3>Bank Mega</h3></div>
+                <div class="col-md-8"><img class="d-block" src="assets/images/logo_mega.png" alt="" width="150"></div>
+                
             </div>
             <hr/ style="background-color:#000;">
 
-            
-            <h3>1. Profile Jabatan</h3>
+            </br>
+            <h5>1. Profile Jabatan</h5>
             <table class="table">
                 <thead>
                     <tr>
-                        <th scope="col">Nama Posisi</th>
-                        <th scope="col"><?php echo $profil->position_name; ?></th>
-                        <th scope="col">Unit Kerja</th>
-                        <th scope="col"><?php echo $profil->unit_kerja; ?></th>
+                        <td><b>Nama Posisi</b></td>
+                        <td><?php echo $profil->position_name; ?></td>
+                        <td><b>Unit Kerja</b></td>
+                        <td><?php echo $profil->unit_kerja; ?></td>
                     </tr>
                     <tr>
-                        <th scope="col">Nama Posisi Supervisor</th>
-                        <th scope="col"><?php echo $profil->posisi_supervisor; ?></th>
-                        <th scope="col">Direktorat</th>
-                        <th scope="col"><?php echo $profil->dir_group_name; ?></th>
+                        <td><b>Nama Posisi Supervisor</b></td>
+                        <td><?php echo $profil->posisi_supervisor; ?></td>
+                        <td><b>Direktorat</b></td>
+                        <td><?php echo $profil->dir_group_name; ?></td>
                     </tr>
                     <tr>
-                        <th scope="col">Tgl Efektif</th>
-                        <th scope="col"></th>
-                        <th scope="col">Disiapkan Oleh</th>
-                        <th scope="col"><?php echo $profil->unit_kerja; ?></th>
+                        <td><b>Tgl Efektif</b></td>
+                        <td></td>
+                        <td><b>Disiapkan Oleh</b></td>
+                        <td><?php echo $profil->unit_kerja; ?></td>
                     </tr>
-                </thead>                
+                </tdead>                
             </table>
 
             </br>
-            <h3>2. Tanggung Jawab Jabatan</h3>
+            <h5>2. Tanggung Jawab Jabatan</h5>
             <table class="table">
                 <thead>
                     <?php $a = 1; ?>
                     <?php foreach($respons as $e): ?>
                     <tr>
-                        <th scope="col"><?php echo $a;?></th>
-                        <th scope="col"><?php echo $e->tugas_tgg_jwb;?></th>
+                        <td style="width:2%"><i class="fas fa-circle">&nbsp;&nbsp;&nbsp;</i></td>
+                        <td><?php echo $e->tugas_tgg_jwb;?></td>
                     </tr>
                     <?php $a++; ?>
                     <?php endforeach; ?>
-                </thead>                
+                </tdead>                
             </table>
 
             </br>
-            <h3>3. Kewenangan</h3>
+            <h5>3. Kewenangan</h5>
             <table class="table">
                 <thead>
                     <?php $a = 1; ?>
                     <?php foreach($kewenangan as $e): ?>
                     <tr>
-                        <th scope="col"><?php echo $a;?></th>
-                        <th scope="col"><?php echo $e->kewenangan;?></th>
+                        <td style="width:2%"><i class="fas fa-circle">&nbsp;&nbsp;&nbsp;</i></td>
+                        <td><?php echo $e->kewenangan;?></td>
                     </tr>
                     <?php $a++; ?>
                     <?php endforeach; ?>
-                </thead>                
+                </tdead>                
             </table>
 
             </br>
-            <h3>4. Kualifikasi Jabatan</h3>
+            <h5>4. Kualifikasi Jabatan</h5>
             <p><b>Pendidikan</b></p>
             <p>Minimal <?php echo $pendidikan->min_education;?>, <?php echo $pendidikan->education;?></p>
             <hr/ style="background-color:#000;">
@@ -104,12 +106,12 @@
                     <?php $a = 1; ?>
                     <?php foreach($jobpeng as $e): ?>
                     <tr>
-                        <th scope="col"><?php echo $a;?></th>
-                        <th scope="col"><?php echo $e->pengalaman;?></th>
+                        <td style="width:2%"><i class="fas fa-circle">&nbsp;&nbsp;&nbsp;</i></td>
+                        <td><?php echo $e->pengalaman;?></td>
                     </tr>
                     <?php $a++; ?>
                     <?php endforeach; ?>
-                </thead>                
+                </tdead>                
             </table>
             
             <p>Kompetensi yang Dibutuhkan</p>
@@ -118,14 +120,14 @@
                     <?php $a = 1; ?>
                     <?php foreach($kompetensi as $e): ?>
                     <tr>
-                        
-                        <th scope="col"><?php echo $e->sikap;?></th>
+                        <td style="width:2%"><i class="fas fa-circle">&nbsp;&nbsp;&nbsp;</i></td>
+                        <td><?php echo $e->sikap;?></td>
                     </tr>
                     <?php $a++; ?>
                     <?php endforeach; ?>
-                </thead>                
+                </tdead>                
             </table>
-        </div> <!-- /container -->
+        
     </body>
 
         

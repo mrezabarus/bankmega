@@ -19,13 +19,61 @@
 		$(this).parent('div').remove(); //Remove field html
 		x--; //Decrement field counter
 	});
+    /* End tugas tanggung jawab */
+
+
+    /* tugas tanggung jawab detail*/
+    var maxFieldtgsdetail = 20;
+	var addButton_tgsdetail = $('.add_button_tgsdetail'); //Add button selector
+	var wrapper_tgsdetail = $('.field_wrapper_tgsdetail'); //Input field wrapper
+	var addedit             = 'Hello'; 
+    var fieldHTMLtgsdetail = '<div class="row"><div class="col-sm-10"></br><input type="text" name="tgs[]" class="form-control" placeholder="Responsibilities"></div><a href="javascript:void(0);" class="remove_button_tgsdetail" title="Remove field"></br><button type="button" width="300" id="appendform" class="btn btn-primary remove_button_tgsdetail">Delete</button></a></div>'; //New input field html 
+	
+	var xtgsdetail = 1; //Initial field counter is 1
+	$(addButton_tgsdetail).click(function(){ //Once add button is clicked
+        console.log(fieldHTMLtgsdetail);
+		if(xtgsdetail < maxFieldtgsdetail){ //Check maximum number of input fields
+            
+			xtgsdetail++; //Increment field counter
+			$(wrapper_tgsdetail).append(fieldHTMLtgsdetail); // Add field html
+		}
+	});
+
+	$(wrapper_tgsdetail).on('click', '.remove_button_tgsdetail', function(e){ //Once remove button is clicked
+        
+        e.preventDefault();        
+        var id = $(this).val();
+        var tablename = 'job_tugas_tgg_jwb';   
+        
+        console.log(id);
+        if(id!=''){
+            $.ajax({
+                type:'POST',
+                url:'<?php echo base_url();?>index.php/job/deljob',
+                data: {
+                    id: id,tablename:tablename
+                },
+                cache: false,
+                success: function(data) {
+                    alert("Deleted");
+                    location.reload();
+                }
+            });
+        }
+        
+
+		e.preventDefault();
+		$(this).parent('div').remove(); //Remove field html
+		xtgsdetail--; //Decrement field counter
+
+	});
 
 
     /* Kewenangan */
     var maxField_kwn = 20;
 	var addButton_kwn = $('.add_button_kwn'); //Add button selector
 	var wrapper_kwn = $('.field_wrapper_kwn'); //Input field wrapper
-	
+	var wrapper_kwn_exist = $('.field_wrapper_kwn_exist'); //Input field wrapper
     var fieldHTML_kwn = '<div class="row"><div class="col-sm-10"></br><input type="text" name="kwn[]" class="form-control" placeholder="Authority"></div><a href="javascript:void(0);" class="remove_button_kwn" title="Remove field"></br><button type="button" width="300" id="appendform" class="btn btn-primary remove_button">Delete</button></a></div></div>'; //New input field html 
 	
 	var x_kwn = 1; //Initial field counter is 1
@@ -40,12 +88,40 @@
 		$(this).parent('div').remove(); //Remove field html
 		x--; //Decrement field counter
 	});
+    $(wrapper_kwn_exist).on('click', '.remove_button_kwnexist', function(e){ //Once remove button is clicked
+        
+
+        e.preventDefault();        
+        var id = $(this).val();
+        var tablename = 'job_kewenangan';   
+        
+        var kwn = "#kwn";
+        
+        if(id!=''){
+            $.ajax({
+                type:'POST',
+                url:'<?php echo base_url();?>index.php/job/deljob',
+                data: {
+                    id: id, tablename: tablename
+                },
+                cache: false,
+                success: function(data) {
+                    alert("Deleted");
+                    location.reload();
+                }
+            });
+        }
+
+		e.preventDefault();
+		$(this).parent('div').remove(); //Remove field html
+		x--; //Decrement field counter
+	});
 
 	/* expneed */
     var maxField_exp = 20;
 	var addButton_exp = $('.add_button_exp'); //Add button selector
 	var wrapper_exp = $('.field_wrapper_exp'); //Input field wrapper
-	
+	var wrapper_exp_exist = $('.field_wrapper_exp_exist'); //Input field wrapper
     var fieldHTML_exp = '<div class="row"><div class="col-sm-4"><label>&nbsp;</label></div><div class="col-sm-4"></br><input type="text" name="exp[]" class="form-control" placeholder="Experience"></div><a href="javascript:void(0);" class="remove_button_exp" title="Remove field"></br><button type="button" width="300" id="appendform" class="btn btn-primary remove_button">Delete</button></a></div></div>'; //New input field html 
 	
 	var x_exp = 1; //Initial field counter is 1
@@ -60,12 +136,40 @@
 		$(this).parent('div').remove(); //Remove field html
 		x--; //Decrement field counter
 	});
+    $(wrapper_exp_exist).on('click', '.remove_button_expexist', function(e){ //Once remove button is clicked
+        
+
+        e.preventDefault();        
+        var id = $(this).val();
+        var tablename = 'job_pengalaman_kerja';   
+        
+        var kom = "#kom";
+        
+        if(id!=''){
+            $.ajax({
+                type:'POST',
+                url:'<?php echo base_url();?>index.php/job/deljob',
+                data: {
+                    id: id, tablename: tablename
+                },
+                cache: false,
+                success: function(data) {
+                    alert("Deleted");
+                    location.reload();
+                }
+            });
+        }
+
+		e.preventDefault();
+		$(this).parent('div').remove(); //Remove field html
+		x--; //Decrement field counter
+	});
 
     /* kompetensi */
     var maxField_kom = 20;
 	var addButton_kom = $('.add_button_kom'); //Add button selector
 	var wrapper_kom = $('.field_wrapper_kom'); //Input field wrapper
-	
+	var wrapper_kom_exist = $('.field_wrapper_kom_exist'); //Input field wrapper
     var fieldHTML_kom = '<div class="row"><div class="col-sm-10"></br><input type="text" name="kom[]" class="form-control" placeholder="Competency"></div><a href="javascript:void(0);" class="remove_button_kom" title="Remove field"></br><button type="button" width="300" id="appendform" class="btn btn-primary remove_button">Delete</button></a></div></div>'; //New input field html 
 	
 	var x_kom = 1; //Initial field counter is 1
@@ -76,6 +180,34 @@
 		}
 	});
 	$(wrapper_kom).on('click', '.remove_button_kom', function(e){ //Once remove button is clicked
+		e.preventDefault();
+		$(this).parent('div').remove(); //Remove field html
+		x--; //Decrement field counter
+	});
+    $(wrapper_kom_exist).on('click', '.remove_button_komexist', function(e){ //Once remove button is clicked
+        
+
+        e.preventDefault();        
+        var id = $(this).val();
+        var tablename = 'job_kompetensi_sikap';   
+        
+        var kom = "#kom";
+        
+        if(id!=''){
+            $.ajax({
+                type:'POST',
+                url:'<?php echo base_url();?>index.php/job/deljob',
+                data: {
+                    id: id, tablename: tablename
+                },
+                cache: false,
+                success: function(data) {
+                    alert("Deleted");
+                    location.reload();
+                }
+            });
+        }
+
 		e.preventDefault();
 		$(this).parent('div').remove(); //Remove field html
 		x--; //Decrement field counter
@@ -99,6 +231,7 @@
             data: datastring,
             success: function(data) {
 					alert("Data Saved");
+                    location.reload();
                 }
             });
     });

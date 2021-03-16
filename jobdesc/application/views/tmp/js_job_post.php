@@ -21,6 +21,7 @@
             cache: false,
             success : function(response){
                 alert("Data Saved");
+                location.reload();
             }
         });      
     });

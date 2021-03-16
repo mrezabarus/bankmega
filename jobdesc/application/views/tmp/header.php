@@ -35,7 +35,10 @@
                         <a class="nav-link" href="<?php echo base_url();?>index.php/home">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="<?php echo base_url();?>index.php/home/job">Job <span class="sr-only"></span></a>
+                        <a class="nav-link" href="<?php echo base_url();?>index.php/posisi">Posisi</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="<?php echo base_url();?>index.php/job">Job <span class="sr-only"></span></a>
                     </li>
                     <!--
                     <li class="nav-item">

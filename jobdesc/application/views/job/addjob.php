@@ -27,11 +27,9 @@ window.onbeforeunload = function(event)
                                 <td><?php echo $detailjob->job_title;?></td>
                             </tr>
                             <tr>
-                                <th scope="row">Send To</th>
+                                <th scope="row"><button type="button" class="btn btn-primary">Send To Admin</button></th>
                                 <td>
-                                <select name="sendto" id="sendto">
-                                    <option value="volvo">Admin</option>
-                                </select>
+                                &nbsp;
                                 </td>
                             </tr>
                         </tbody>
@@ -42,7 +40,7 @@ window.onbeforeunload = function(event)
 
             <div class="card card-signin my-5">                
                 <h5 class="card-header" style="background-color: #43425D; color:#fff;">Job Desc Detail
-                <small class="float-sm-right"><a href="<?php echo base_url();?>index.php/job/review/<?php echo $id_job;?>" data-toggle="modal" data-target="#exampleModal">Preview</a></small></h5>
+                <small class="float-sm-right"><a href="<?php echo base_url();?>index.php/job/review/<?php echo $id_job;?>"  target="_blank">Preview</a></small></h5>
                 <div class="card-body">
                     
                     <div class="bs-example">

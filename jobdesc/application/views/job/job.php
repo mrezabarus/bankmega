@@ -7,7 +7,7 @@ td { font-size: 11px; }
         <div class="col-sm-9 col-md-7 col-lg-8">
         
             <div class="card card-signin my-5">
-                <h5 class="card-header" style="background-color: #43425D; color:#fff;">Position List <small class="float-sm-right"><a href="#" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-plus" aria-hidden="true"></i></a></small></h5>
+                <h5 class="card-header" style="background-color: #43425D; color:#fff;">Job List <small class="float-sm-right"><a href="#" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-plus" aria-hidden="true"></i></a></small></h5>
                 <div class="card-body">
                     
                     <table class="table">
@@ -28,7 +28,7 @@ td { font-size: 11px; }
                                 <td><?php echo $e->id_job;?></td>
                                 <td><?php echo $e->job_title;?></td>
                                 <td><?php echo $e->position_name;?></td>
-                                <td><a href="<?php echo base_url();?>index.php/job/view/<?php echo $e->id_job;?>"><i class="fas fa-binoculars">&nbsp;</i></a>&nbsp;|&nbsp;<a href="<?php echo base_url();?>index.php/job/add/<?php echo $e->id_job;?>"><i class="fas fa-edit">&nbsp;</i></a></td>
+                                <td><a href="<?php echo base_url();?>index.php/job/review/<?php echo $e->id_job;?>" target="_blank"><i class="fas fa-binoculars">&nbsp;</i></a>&nbsp;|&nbsp;<a href="<?php echo base_url();?>index.php/job/add/<?php echo $e->id_job;?>"><i class="fas fa-edit">&nbsp;</i></a></td>
                             </tr>
                         <?php $a++; ?>
                         <?php endforeach; ?>

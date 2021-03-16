@@ -19,7 +19,24 @@
       $(".nav-tabs a").click(function(){
         $(this).tab('show');
       });
+      $('#tabs-list').click(function () {
+          location.reload();
+      });
+
+      /*TAB REFRESH AFTER JQUERY POST AJAX*/
+      $('#myTab a').click(function (e) {
+        e.preventDefault();
+        $(this).tab('show');
+      });
+      $("ul.nav-tabs > li > a").on("shown.bs.tab", function (e) {
+          var id = $(e.target).attr("href").substr(1);
+          window.location.hash = id;
+      });
+      var hash = window.location.hash;
+      $('#myTab a[href="' + hash + '"]').tab('show');
     });
+
+    
     </script>
 
     
